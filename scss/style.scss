@@ -1,20 +1,21 @@
+@import "fonts";
 @import "reboot";
 @import "mixins";
 @import "utilities";
 
-.header{
+.header {
   position: relative;
-  .nav{
+  .nav {
     position: absolute;
     width: 100%;
     z-index: 999;
-    .container{
-      .nav-header{
+    .container {
+      .nav-header {
         display: flex;
         align-items: center;
         justify-content: space-between;
       }
-      .links-container{
+      .links-container {
         position: fixed;
         top: 0;
         right: -80vw;
@@ -23,18 +24,18 @@
         background: lightblue;
         z-index: 9999999999;
         transition: $trans;
-        .close-btn{
+        .close-btn {
           padding: 1rem;
           width: 3rem;
         }
-        .nav-links{
+        .nav-links {
           height: 100%;
           display: flex;
           flex-direction: column;
           justify-content: space-around;
           padding-left: 2rem;
-          li{
-            .scroll-link{
+          li {
+            .scroll-link {
               @extend .text-medium;
             }
           }
@@ -42,8 +43,8 @@
       }
     }
   }
-  .banner{
-    background: url('../img/banner.jpg') rgba(0,0,0,.35) no-repeat;
+  .banner {
+    background: url("../img/banner.jpg") rgba(0, 0, 0, 0.35) no-repeat;
     background-position: center center;
     background-size: cover;
     background-blend-mode: overlay;
@@ -51,22 +52,15 @@
     display: grid;
     place-items: center;
     position: relative;
-    &::after{
-      content: '';
-      position: absolute;
-      height: 100%;
-      width: 100%;
-      top: 0;
-      right: 0;
-    }
-    .banner-content{
+   
+    .banner-content {
       color: #fff;
       margin-top: 4rem;
-      .banner-title{
+      .banner-title {
         @extend .h2;
         margin-bottom: 2.5rem;
       }
-      .banner-subtitle{
+      .banner-subtitle {
         @extend .text-medium;
         margin-bottom: 2.56rem;
       }
@@ -74,67 +68,64 @@
   }
 }
 
-.social-proof{
+.social-proof {
   height: 12.88rem;
-  background: #FDFDFD;
+  background: #fdfdfd;
   display: grid;
   place-items: center;
-  .container{
-    .logo-container{
+  .container {
+    .logo-container {
       overflow: scroll;
       padding: 2rem;
       height: 100%;
       display: flex;
-      img{
+      img {
         padding-right: 2rem;
       }
-      &::-webkit-scrollbar{
+      &::-webkit-scrollbar {
         width: 0px;
       }
     }
   }
 }
 
-.features{
+.features {
   position: relative;
   overflow: hidden;
-  .f-circle{
+  .f-circle {
     position: absolute;
     top: 1.19rem;
     right: 10.06rem;
   }
-  .feature-blob{
+  .feature-blob {
     position: absolute;
     top: 32.13rem;
     left: 13.38rem;
   }
-  .container{
-    .features-upper{
-      .features-title{
+  .container {
+    .features-upper {
+      .features-title {
         @extend .h2;
         margin-top: 7.06rem;
         margin-bottom: 1.19rem;
       }
-      .features-subtitle{
+      .features-subtitle {
         @extend .text;
         margin-bottom: 1.69rem;
       }
     }
-    .features-lower{
+    .features-lower {
       margin-top: 7.56rem;
-      .feature-card{
+      .feature-card {
         margin-bottom: 6.06rem;
-        .card-img{
+        .card-img {
           margin-bottom: 0.75rem;
         }
-        .card-title{
-          font-family: 'futura';
-          font-weight: 400;
-          font-size: 1.25rem;
-          line-height: 1.5rem;
+        .card-title {
+         @extend .medium;
           margin-bottom: 0.75rem;
         }
-        .card-text{
+        .card-text {
           @extend .text-small;
           width: 15.94rem;
         }
@@ -143,15 +134,53 @@
   }
 }
 
-.practice{
-  .container{
-    .practice-title{
+.practice {
+  position: relative;
+  overflow: hidden;
+  // background: lightblue;
+  .absolute{
+    position: absolute;
+    z-index: -1;
+  }
+  .practice-blob1{
+    @extend .absolute;
+    top: 35rem;
+    left: 9.69rem;
+  }
+  .practice-blob2{
+    @extend .absolute;
+    bottom: 5.75rem;
+    right: 14rem;
+  }
+  .container {
+    .practice-title {
       @extend .h2;
       text-align: center;
+    }
+    .practice-card{
+      .single-card{
+        margin: .5rem;
+        margin-top: 2.69rem;
+        padding: 1.81rem 1.31rem 1.81rem;
+        height: 21.19rem;
+        background: #fff;
+        box-shadow: 2px 2px 24px rgba(0, 0, 0, 0.12);
+        img{
+          padding-bottom: 2.81rem;
+        }
+        .single-card-title{
+          @extend .medium;
+          margin-bottom: 1.5rem;
+        }
+        .single-card-text{
+          @extend .text;
+        }
+      }
     }
   }
 }
 
-footer{
+footer {
+  margin-top: 4rem;
   height: 100vh;
 }

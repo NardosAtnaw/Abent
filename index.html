@@ -142,18 +142,63 @@
    </section>
 
    <section class="practice">
+      <svg width="491" class="practice-blob1" height="519" viewBox="0 0 491 519" fill="none" xmlns="http://www.w3.org/2000/svg">
+         <path d="M421.97 57.1886C460.988 98.8919 474.722 160.824 483.774 222.135C492.826 283.134 496.884 343.821 474.41 394.861C451.623 445.901 402.304 487.604 346.118 506.589C289.62 525.573 226.255 522.461 173.19 499.431C120.125 476.4 77.6738 433.763 45.5228 382.724C13.3719 331.684 -7.85392 272.552 2.759 220.267C13.6841 167.671 56.4479 122.233 103.894 82.3973C151.34 42.2501 203.78 7.70475 261.839 1.16915C319.898 -5.36645 383.264 15.7964 421.97 57.1886Z" fill="url(#paint0_linear_578:816)" fill-opacity="0.1"/>
+         <defs>
+         <linearGradient id="paint0_linear_578:816" x1="-7.02649e-06" y1="519" x2="534.007" y2="467.628" gradientUnits="userSpaceOnUse">
+         <stop stop-color="#4B79A1"/>
+         <stop offset="0.19843" stop-color="#3594B6"/>
+         <stop offset="0.403365" stop-color="#24AEBF"/>
+         <stop offset="0.580183" stop-color="#3FC7BE"/>
+         <stop offset="0.776131" stop-color="#71DEB5"/>
+         </linearGradient>
+         </defs>
+         </svg>
+         
+         <svg width="491" class="practice-blob2" height="519" viewBox="0 0 491 519" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M421.97 57.1886C460.988 98.8919 474.722 160.824 483.774 222.135C492.826 283.134 496.884 343.821 474.41 394.861C451.623 445.901 402.304 487.604 346.118 506.589C289.62 525.573 226.255 522.461 173.19 499.431C120.125 476.4 77.6738 433.763 45.5228 382.724C13.3719 331.684 -7.85392 272.552 2.759 220.267C13.6841 167.671 56.4479 122.233 103.894 82.3973C151.34 42.2501 203.78 7.70475 261.839 1.16915C319.898 -5.36645 383.264 15.7964 421.97 57.1886Z" fill="url(#paint0_linear_578:816)" fill-opacity="0.1"/>
+            <defs>
+            <linearGradient id="paint0_linear_578:816" x1="-7.02649e-06" y1="519" x2="534.007" y2="467.628" gradientUnits="userSpaceOnUse">
+            <stop stop-color="#4B79A1"/>
+            <stop offset="0.19843" stop-color="#3594B6"/>
+            <stop offset="0.403365" stop-color="#24AEBF"/>
+            <stop offset="0.580183" stop-color="#3FC7BE"/>
+            <stop offset="0.776131" stop-color="#71DEB5"/>
+            </linearGradient>
+            </defs>
+            </svg>
       <div class="container">
          <h1 class="practice-title">
             Practice Areas
          </h1>
-
-         <div class="practice-card">
-            <div class="single-card">
-               <img src="./" alt="" class="pra-img">
-            </div>
+         
+         <div class="practice-card" id="card">
+  
+               <div class="single-card" v-for="practice in practiceCard" :key="practice.id">
+                  <img :src="practice.img" alt="" class="pra-img">
+                  <h2 class="single-card-title">
+                    {{ practice.title }}
+                  </h2>
+                  <p class="single-card-text">
+                    {{ practice.text }}
+                  </p>
+                  </div>
+         
          </div>
       </div>
    </section>
+
+   <section class="testimonials">
+      <div class="container">
+         <h1 class="testi-title">
+            Testimonials
+         </h1>
+
+         <div class="testi-card"></div>
+      </div>
+   </section>
+
+
    <footer>
 
    </footer>
