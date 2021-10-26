@@ -386,7 +386,7 @@ template {
   line-height: 3.98rem;
 }
 
-.medium, .features .container .features-lower .feature-card .card-title, .practice .container .practice-card .single-card .single-card-title {
+.medium, .features .container .features-lower .feature-card .card-title, .practice .container .practice-card .single-card .single-card-title, .testimonials .container .testi-card .testi-footer .testi-name {
   font-family: 'medium bt';
   font-weight: 600;
   font-size: 1.25rem;
@@ -400,7 +400,7 @@ template {
   line-height: 1.5rem;
 }
 
-.text, .features .container .features-upper .features-subtitle, .practice .container .practice-card .single-card .single-card-text {
+.text, .features .container .features-upper .features-subtitle, .practice .container .practice-card .single-card .single-card-text, .testimonials .container .testi-card .testi-text {
   font-family: "light bt";
   font-size: 1.13rem;
   line-height: 1.75rem;
@@ -419,7 +419,7 @@ template {
   line-height: 1.5rem;
 }
 
-.h2, .header .banner .banner-content .banner-title, .features .container .features-upper .features-title, .practice .container .practice-title {
+.h2, .header .banner .banner-content .banner-title, .features .container .features-upper .features-title, .practice .container .practice-title, .testimonials .container .testi-title {
   font-family: 'medium bt';
   font-weight: 700;
   font-size: 2.44rem;
@@ -1074,7 +1074,39 @@ template {
   margin-bottom: 1.5rem;
 }
 
+.testimonials {
+  margin-top: 5.69rem;
+  background: linear-gradient(180deg, #FDFDFD 0%, rgba(253, 253, 253, 0) 100%);
+}
+
+.testimonials .container .testi-title {
+  margin-top: 2.56rem;
+  text-align: center;
+}
+
+.testimonials .container .testi-card {
+  margin-top: 3.88rem;
+  background: #fff;
+  border: 1px solid #E4E4E4;
+}
+
+.testimonials .container .testi-card img {
+  margin-top: -1.63rem;
+  margin-left: 1.19rem;
+}
+
+.testimonials .container .testi-card .testi-footer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.testimonials .container .testi-card .testi-footer .icons-container {
+  display: flex;
+  gap: 0.5rem;
+}
+
 footer {
   margin-top: 4rem;
   height: 100vh;
 }
+/*# sourceMappingURL=style.css.map */

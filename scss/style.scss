@@ -179,7 +179,40 @@
     }
   }
 }
-
+.testimonials{
+  margin-top: 5.69rem;
+  background: linear-gradient(180deg, #FDFDFD 0%, rgba(253, 253, 253, 0) 100%);
+  .container{
+    .testi-title{
+      @extend .h2;
+      margin-top: 2.56rem;
+      text-align: center;
+    }
+    .testi-card{
+      margin-top: 3.88rem;
+      background: #fff;
+      border: 1px solid #E4E4E4;
+      img{
+        margin-top: -1.63rem;
+        margin-left: 1.19rem;
+      }
+      .testi-text{
+        @extend .text;
+      }
+      .testi-footer{
+        display: flex;
+        justify-content: space-between;
+        .testi-name{
+          @extend .medium;
+        }
+        .icons-container{
+          display:flex;
+          gap: 0.5rem;
+        }
+      }
+    }
+  }
+}
 footer {
   margin-top: 4rem;
   height: 100vh;
