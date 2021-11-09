@@ -1,0 +1,66 @@
+.main-text {
+  margin-top: 3.5rem;
+  .container {
+    .side-links {
+      display: none;
+    }
+    .content {
+      .service-title {
+        @extend .h2;
+        margin-bottom: 3.88rem;
+      }
+      img {
+        margin: 2.88rem 0;
+      }
+      p {
+        @extend .text;
+      }
+    }
+  }
+}
+
+@include responsive($lg) {
+  .main-text {
+    .container {
+      align-items: flex-start;
+      gap: 2rem;
+      .side-links {
+        display: block;
+        h3 {
+          font-family: "medium bt";
+          font-weight: 700;
+          font-size: 1.5rem;
+          line-height: 1.5rem;
+          margin-bottom: 1.81rem;
+        }
+        ul {
+          margin-bottom: 3.5rem;
+          li {
+            a {
+              font-family: "light bt";
+              font-size: 1.13rem;
+              line-height: 1.75rem;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.main-text {
+  .container {
+    .content {
+      img,
+      p {
+        width: 58.19rem;
+      }
+    }
+  }
+}
+
+.fixed{
+  position: fixed;
+  width: 100%;
+  top: 0;
+}

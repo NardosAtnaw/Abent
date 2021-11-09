@@ -1,0 +1,360 @@
+.header {
+  .contact-banner {
+    background: url("../img/contact.jpg") rgba(0, 0, 0, 0.35) no-repeat;
+    background-position: center center;
+    background-size: cover;
+    background-blend-mode: overlay;
+    height: 40vh;
+  }
+}
+
+.time {
+  position: relative;
+  overflow: hidden;
+  .time-blob {
+    @extend .absolute;
+    top: -6.88rem;
+    right: -10.88rem;
+  }
+  .time-title {
+    @extend .h2;
+    width: 37.06rem;
+    margin: 0 auto;
+    padding-top: 6.75rem;
+  }
+  .container {
+    margin-top: 4.63rem;
+    .left {
+      margin-bottom: 4.81rem;
+      border: 1px solid $primary-color;
+      border-radius: 2.5rem;
+      p {
+        font-family: "medium bt";
+        font-size: 1rem;
+        line-height: 1.75rem;
+        padding: 2.75rem 1.38rem;
+        padding-bottom: 5rem;
+      }
+    }
+    .right {
+      ul {
+        li {
+          display: flex;
+          font-family: "medium bt";
+          font-size: 1rem;
+          column-gap: 0.63rem;
+          margin-bottom: 1rem;
+          align-items: flex-start;
+        }
+      }
+    }
+  }
+}
+@include responsive($md) {
+  .time {
+    .time-blob {
+      width: 32rem;
+    }
+    .container {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1.81rem;
+      .right {
+        margin-top: 3rem;
+      }
+    }
+  }
+}
+@include responsive($xl) {
+  .time {
+    .time-blob {
+      width: auto;
+    }
+    .time-title {
+      width: 55rem;
+    }
+    .container {
+      width: 65.56rem;
+      .left {
+        p {
+          font-family: "medium bt";
+          font-size: 1.13rem;
+          line-height: 2.75rem;
+        }
+      }
+      .right {
+        margin-left: 4.88rem;
+        ul {
+          li {
+            font-family: "medium bt";
+            font-size: 1.13rem;
+            margin-bottom: 1.75rem;
+          }
+        }
+      }
+    }
+  }
+}
+.contact-us {
+  .contact-us-title {
+    padding-top: 4.81rem;
+    padding-bottom: 4.06rem;
+    @extend .h2;
+  }
+  .contact-container {
+    .contact-card {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      background: #ffffff;
+      box-shadow: 0px 2px 48px rgba(0, 0, 0, 0.08);
+      margin: 0 auto;
+      margin-bottom: 2.81rem;
+      width: 18.94rem;
+      height: 14rem;
+      img {
+        margin-bottom: 1.38rem;
+      }
+      p {
+        @extend .text;
+      }
+      .lo-text {
+        width: 15rem;
+        margin: 0 auto;
+      }
+    }
+  }
+}
+
+@include responsive($md) {
+  .contact-us {
+    .contact-container {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      gap: 1.56rem;
+      .contact-card {
+        width: 14.94rem;
+        .lo-text {
+          width: 12.75rem;
+        }
+      }
+    }
+  }
+}
+
+@include responsive($lg) {
+  .contact-us {
+    .contact-container {
+      width: 90%;
+      margin: 0 auto;
+      gap: 1rem;
+      .contact-card {
+        width: 18.94rem;
+      }
+    }
+  }
+}
+
+@include responsive($xl){
+  .contact-us{
+    .contact-container{
+      width: 68.00rem;
+    }
+  }
+}
+.wrapper {
+  background-image: linear-gradient(
+    84.19deg,
+    rgba(75, 121, 161, 0.05) 0%,
+    rgba(53, 148, 182, 0.05) 19.77%,
+    rgba(36, 174, 191, 0.05) 40.19%,
+    rgba(63, 199, 190, 0.05) 57.81%,
+    rgba(113, 222, 181, 0.05) 77.33%
+  );
+  position: relative;
+  .contact-blob {
+    width: 101.13rem;
+    position: absolute;
+    z-index: -1;
+    top: -4rem;
+  }
+  .map {
+    margin-top: 4rem;
+    
+    overflow: hidden;
+    padding-bottom: 5.06rem;
+    height: 31.94rem;
+
+    .map-title {
+      @extend .h2;
+      margin-bottom: 4.88rem;
+    }
+    .map-container {
+      .location {
+        .map-responsive {
+          overflow: hidden;
+          padding-bottom: 56.25%;
+          position: relative;
+          height: 17rem;
+
+          max-height: 31.94rem;
+          iframe {
+            left: 0;
+            top: 0;
+            height: 100%;
+            width: 100%;
+            position: absolute;
+          }
+        }
+      }
+    }
+  }
+  .contact-form {
+    border: 1px solid $primary-color;
+    border-radius: 2.5rem;
+    margin: 10.75rem 1rem 0;
+
+    position: relative;
+    .chat {
+      width: 5.25rem;
+      position: absolute;
+      right: 1.2rem;
+      top: -3rem;
+    }
+    .container {
+      width: 100%;
+      padding: 0 1rem;
+      margin-top: 3.13rem;
+      background: transparent;
+      h2 {
+        @extend .h2;
+        margin-bottom: 1rem;
+      }
+      p {
+        @extend .text;
+        color: #7d7d7d;
+        margin-bottom: 2rem;
+      }
+      .myform {
+        input,
+        textarea {
+          @extend .text;
+          color: #7d7d7d;
+          width: 18.94rem;
+          border: none;
+          background: #fff;
+          padding: 1.13rem 0.8rem;
+          box-shadow: 0px 2px 11px rgba(0, 0, 0, 0.08);
+          margin-bottom: 1.38rem;
+          outline: none;
+        }
+        .socials {
+          color: #afafaf;
+          font-family: "Futura";
+          font-weight: bold;
+          font-size: 1rem;
+          width: 18.94rem;
+          display: flex;
+          justify-content: flex-end;
+          gap: 1.31rem;
+          margin: 1.38rem 0 1.69rem;
+          ul {
+            display: flex;
+            gap: 0.88rem;
+          }
+        }
+        .button {
+          @extend .text;
+          margin-bottom: 2.38rem;
+          text-align: end;
+        }
+      }
+    }
+  }
+}
+
+@include responsive($md) {
+  .wrapper {
+    .contact-blob {
+      top: -8.3rem;
+    }
+    .contact-form {
+      .container {
+        width: 100% - 10%;
+        .myform {
+          .right-margin {
+            margin-right: 1rem;
+          }
+          .socials {
+            width: 100%;
+          }
+          textarea {
+            width: 100%;
+          }
+        }
+      }
+    }
+    .map{
+      margin-bottom: 5rem;
+    }
+  }
+}
+
+@include responsive($lg) {
+  .wrapper {
+    .contact-blob {
+      width: 100%;
+      top: -12.3rem;
+    }
+    .contact-form {
+      .container {
+        .myform {
+          input {
+            width: 48.5%;
+          }
+        }
+      }
+    }
+  
+  }
+}
+
+@include responsive($xl){
+  .wrapper{
+    .contact-blob {
+      top: -15.6rem;
+    }
+    .contact-form{
+      width: 68.38rem;
+      margin: 0 auto;
+      margin-top: 17rem;
+      .container{
+        width: 54.00rem;
+      }
+    }
+    
+  .map {
+    .map-container {
+      .location {
+        .map-responsive {
+          iframe {
+            height: 50%;
+          }
+        }
+      }
+    }
+  }
+  }
+}
+
+@include responsive($xxl){
+  .wrapper{
+    .contact-blob{
+      top: -20.8rem;
+    }
+  }
+}
+.contact-footer {
+  margin-top: 0 !important;
+}

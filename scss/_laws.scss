@@ -1,0 +1,120 @@
+.header {
+  .laws-banner {
+    background: url("../img/laws.jpg") rgba(0, 0, 0, 0.35) no-repeat;
+    background-position: center center;
+    background-size: cover;
+    background-blend-mode: overlay;
+    height: 50vh;
+    display: grid;
+    justify-content: center;
+    align-items: flex-end;
+    .law-banner-content{
+      z-index: 999;
+      .law-banner-title{
+        @extend .h2;
+        margin-bottom: 2.63rem;
+        color: #fff;
+      }
+      .input-container {
+        display: flex;
+        flex-direction: row-reverse;
+        width: 18.94rem;
+        padding: 0 1.13rem;
+        margin-bottom: 2.81rem;
+        border: 2px solid #fff;
+        border-radius: 3.81rem;
+        .search-button{
+          background: none;
+          border: none;
+          padding: 0;
+          margin: 0;
+        }
+        .icon {
+          padding: 10px;
+          min-width: 50px;
+          background: transparent;
+          border: none;
+          
+        }
+        .input-field {
+          @extend .text;
+          width: 100%;
+          padding: 10px;
+          outline: none;
+          color: #fff;
+          border-color: #fff;
+          background: transparent;
+          border: none;
+          &::placeholder{
+            color: #fff;
+            @extend .text;
+          }
+        }
+      }
+    }
+  }
+}
+
+@include responsive($md){
+  .header{
+    // height: 40vh;
+    .laws-banner{
+      align-items: center;
+      .law-banner-content{
+        margin-top: 2rem;
+        .input-container{
+          width: 25rem;
+        }
+      }
+    }
+  }
+}
+
+@include responsive($lg){
+  .header{
+    .laws-banner{
+      .law-banner-content{
+        .input-container{
+          width: 32.81rem;
+        }
+      }
+    }
+  }
+}
+@include responsive($lg){
+  .header{
+    .laws-banner{
+      .law-banner-content{
+        margin-top: 10rem;
+        .input-container{
+          width: 47.81rem;
+        }
+      }
+    }
+  }
+}
+.categories{
+  background: #FDFDFD;
+  height: auto;
+  .container{
+    padding: 1.69rem 0;
+    .btn-container{
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.88rem;
+      a{
+        @extend .text;
+        margin-bottom: 1rem;
+      }
+    }
+  }
+}
+
+.laws-marign {
+  margin-top: 0 !important;
+  padding-top: 0 !important;
+}
+
+.laws-footer{
+  margin-top: 0 !important;
+}

@@ -24,10 +24,17 @@
   font-size: 1.5rem;
   line-height: 1.5rem;
 }
+.absolute {
+  position: absolute;
+  z-index: -1;
+}
 .text {
   font-family: "light bt";
   font-size: 1.13rem;
   line-height: 1.75rem;
+}
+.text-center{
+  text-align: center;
 }
 .text-medium {
   font-family: 'medium bt';
@@ -46,6 +53,14 @@
   font-size: 2.44rem;
   line-height: 2.88rem;
 }
+@include responsive($xl){
+  .h2 {
+    font-family: "Futura";
+    font-weight: 700;
+    font-size: 3.31rem;
+    line-height: 3.98rem;
+  }
+}
 .text-small {
   font-family: "light bt";
   font-weight: 300;
@@ -63,7 +78,7 @@ $trans: all 0.5s ease-in-out;
 // Gird system
 .container {
   width: 100% - 10%;
-  // max-width: 1200px;
+  max-width: 1440px;
   margin: 0 auto;
   overflow: hidden;
 }
@@ -168,12 +183,32 @@ $trans: all 0.5s ease-in-out;
   background: $primary-color;
   color: #fff;
   margin-bottom: 5px;
+  &:hover{
+    background: transparent;
+    color: $primary-color;
+    border: 1px solid $primary-color;
+  }
 }
+
 .btn-rounded-outline-primary {
   @extend .btn-rounded;
   background: transparent;
   color: $primary-color;
   border-color: $primary-color;
+  &:hover{
+    background: $primary-color;
+    color: #fff;
+  }
+}
+.btn-rounded-outline-category {
+  @extend .btn-rounded;
+  background: transparent;
+  color: #888B8D;
+  border-color: #888B8D;
+  &:hover{
+    background: #888B8D;
+    color: #fff;
+  }
 }
 .btn-secondary {
   color: #fff;
