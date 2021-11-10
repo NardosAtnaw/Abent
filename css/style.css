@@ -406,7 +406,7 @@ template {
 }
 
 .text, .contact-us .contact-container .contact-card p, .wrapper .contact-form .container p, .wrapper .contact-form .container .myform input,
-.wrapper .contact-form .container .myform textarea, .wrapper .contact-form .container .myform .button, .header .laws-banner .law-banner-content .input-container .input-field, .header .laws-banner .law-banner-content .input-container .input-field::placeholder, .categories .container .btn-container a, .main-text .container .content p, .features .container .features-upper .features-subtitle, .practice .container .practice-card .single-card .single-card-text, .testimonials .container .testi-container .testi-card .testi-text, .attorney .attorney-container .container .attorney-text, .footer .container .footer-contact .contact-info div p, .footer .container .corporate ul li a, .footer .container .single ul li a {
+.wrapper .contact-form .container .myform textarea, .wrapper .contact-form .container .myform .button, .header .laws-banner .law-banner-content .input-container .input-field, .header .laws-banner .law-banner-content .input-container .input-field::placeholder, .categories .container .btn-container a, .main-text .container .content p, .header .attorney-banner .law-banner-content .input-container .input-field, .header .attorney-banner .law-banner-content .input-container .input-field::placeholder, .attorney-profile .container .attorney-details .attorney-content .profile, .attorney-profile .container .attorney-details .attorney-content .experience, .attorney-profile .container .attorney-details .attorney-content .education ul li, .about .about-container .container .about-text, .features .container .features-upper .features-subtitle, .practice .container .practice-card .single-card .single-card-text, .testimonials .container .testi-container .testi-card .testi-text, .attorney .attorney-container .container .attorney-text, .footer .container .footer-contact .contact-info div p, .footer .container .corporate ul li a, .footer .container .single ul li a {
   font-family: "light bt";
   font-size: 1.13rem;
   line-height: 1.75rem;
@@ -422,14 +422,14 @@ template {
   line-height: 1.75rem;
 }
 
-.h4, .laws .laws-cards .law-card .container .law-card-title {
+.h4, .attorney-profile .container .attorney-details .attorney-content .education .edu-title, .attorney-profile .container .attorney-details .attorney-content .education .admission-title, .laws .laws-cards .law-card .container .law-card-title {
   font-family: 'futura';
   font-weight: 700;
   font-size: 1.56rem;
   line-height: 1.5rem;
 }
 
-.h2, .time .time-title, .contact-us .contact-us-title, .wrapper .map .map-title, .wrapper .contact-form .container h2, .header .laws-banner .law-banner-content .law-banner-title, .main-text .container .content .service-title, .header .banner .banner-content .banner-title, .features .container .features-upper .features-title, .practice .container .practice-title, .testimonials .testi-title, .attorney .attorney-title, .laws .laws-title {
+.h2, .time .time-title, .contact-us .contact-us-title, .wrapper .map .map-title, .wrapper .contact-form .container h2, .header .laws-banner .law-banner-content .law-banner-title, .main-text .container .content .service-title, .header .attorney-banner .law-banner-content .law-banner-title, .attorney-profile .container .attorney-info .attorney-name, .about .about-title, .features .container .features-upper .features-title, .practice .container .practice-title, .testimonials .testi-title, .attorney .attorney-title, .laws .laws-title {
   font-family: 'medium bt';
   font-weight: 700;
   font-size: 2.44rem;
@@ -437,7 +437,7 @@ template {
 }
 
 @media screen and (min-width: 1200px) {
-  .h2, .time .time-title, .contact-us .contact-us-title, .wrapper .map .map-title, .wrapper .contact-form .container h2, .header .laws-banner .law-banner-content .law-banner-title, .main-text .container .content .service-title, .header .banner .banner-content .banner-title, .features .container .features-upper .features-title, .practice .container .practice-title, .testimonials .testi-title, .attorney .attorney-title, .laws .laws-title {
+  .h2, .time .time-title, .contact-us .contact-us-title, .wrapper .map .map-title, .wrapper .contact-form .container h2, .header .laws-banner .law-banner-content .law-banner-title, .main-text .container .content .service-title, .header .attorney-banner .law-banner-content .law-banner-title, .attorney-profile .container .attorney-info .attorney-name, .about .about-title, .features .container .features-upper .features-title, .practice .container .practice-title, .testimonials .testi-title, .attorney .attorney-title, .laws .laws-title {
     font-family: "Futura";
     font-weight: 700;
     font-size: 3.31rem;
@@ -445,7 +445,7 @@ template {
   }
 }
 
-.text-small, .features .container .features-lower .feature-card .card-text, .laws .laws-cards .law-card .container .law-card-date, .footer .copyright {
+.text-small, .attorney-profile .container .attorney-info .info-container div p, .attorney-profile .container .attorney-details .btn-container button, .features .container .features-lower .feature-card .card-text, .laws .laws-cards .law-card .container .law-card-date, .footer .copyright {
   font-family: "light bt";
   font-weight: 300;
   font-size: 1rem;
@@ -456,7 +456,6 @@ template {
   width: 90%;
   max-width: 1440px;
   margin: 0 auto;
-  overflow: hidden;
 }
 
 .row {
@@ -962,7 +961,7 @@ template {
 }
 
 .time .time-title {
-  width: 37.06rem;
+  max-width: 37.06rem;
   margin: 0 auto;
   padding-top: 6.75rem;
 }
@@ -1013,7 +1012,7 @@ template {
     width: auto;
   }
   .time .time-title {
-    width: 55rem;
+    max-width: 55rem;
   }
   .time .container {
     width: 65.56rem;
@@ -1263,10 +1262,6 @@ template {
   align-items: flex-end;
 }
 
-.header .laws-banner .law-banner-content {
-  z-index: 999;
-}
-
 .header .laws-banner .law-banner-content .law-banner-title {
   margin-bottom: 2.63rem;
   color: #fff;
@@ -1328,7 +1323,7 @@ template {
   }
 }
 
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 1200px) {
   .header .laws-banner .law-banner-content {
     margin-top: 10rem;
   }
@@ -1406,15 +1401,246 @@ template {
   }
 }
 
-.main-text .container .content img,
-.main-text .container .content p {
-  width: 58.19rem;
+@media screen and (min-width: 1200px) {
+  .main-text .container .content img,
+  .main-text .container .content p {
+    width: 58.19rem;
+  }
+}
+
+.header .attorney-banner {
+  background: url("../img/attorney1.jpg") rgba(0, 0, 0, 0.35) no-repeat;
+  background-position: center center;
+  background-size: cover;
+  background-blend-mode: overlay;
+  height: 50vh;
+  display: grid;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.header .attorney-banner .law-banner-content {
+  z-index: 999;
+}
+
+.header .attorney-banner .law-banner-content .law-banner-title {
+  margin-bottom: 2.63rem;
+  color: #fff;
+}
+
+.header .attorney-banner .law-banner-content .input-container {
+  display: flex;
+  flex-direction: row-reverse;
+  width: 18.94rem;
+  padding: 0 1.13rem;
+  margin-bottom: 2.81rem;
+  border: 2px solid #fff;
+  border-radius: 3.81rem;
+}
+
+.header .attorney-banner .law-banner-content .input-container .search-button {
+  background: none;
+  border: none;
+  padding: 0;
+  margin: 0;
+}
+
+.header .attorney-banner .law-banner-content .input-container .icon {
+  padding: 10px;
+  min-width: 50px;
+  background: transparent;
+  border: none;
+}
+
+.header .attorney-banner .law-banner-content .input-container .input-field {
+  width: 100%;
+  padding: 10px;
+  outline: none;
+  color: #fff;
+  border-color: #fff;
+  background: transparent;
+  border: none;
+}
+
+.header .attorney-banner .law-banner-content .input-container .input-field::placeholder {
+  color: #fff;
+}
+
+.attorney-profile {
+  margin-top: 3.69rem;
+}
+
+.attorney-profile .container .attorney-info {
+  margin-bottom: 3.25rem;
+}
+
+.attorney-profile .container .attorney-info .attorney-name {
+  margin-bottom: 2.94rem;
+}
+
+.attorney-profile .container .attorney-info .info-container div {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.5rem;
+  margin-bottom: 2.13rem;
+}
+
+.attorney-profile .container .attorney-info .social-icon {
+  display: flex;
+  gap: 1rem;
+}
+
+.attorney-profile .container .attorney-details {
+  padding: 1.19rem 0;
+}
+
+.attorney-profile .container .attorney-details .btn-container {
+  background: #ffffff;
+  box-shadow: 2px 2px 30px rgba(0, 0, 0, 0.15);
+  border-radius: 5.19rem;
+  display: flex;
+}
+
+.attorney-profile .container .attorney-details .btn-container button {
+  background: transparent;
+  border: none;
+  width: 100%;
+  height: 100%;
+  padding: 1.19rem 0.19rem;
+  color: #566cfb;
+}
+
+.attorney-profile .container .attorney-details .btn-container button:first-child {
+  border-top-left-radius: 5.19rem;
+  border-bottom-left-radius: 5.19rem;
+}
+
+.attorney-profile .container .attorney-details .btn-container button:last-child {
+  border-top-right-radius: 5.19rem;
+  border-bottom-right-radius: 5.19rem;
+}
+
+.attorney-profile .container .attorney-details .btn-container .active {
+  background: #566cfb;
+  color: #fff;
+}
+
+.attorney-profile .container .attorney-details .attorney-content .profile, .attorney-profile .container .attorney-details .attorney-content .experience, .attorney-profile .container .attorney-details .attorney-content .education {
+  display: none;
+}
+
+.attorney-profile .container .attorney-details .attorney-content .show {
+  display: block;
+}
+
+.attorney-profile .container .attorney-details .attorney-content .profile {
+  margin-top: 4.56rem;
+}
+
+.attorney-profile .container .attorney-details .attorney-content .experience {
+  margin-top: 4.56rem;
+}
+
+.attorney-profile .container .attorney-details .attorney-content .education {
+  margin-top: 4.56rem;
+}
+
+.attorney-profile .container .attorney-details .attorney-content .education .edu-title, .attorney-profile .container .attorney-details .attorney-content .education .admission-title {
+  margin-bottom: 1.8rem;
+}
+
+.attorney-profile .container .attorney-details .attorney-content .education ul {
+  margin-bottom: 3.44rem;
+}
+
+.attorney-profile .container .attorney-details .attorney-content .education ul li {
+  line-height: normal;
+  display: flex;
+  align-items: flex-start;
+  gap: 0.5rem;
+  margin-bottom: 0.94rem;
+}
+
+@media screen and (min-width: 768px) {
+  .attorney-profile .container .attorney-details .btn-container button {
+    font-size: 1.13rem;
+  }
+}
+
+.about {
+  margin-top: 4.44rem;
+}
+
+.about .about-title {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.about .right {
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+.about .about-container .about-img {
+  margin-top: 3.69rem;
+  width: 22.25rem;
+}
+
+.about .about-container .about-img-right {
+  margin-top: 3.69rem;
+}
+
+.about .about-container .container .about-text {
+  line-height: 2.31rem;
+  margin-top: 4.44rem;
+}
+
+.about .about-container .container a {
+  margin-top: 2.88rem;
+}
+
+@media screen and (min-width: 768px) {
+  .about .about-container .about-img {
+    width: 40rem;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .about {
+    margin: 7rem 0;
+  }
+  .about .about-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+  }
+  .about .about-container .container a {
+    margin-top: 0.88rem;
+  }
+}
+
+@media screen and (min-width: 1920px) {
+  .about .about-container {
+    align-items: center;
+  }
+  .about .about-container .about-img, .about .about-container .about-img-right {
+    width: 58rem;
+  }
+  .about .about-container .container .about-text {
+    font-size: 1.13rem;
+  }
 }
 
 .fixed {
-  position: fixed;
-  width: 100%;
+  position: fixed !important;
   top: 0;
+  background: #fff;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  z-index: 999999;
+}
+
+.black {
+  color: #000 !important;
 }
 
 .header {
@@ -1425,6 +1651,8 @@ template {
   position: absolute;
   width: 100%;
   z-index: 999;
+  padding-bottom: 1rem;
+  transition: all 0.3s linear;
 }
 
 .header .nav .container .nav-header {
@@ -1433,13 +1661,17 @@ template {
   justify-content: space-between;
 }
 
+.header .nav .container .nav-header .menu {
+  width: 3rem;
+}
+
 .header .nav .container .links-container {
   position: fixed;
   top: 0;
-  right: -80vw;
+  right: -70vw;
   height: 100vh;
-  width: 80vw;
-  background: lightblue;
+  width: 70vw;
+  background: #a07178;
   z-index: 9999999999;
   transition: all 0.5s ease-in-out;
 }
@@ -1447,14 +1679,22 @@ template {
 .header .nav .container .links-container .close-btn {
   padding: 1rem;
   width: 3rem;
+  position: absolute;
+  top: 2.5rem;
+  right: 2.5rem;
 }
 
 .header .nav .container .links-container .nav-links {
-  height: 100%;
+  height: 50%;
+  padding-top: 30%;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   padding-left: 2rem;
+}
+
+.header .nav .container .links-container .nav-links li .scroll-link {
+  color: #f4f4f4;
 }
 
 .header .banner {
@@ -1462,6 +1702,7 @@ template {
   background-position: center center;
   background-size: cover;
   background-blend-mode: overlay;
+  background-attachment: fixed;
   height: 100vh;
   display: grid;
   place-items: center;
@@ -1474,11 +1715,74 @@ template {
 }
 
 .header .banner .banner-content .banner-title {
-  margin-bottom: 2.5rem;
+  font-family: "medium bt";
+  font-weight: 700;
+  font-size: 2.44rem;
+  line-height: 2.88rem;
+  margin-bottom: 1.31rem;
+  max-width: 33.00rem;
 }
 
 .header .banner .banner-content .banner-subtitle {
   margin-bottom: 2.56rem;
+}
+
+@media screen and (min-width: 768px) {
+  .header .banner .banner-content .banner-title {
+    font-family: "Futura";
+    font-weight: 700;
+    font-size: 3.31rem;
+    line-height: 4.31rem;
+    margin-bottom: 2.31rem;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .header .banner .banner-content .banner-title {
+    font-family: "Futura";
+    font-weight: 700;
+    font-size: 4.31rem;
+    line-height: 4.31rem;
+    margin-bottom: 2.31rem;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .header .nav {
+    padding-top: 1.75rem;
+  }
+  .header .nav .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .header .nav .container .nav-header {
+    display: block;
+  }
+  .header .nav .container .nav-header .menu {
+    display: none;
+  }
+  .header .nav .container .links-container {
+    position: static;
+    height: auto;
+    z-index: 9999999999;
+    transition: all 0.5s ease-in-out;
+    background: none;
+    width: 70%;
+    max-width: 46.69rem;
+  }
+  .header .nav .container .links-container .close-btn {
+    display: none;
+  }
+  .header .nav .container .links-container .nav-links {
+    height: auto;
+    display: flex;
+    padding-top: 0%;
+    flex-direction: row;
+    justify-content: space-between;
+    justify-content: space-between;
+    padding-left: 2rem;
+  }
 }
 
 .features {
@@ -1490,6 +1794,7 @@ template {
   position: absolute;
   top: 1.19rem;
   right: 10.06rem;
+  z-index: -1;
 }
 
 .features .feature-md {
@@ -1548,9 +1853,21 @@ template {
     top: 50%;
     right: -50%;
   }
+  .features .container .features-lower {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
 }
 
 @media screen and (min-width: 992px) {
+  .features .container .features-upper .features-title {
+    font-family: "medium bt";
+    font-weight: 700;
+    font-size: 2rem;
+    line-height: 2.88rem;
+    margin-top: 7.06rem;
+    margin-bottom: 1.19rem;
+  }
   .features .feature-md {
     top: 25%;
     right: -30%;
@@ -1635,13 +1952,13 @@ template {
   position: absolute;
   bottom: 0.2rem;
   left: 0.2rem;
-  content: '';
+  content: "";
   display: block;
   width: 98%;
   height: 50%;
   background: #566cfb;
   z-index: -1;
-  transition: all .2s ease-in-out;
+  transition: all 0.2s ease-in-out;
 }
 
 .practice .container .practice-card .single-card:hover .hover {
@@ -1879,7 +2196,7 @@ template {
   border-radius: 0.63rem;
   margin-bottom: 3.5rem;
   max-width: 26rem;
-  transition: all .3s linear;
+  transition: all 0.3s linear;
 }
 
 .laws .laws-cards .law-card .law-card-img {
@@ -1888,7 +2205,7 @@ template {
   border-top-right-radius: 0.63rem;
   filter: grayscale(1);
   width: 26rem;
-  transition: all .3s linear;
+  transition: all 0.3s linear;
 }
 
 .laws .laws-cards .law-card .container {
@@ -1902,7 +2219,7 @@ template {
 
 .laws .laws-cards .law-card .container .law-card-title {
   margin-bottom: 2rem;
-  transition: all .3s linear;
+  transition: all 0.3s linear;
 }
 
 .laws .laws-cards .law-card:hover .law-card-title {

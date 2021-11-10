@@ -47,20 +47,16 @@
     }
   }
 }
-
-.main-text {
-  .container {
-    .content {
-      img,
-      p {
-        width: 58.19rem;
+@include responsive($xl){
+  .main-text {
+    .container {
+      .content {
+        img,
+        p {
+          width: 58.19rem;
+        }
       }
     }
   }
-}
 
-.fixed{
-  position: fixed;
-  width: 100%;
-  top: 0;
 }

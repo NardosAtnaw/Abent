@@ -18,7 +18,7 @@
   }
   .time-title {
     @extend .h2;
-    width: 37.06rem;
+    max-width: 37.06rem;
     margin: 0 auto;
     padding-top: 6.75rem;
   }
@@ -71,7 +71,7 @@
       width: auto;
     }
     .time-title {
-      width: 55rem;
+      max-width: 55rem;
     }
     .container {
       width: 65.56rem;

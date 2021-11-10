@@ -12,29 +12,7 @@
 
   <body>
     <header id="app" class="header">
-      <nav class="nav">
-        <div class="container">
-          <div class="nav-header">
-            <div class="logo">
-              <img src="./img/logo.png" alt="Abent Law Firm" />
-            </div>
-            <div class="menu">
-              <img src="./img/menu.svg" alt="" />
-            </div>
-          </div>
-
-          <div class="links-container">
-            <img src="./img/close.svg" class="close-btn" alt="" />
-            <ul class="nav-links">
-              <li><a href="#" class="scroll-link">Practice Areas</a></li>
-              <li><a href="#" class="scroll-link">Attorney</a></li>
-              <li><a href="#" class="scroll-link">Testimonials</a></li>
-              <li><a href="#" class="scroll-link">Laws</a></li>
-              <li><a href="#" class="scroll-link">Contact</a></li>
-            </ul>
-          </div>
-        </div>
-      </nav>
+      <nav class="nav" id="nav"></nav>
 
       <section class="banner">
         <div class="banner-content container">
@@ -42,19 +20,19 @@
           <p class="banner-subtitle">
             The Law Office of Abnet Solomon (aka AbnetLaw)
           </p>
-          <a href="#" class="btn btn-rounded-secondary text">Contact Us</a>
+          <a href="./contact.html" class="btn btn-rounded-secondary text"
+            >Contact Us</a
+          >
         </div>
       </section>
     </header>
 
-
-
     <section class="features">
-      <img src="./img/feature_circle.svg" class="f-circle" alt="" />
+      <img src="./img/feature_circle.png" class="f-circle" alt="" />
 
-      <img src="./img/law-blob.jpg" alt="" class="feature-md">
+      <img src="./img/law-blob.jpg" alt="" class="feature-md" />
       <div class="container row">
-        <div class="features-upper col-md-6 col-lg-4">
+        <div class="features-upper col-md-6 col-lg-3 col-xl-4">
           <h1 class="features-title">What Makes You Choose Us?</h1>
           <p class="features-subtitle">
             Being passionate about the law & striving for the highest standard
@@ -63,8 +41,8 @@
           <a href="#" class="btn btn-rounded-primary text-small">Learn More</a>
         </div>
 
-        <div class="features-lower col-lg-7 col-lg-offset-1 row">
-          <div class="feature-card col-md-6 ">
+        <div class="features-lower col-lg-7 col-lg-offset-1 ">
+          <div class="feature-card col-md-6">
             <img src="./img/digital.svg" alt="" class="card-img" />
             <h2 class="card-title">Digitally Available</h2>
             <p class="card-text">
@@ -73,7 +51,7 @@
             </p>
           </div>
 
-          <div class="feature-card col-md-6 ">
+          <div class="feature-card col-md-6">
             <img src="./img/idea.svg" alt="" class="card-img" />
             <h2 class="card-title">Our Philosophy</h2>
             <p class="card-text">
@@ -82,7 +60,7 @@
             </p>
           </div>
 
-          <div class="feature-card col-md-6 ">
+          <div class="feature-card col-md-6">
             <img src="./img/math.svg" alt="" class="card-img" />
             <h2 class="card-title">Our Math</h2>
             <p class="card-text">
@@ -91,7 +69,7 @@
             </p>
           </div>
 
-          <div class="feature-card col-md-6 ">
+          <div class="feature-card col-md-6">
             <img src="./img/mission.svg" alt="" class="card-img" />
             <h2 class="card-title">Our Mission</h2>
             <p class="card-text">
@@ -214,122 +192,124 @@
       </div>
     </section>
     <section class="attorney">
-      <h1 class="attorney-title">
-         About Us
-      </h1>
+      <h1 class="attorney-title">About Us</h1>
       <div class="attorney-container">
-        <img src="./img/attorney.jpg" class="attorney-img" alt="">
-       <div class="container">
-         <p class="attorney-text ">
-         
-Abnet Solomon Law Office (aka AbnetLaw) is an Addis Ababa-based legal services provider we were founded with the inspiration to elevate the legal services experience in Ethiopia to a higher level of efficiency, and with the clear goal of becoming a client-focused, customized, and individualized leading legal services provider in Ethiopia defined through a reputation of consistent professionalism and diligence.
-<br> <br>
-            
-At AbnetLaw our philosophy is guided by representing fewer clients at a time. We believe that this mode of operation allows us to provide more intimate attention to each of our clients and their cases, we consider our firm to be client-centric and a best-in-class legal services provider in Ethiopia. We assure our clients that AbnetLaw is uniquely positioned to personalize the client experience by means of offering both dedicated and personalized attention to each client and their respective case.
+        <img src="./img/attorney.jpg" class="attorney-img" alt="" />
+        <div class="container">
+          <p class="attorney-text">
+            Abnet Solomon Law Office (aka AbnetLaw) is an Addis Ababa-based
+            legal services provider we were founded with the inspiration to
+            elevate the legal services experience in Ethiopia to a higher level
+            of efficiency, and with the clear goal of becoming a client-focused,
+            customized, and individualized leading legal services provider in
+            Ethiopia defined through a reputation of consistent professionalism
+            and diligence.
+            <br />
+            <br />
 
-         </p>
-         <div class="attorney-btn">
-           <a href="" class="btn btn-rounded-outline-primary text">
-            Learn More
-          </a>
-
-         </div>
-
-       </div>
+            At AbnetLaw our philosophy is guided by representing fewer clients
+            at a time. We believe that this mode of operation allows us to
+            provide more intimate attention to each of our clients and their
+            cases, we consider our firm to be client-centric and a best-in-class
+            legal services provider in Ethiopia. We assure our clients that
+            AbnetLaw is uniquely positioned to personalize the client experience
+            by means of offering both dedicated and personalized attention to
+            each client and their respective case.
+          </p>
+          <div class="attorney-btn">
+            <a href="./about.html" class="btn btn-rounded-outline-primary text">
+              Learn More
+            </a>
+          </div>
+        </div>
       </div>
-
-      
-   </section>
+    </section>
     <section class="testimonials">
       <h1 class="testi-title">Testimonials</h1>
       <div class="container">
+        <div class="testi-container" id="testi">
+          <div class="testi-card" v-for="testi in testiCard" :key="testi.id">
+            <img :src="testi.img" class="testi-img" alt="" />
 
-         <div class="testi-container"  id="testi">
-           <div class="testi-card"  v-for="testi in testiCard" :key='testi.id'>
-             <img :src="testi.img" class="testi-img" alt="" />
-   
-             <p class="testi-text">
-               {{testi.text}}
-             </p>
-             <div class="testi-footer">
-               <h2 class="testi-name">{{ testi.name }}</h2>
-   
-               <div class="icons-container">
-                 <a :href="testi.url.twitter">
-                   <img src="./img/twitter.svg" alt="" />
-                 </a>
-   
-                 <a :href="testi.url.linkedin">
-                   <img src="./img/linkedin.svg" alt="" />
-                 </a>
-   
-                 <a :href="testi.url.fb">
-                   <img src="./img/facebook.svg" alt="" />
-                 </a>
-               </div>
-             </div>
-           </div>
-         </div>
+            <p class="testi-text">{{testi.text}}</p>
+            <div class="testi-footer">
+              <h2 class="testi-name">{{ testi.name }}</h2>
 
+              <div class="icons-container">
+                <a :href="testi.url.twitter">
+                  <img src="./img/twitter.svg" alt="" />
+                </a>
+
+                <a :href="testi.url.linkedin">
+                  <img src="./img/linkedin.svg" alt="" />
+                </a>
+
+                <a :href="testi.url.fb">
+                  <img src="./img/facebook.svg" alt="" />
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
 
     <section class="attorney">
-       <h1 class="attorney-title">
-          Attorney
-       </h1>
-       <div class="attorney-container">
-         <img src="./img/attorney.jpg" class="attorney-img" alt="">
+      <h1 class="attorney-title">Attorney</h1>
+      <div class="attorney-container">
+        <img src="./img/attorney.jpg" class="attorney-img" alt="" />
         <div class="container">
-          <p class="attorney-text ">
-            Abnet S. Melkamu is the founder and owner of the Law Office of Abnet Solomon (aka AbnetLaw). He is admitted to practice law in all levels of the Federal Courts. He is also admitted to practice before the Addis Ababa city municipality courts. His practices encompass all kinds of business transactions and business disputes.
-            
-            <br> <br>
-            Being an attorney has been a long-standing goal for Abnet, and he founded AbnetLaw in 2018 with the ambition of improving the quality of Ethiopian legal services by introducing a tailor-made, unique legal service and providing all-round, one-stop, multi-level, high-quality services for the best satisfaction of his clients. Since then, his main focus has been continuing to provide customized and personalized legal services to international medium and small businesses.
- 
+          <p class="attorney-text">
+            Abnet S. Melkamu is the founder and owner of the Law Office of Abnet
+            Solomon (aka AbnetLaw). He is admitted to practice law in all levels
+            of the Federal Courts. He is also admitted to practice before the
+            Addis Ababa city municipality courts. His practices encompass all
+            kinds of business transactions and business disputes.
 
+            <br />
+            <br />
+            Being an attorney has been a long-standing goal for Abnet, and he
+            founded AbnetLaw in 2018 with the ambition of improving the quality
+            of Ethiopian legal services by introducing a tailor-made, unique
+            legal service and providing all-round, one-stop, multi-level,
+            high-quality services for the best satisfaction of his clients.
+            Since then, his main focus has been continuing to provide customized
+            and personalized legal services to international medium and small
+            businesses.
           </p>
           <div class="attorney-btn">
-            <a href="" class="btn btn-rounded-outline-primary text">
-             Read Full Attorney Profile
-           </a>
- 
+            <a
+              href="./attorney.html"
+              class="btn btn-rounded-outline-primary text"
+            >
+              Read Full Attorney Profile
+            </a>
           </div>
-
         </div>
-       </div>
-
-       
+      </div>
     </section>
 
     <section class="laws">
-      <img src="./img/law-blob.jpg" class="law-upper" alt="">
+      <img src="./img/law-blob.jpg" class="law-upper" alt="" />
       <h1 class="laws-title text-center">Laws</h1>
-        <div class="laws-cards container" id="laws">
-          <div class="law-card"  v-for="law in lawCard" :key="law.id">
-            <img :src="law.img" class="law-card-img" alt="">
+      <div class="laws-cards container" id="laws">
+        <div class="law-card" v-for="law in lawCard" :key="law.id">
+          <img :src="law.img" class="law-card-img" alt="" />
 
-            <div class="container">
-              
-              <p class="law-card-date">{{ law.date }}</p>
-  
-              <h2 class="law-card-title">{{ law.title }}</h2>
-            </div>
+          <div class="container">
+            <p class="law-card-date">{{ law.date }}</p>
 
+            <h2 class="law-card-title">{{ law.title }}</h2>
           </div>
-         
-          </div>
-          <div class="text-center">
-
-            <a href="#" class="btn btn-rounded-primary text-small">See more</a>
         </div>
-        <img src="./img/law-blob2.jpg" class="law-lower" alt="">
+      </div>
+      <div class="text-center">
+        <a href="#" class="btn btn-rounded-primary text-small">See more</a>
+      </div>
+      <img src="./img/law-blob2.jpg" class="law-lower" alt="" />
     </section>
 
-    <footer class="footer" id="footer">
-      
-    </footer>
+    <footer class="footer" id="footer"></footer>
     <script src="./js/app.js" type="module"></script>
-    
   </body>
 </html>

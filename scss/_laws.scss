@@ -9,7 +9,7 @@
     justify-content: center;
     align-items: flex-end;
     .law-banner-content{
-      z-index: 999;
+      // z-index: 999;
       .law-banner-title{
         @extend .h2;
         margin-bottom: 2.63rem;
@@ -81,7 +81,7 @@
     }
   }
 }
-@include responsive($lg){
+@include responsive($xl){
   .header{
     .laws-banner{
       .law-banner-content{

@@ -1,3 +1,30 @@
+const navBar = document.querySelector('#nav')
+
+navBar.innerHTML = `<div class="container">
+  <div class="nav-header">
+    <div class="logo">
+      <a href="./"><img src="./img/logo.png" alt="Abent Law Firm" /></a>
+    </div>
+    <div class="menu">
+      <img src="./img/menu-white.svg" alt="" />
+      
+    </div>
+  </div>
+
+  <div class="links-container">
+    <img src="./img/close.svg" class="close-btn" alt="" />
+    <ul class="nav-links">
+      <li><a href="./service.html" class="scroll-link">Our Services</a></li>
+      <li><a href="./attorney.html" class="scroll-link">Attorney</a></li>
+      <li><a href="./about.html" class="scroll-link">About</a></li>
+      <li><a href="./laws.html" class="scroll-link">Laws</a></li>
+      <li><a href="./contact.html" class="scroll-link">Contact</a></li>
+    </ul>
+  </div>
+
+
+</div>`
+
 const menu = document.querySelector('.menu')
 const sidebar = document.querySelector('.links-container')
 const close = document.querySelector('.close-btn')
@@ -9,6 +36,35 @@ close.addEventListener('click', () => {
   sidebar.style.right = '-80vw'
 })
 
+window.addEventListener('scroll', () => {
+  const nav = document.querySelector('.nav')
+  const menu =document.querySelector('.menu')
+  const scrollLink = document.querySelectorAll('.scroll-link')
+  const navHeight = nav.getBoundingClientRect().height
+  const scrollHeight = window.pageYOffset
+
+  if(navHeight < scrollHeight){
+    nav.classList.add('fixed')
+
+    if(window.innerWidth > 768){
+      scrollLink.forEach( link => {
+        link.classList.add('black')
+      })
+    }
+    menu.innerHTML = `<img src="./img/menu-black.svg" alt="" />`
+  }else{
+    nav.classList.remove('fixed')
+   
+      if(window.innerWidth > 768){
+        scrollLink.forEach( link => {
+          link.classList.remove('black')
+        })
+
+      }
+  
+    menu.innerHTML = `<img src="./img/menu-white.svg" alt="" />`
+  }
+})
 
 const app = Vue.createApp({
   data() {
@@ -269,9 +325,53 @@ const laws1 = Vue.createApp({
 
 laws1.mount('#laws1')
 
-window.addEventListener('scroll', () => {
-  const sideLinks = document.querySelector('.side-links')
-  const top = sideLinks.getBoundingClientRect().top
- 
+const tabs = Vue.createApp({
+  data () {
+    return {
+      toggle: false,
+    }
+  },
+  methods: {
+    toggleshow(e){
+      let pro = this.$refs.profile
+      let exp = this.$refs.exp
+      let edu = this.$refs.edu
+      let id = e.target.dataset.id
+      let btnPro = this.$refs.btnPro
+      let btnExp = this.$refs.btnExp
+      let btnEdu = this.$refs.btnEdu
+      
+      if(pro.classList.contains(id)){
+        btnEdu.classList.remove('active')
+        btnExp.classList.remove('active')
+        btnPro.classList.add('active')
 
+
+        edu.classList.remove('show')
+        exp.classList.remove('show')
+        pro.classList.add('show')
+      }
+      if(edu.classList.contains(id)){
+        btnPro.classList.remove('active')
+        btnExp.classList.remove('active')
+        btnEdu.classList.add('active')
+
+        pro.classList.remove('show')
+        edu.classList.remove('show')
+        exp.classList.add('show')
+      }
+      if(exp.classList.contains(id)){
+        btnPro.classList.remove('active')
+        btnEdu.classList.remove('active')
+        btnExp.classList.add('active')
+
+
+        pro.classList.remove('show')
+        exp.classList.remove('show')
+        edu.classList.add('show')
+      }
+    }
+  }
 })
+
+tabs.mount('#tabs')

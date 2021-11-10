@@ -1,0 +1,73 @@
+.about {
+  margin-top: 4.44rem;
+  .about-title {
+    @extend .h2;
+    text-align: center;
+    margin-bottom: 4rem;
+  }
+  .right{
+    display: flex;
+    flex-direction: column-reverse;
+
+  }
+  .about-container {
+    .about-img {
+      margin-top: 3.69rem;
+      width: 22.25rem;
+    }
+    .about-img-right{
+      margin-top: 3.69rem;
+    }
+    .container {
+      .about-text {
+        @extend .text;
+        line-height: 2.31rem;
+        margin-top: 4.44rem;
+      }
+      a {
+        margin-top: 2.88rem;
+      }
+    }
+  }
+}
+@include responsive($md) {
+  .about {
+    .about-container {
+      .about-img {
+        width: 40rem;
+      }
+    }
+  }
+}
+
+@include responsive($lg) {
+  .about {
+    margin: 7rem 0;
+    .about-container {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      align-items: center;
+      .container {
+        a {
+          margin-top: 0.88rem;
+        }
+      }
+    }
+  }
+}
+@include responsive($xxl) {
+  .about {
+    .about-container {
+      align-items: center;
+      .about-img, .about-img-right {
+        width: 58rem;
+      }
+
+      .container {
+        .about-text {
+          font-size: 1.13rem;
+        }
+      }
+    }
+  }
+}

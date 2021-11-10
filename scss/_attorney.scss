@@ -1,0 +1,162 @@
+.header {
+  .attorney-banner {
+    background: url("../img/attorney1.jpg") rgba(0, 0, 0, 0.35) no-repeat;
+    background-position: center center;
+    background-size: cover;
+    background-blend-mode: overlay;
+    height: 50vh;
+    display: grid;
+    justify-content: center;
+    align-items: flex-end;
+    .law-banner-content {
+      z-index: 999;
+      .law-banner-title {
+        @extend .h2;
+        margin-bottom: 2.63rem;
+        color: #fff;
+      }
+      .input-container {
+        display: flex;
+        flex-direction: row-reverse;
+        width: 18.94rem;
+        padding: 0 1.13rem;
+        margin-bottom: 2.81rem;
+        border: 2px solid #fff;
+        border-radius: 3.81rem;
+        .search-button {
+          background: none;
+          border: none;
+          padding: 0;
+          margin: 0;
+        }
+        .icon {
+          padding: 10px;
+          min-width: 50px;
+          background: transparent;
+          border: none;
+        }
+        .input-field {
+          @extend .text;
+          width: 100%;
+          padding: 10px;
+          outline: none;
+          color: #fff;
+          border-color: #fff;
+          background: transparent;
+          border: none;
+          &::placeholder {
+            color: #fff;
+            @extend .text;
+          }
+        }
+      }
+    }
+  }
+}
+
+.attorney-profile {
+  margin-top: 3.69rem;
+  .container {
+    .attorney-info {
+      margin-bottom: 3.25rem;
+      .attorney-name {
+        @extend .h2;
+        margin-bottom: 2.94rem;
+      }
+      .info-container {
+        div {
+          display: flex;
+          align-items: flex-start;
+          gap: 0.5rem;
+          margin-bottom: 2.13rem;
+          p {
+            @extend .text-small;
+          }
+        }
+      }
+
+      .social-icon {
+        display: flex;
+        gap: 1rem;
+      }
+    }
+    .attorney-details {
+      padding: 1.19rem 0;
+      .btn-container {
+        background: #ffffff;
+        box-shadow: 2px 2px 30px rgba(0, 0, 0, 0.15);
+        border-radius: 5.19rem;
+        display: flex;
+        button{
+          @extend .text-small;
+          background: transparent;
+          border: none;
+          width: 100%;
+          height: 100%;
+          padding: 1.19rem 0.19rem;
+          color: $primary-color;
+          &:first-child{
+            border-top-left-radius: 5.19rem;
+            border-bottom-left-radius: 5.19rem;
+          }
+          &:last-child{
+            border-top-right-radius: 5.19rem;
+            border-bottom-right-radius: 5.19rem;
+          }
+        }
+        .active{
+          background: $primary-color;
+          color: #fff;
+        }
+      }
+      .attorney-content{
+        .profile, .experience, .education{
+          display: none;
+        }
+        .show{
+          display: block;
+        }
+        .profile{
+          @extend .text;
+          margin-top: 4.56rem;
+        }
+        .experience{
+          @extend .text;
+          margin-top: 4.56rem;
+        }
+        .education{
+          margin-top: 4.56rem;
+          .edu-title, .admission-title{
+            @extend .h4;
+            margin-bottom: 1.8rem;
+          }
+          ul{
+            margin-bottom: 3.44rem;
+            li{
+              @extend .text;
+              line-height: normal;
+              display: flex;
+              align-items: flex-start;
+              gap: 0.5rem;
+              margin-bottom: 0.94rem;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@include responsive($md){
+  .attorney-profile{
+    .container{
+      .attorney-details{
+        .btn-container{
+          button{
+            font-size: 1.13rem;
+          }
+        }
+      }
+    }
+  }
+}

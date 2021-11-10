@@ -5,34 +5,56 @@
 @import "contact";
 @import "laws";
 @import "service";
+@import "attorney";
+@import "about";
 
+.fixed {
+  position: fixed !important;
+  top: 0;
+  background: #fff;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  z-index: 999999;
+}
+
+.black {
+  color: #000 !important;
+}
 .header {
   position: relative;
   .nav {
     position: absolute;
     width: 100%;
     z-index: 999;
+    padding-bottom: 1rem;
+    transition: all 0.3s linear;
     .container {
       .nav-header {
         display: flex;
         align-items: center;
         justify-content: space-between;
+        .menu {
+          width: 3rem;
+        }
       }
       .links-container {
         position: fixed;
         top: 0;
-        right: -80vw;
+        right: -70vw;
         height: 100vh;
-        width: 80vw;
-        background: lightblue;
+        width: 70vw;
+        background: $secondary-color;
         z-index: 9999999999;
         transition: $trans;
         .close-btn {
           padding: 1rem;
           width: 3rem;
+          position: absolute;
+          top: 2.5rem;
+          right: 2.5rem;
         }
         .nav-links {
-          height: 100%;
+          height: 50%;
+          padding-top: 30%;
           display: flex;
           flex-direction: column;
           justify-content: space-around;
@@ -40,6 +62,7 @@
           li {
             .scroll-link {
               @extend .text-medium;
+              color: #f4f4f4;
             }
           }
         }
@@ -51,6 +74,7 @@
     background-position: center center;
     background-size: cover;
     background-blend-mode: overlay;
+    background-attachment: fixed;
     height: 100vh;
     display: grid;
     place-items: center;
@@ -60,12 +84,88 @@
       color: #fff;
       margin-top: 4rem;
       .banner-title {
-        @extend .h2;
-        margin-bottom: 2.5rem;
+        font-family: "medium bt";
+        font-weight: 700;
+        font-size: 2.44rem;
+        line-height: 2.88rem;
+        margin-bottom: 1.31rem;
+        max-width: 33.00rem;
       }
       .banner-subtitle {
         @extend .text-medium;
         margin-bottom: 2.56rem;
+      }
+    }
+  }
+}
+
+@include responsive($md) {
+  .header {
+    .banner {
+      .banner-content {
+        .banner-title {
+          font-family: "Futura";
+          font-weight: 700;
+          font-size: 3.31rem;
+          line-height: 4.31rem;
+          margin-bottom: 2.31rem;
+        }
+      }
+    }
+  }
+}
+
+@include responsive($xl) {
+  .header {
+    .banner {
+      .banner-content {
+        .banner-title {
+          font-family: "Futura";
+          font-weight: 700;
+          font-size: 4.31rem;
+          line-height: 4.31rem;
+          margin-bottom: 2.31rem;
+        }
+      }
+    }
+  }
+}
+
+@include responsive($lg) {
+  .header {
+    .nav {
+      padding-top: 1.75rem;
+      .container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        .nav-header {
+          display: block;
+          .menu {
+            display: none;
+          }
+        }
+        .links-container {
+          position: static;
+          height: auto;
+          z-index: 9999999999;
+          transition: $trans;
+          background: none;
+          width: 70%;
+          max-width: 46.69rem;
+          .close-btn {
+            display: none;
+          }
+          .nav-links {
+            height: auto;
+            display: flex;
+            padding-top: 0%;
+            flex-direction: row;
+            justify-content: space-between;
+            justify-content: space-between;
+            padding-left: 2rem;
+          }
+        }
       }
     }
   }
@@ -78,6 +178,7 @@
     position: absolute;
     top: 1.19rem;
     right: 10.06rem;
+    z-index: -1;
   }
   .feature-md {
     display: none;
@@ -137,10 +238,28 @@
       top: 50%;
       right: -50%;
     }
+    .container {
+      .features-lower {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+      }
+    }
   }
 }
 @include responsive($lg) {
   .features {
+    .container {
+      .features-upper {
+        .features-title {
+          font-family: "medium bt";
+          font-weight: 700;
+          font-size: 2rem;
+          line-height: 2.88rem;
+          margin-top: 7.06rem;
+          margin-bottom: 1.19rem;
+        }
+      }
+    }
     .feature-md {
       top: 25%;
       right: -30%;
@@ -172,12 +291,12 @@
   }
 }
 
-@include responsive($xxl){
+@include responsive($xxl) {
   .features {
-    .feature-md{
+    .feature-md {
       right: -15%;
     }
-    .f-circle{
+    .f-circle {
       left: 0;
     }
   }
@@ -195,7 +314,7 @@
   }
 
   @keyframes pulse {
-    0%{
+    0% {
       transform: translateX(0);
     }
     50% {
@@ -228,21 +347,21 @@
         background: #fff;
         box-shadow: 2px 2px 24px rgba(0, 0, 0, 0.12);
         cursor: pointer;
-        .hover{
+        .hover {
           position: absolute;
           bottom: 0.2rem;
           left: 0.2rem;
-          content: '';
+          content: "";
           display: block;
           width: 98%;
           height: 50%;
           background: $primary-color;
           z-index: -1;
-          transition: all .2s ease-in-out;
+          transition: all 0.2s ease-in-out;
         }
-        &:hover .hover{
+        &:hover .hover {
           transform: translateY(1.3rem) rotate(5.54deg);
-        } 
+        }
         img {
           padding-bottom: 1.81rem;
         }
@@ -310,9 +429,9 @@
     }
   }
 }
-@include responsive($xxl){
-  .practice{
-    .practice-blob1{
+@include responsive($xxl) {
+  .practice {
+    .practice-blob1 {
       left: 90%;
     }
     .practice-blob2 {
@@ -374,10 +493,10 @@
   }
 }
 
-@include responsive($xxl){
-  .testimonials{
-    .container{
-      .testi-container{
+@include responsive($xxl) {
+  .testimonials {
+    .container {
+      .testi-container {
         gap: 7rem;
       }
     }
@@ -430,15 +549,15 @@
     }
   }
 }
-@include responsive($xxl){
-  .attorney{
-    .attorney-container{
+@include responsive($xxl) {
+  .attorney {
+    .attorney-container {
       align-items: center;
-      .attorney-img{
+      .attorney-img {
         width: 58rem;
       }
-      .container{
-        .attorney-text{
+      .container {
+        .attorney-text {
           font-size: 1.13rem;
         }
       }
@@ -497,14 +616,14 @@
       border-radius: 0.63rem;
       margin-bottom: 3.5rem;
       max-width: 26rem;
-      transition: all .3s linear;
+      transition: all 0.3s linear;
       .law-card-img {
         object-fit: cover;
         border-top-left-radius: 0.63rem;
         border-top-right-radius: 0.63rem;
         filter: grayscale(1);
         width: 26rem;
-        transition: all .3s linear;
+        transition: all 0.3s linear;
       }
       .container {
         padding-top: 1.38rem;
@@ -516,16 +635,16 @@
         .law-card-title {
           @extend .h4;
           margin-bottom: 2rem;
-          transition: all .3s linear;
+          transition: all 0.3s linear;
         }
       }
-      &:hover .law-card-title{
+      &:hover .law-card-title {
         color: $primary-color;
       }
       &:hover {
         box-shadow: 2px 2px 41px rgba(0, 0, 0, 0.12);
       }
-      &:hover .law-card-img{
+      &:hover .law-card-img {
         filter: grayscale(0);
       }
     }
@@ -584,7 +703,7 @@
   }
 }
 
-@include responsive($xxl){
+@include responsive($xxl) {
   .laws {
     .law-upper {
       top: 0;
