@@ -1694,6 +1694,7 @@ template {
 }
 
 .header .nav .container .links-container .nav-links li .scroll-link {
+  font-size: 1.5rem;
   color: #f4f4f4;
 }
 
