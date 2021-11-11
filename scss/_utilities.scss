@@ -1,13 +1,13 @@
 
 
 .huge {
-  font-family: "Futura";
+  font-family: "Futura", 'Poppins';
   font-weight: 700;
   font-size: 4.31rem;
   line-height: 4.31rem;
 }
 .h1 {
-  font-family: "Futura";
+  font-family: "Futura" , 'Poppins';
   font-weight: 700;
   font-size: 3.31rem;
   line-height: 3.98rem;
@@ -42,7 +42,7 @@
   line-height: 1.75rem;
 }
 .h4 {
-  font-family: 'futura';
+  font-family: 'futura' , 'Poppins';
   font-weight: 700;
   font-size: 1.56rem;
   line-height: 1.5rem;
@@ -55,7 +55,7 @@
 }
 @include responsive($xl){
   .h2 {
-    font-family: "Futura";
+    font-family: "Futura", 'Poppins';
     font-weight: 700;
     font-size: 3.31rem;
     line-height: 3.98rem;

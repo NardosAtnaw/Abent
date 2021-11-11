@@ -15,7 +15,9 @@
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
   z-index: 999999;
 }
-
+.show{
+  display: flex !important;
+}
 .black {
   color: #000 !important;
 }
@@ -39,9 +41,9 @@
       .links-container {
         position: fixed;
         top: 0;
-        right: -70vw;
+        right: 0vw;
         height: 100vh;
-        width: 70vw;
+        width: 100vw;
         background: $secondary-color;
         z-index: 9999999999;
         transition: $trans;
@@ -54,16 +56,45 @@
         }
         .nav-links {
           height: 50%;
-          padding-top: 30%;
+          padding-top: 20rem;
           display: flex;
           flex-direction: column;
           justify-content: space-around;
           padding-left: 2rem;
           li {
+            margin-bottom: 1rem;
             .scroll-link {
               @extend .text-medium;
               font-size: 1.5rem;
               color: #f4f4f4;
+              
+            }
+            .sublinks {
+              margin: 1rem 0;
+              // display: flex;
+              margin-left: 1rem;
+              color: #fff;
+              h3 {
+                font-family: "medium bt";
+                font-weight: 500;
+                font-size: 1rem;
+                line-height: 1.5rem;
+                margin-bottom: 1rem;
+              }
+              img {
+                width: 1.2rem;
+              }
+              li {
+                margin-bottom: .5rem;
+                margin-left: 1rem;
+                a {
+                  font-family: "light bt";
+                  font-size: 0.88rem;
+                  display: flex;
+                  gap: .8rem;
+                  color: #fff;
+                }
+              }
             }
           }
         }
@@ -90,7 +121,7 @@
         font-size: 2.44rem;
         line-height: 2.88rem;
         margin-bottom: 1.31rem;
-        max-width: 33.00rem;
+        max-width: 33rem;
       }
       .banner-subtitle {
         @extend .text-medium;
@@ -105,7 +136,7 @@
     .banner {
       .banner-content {
         .banner-title {
-          font-family: "Futura";
+          font-family: "Futura", 'Poppins';
           font-weight: 700;
           font-size: 3.31rem;
           line-height: 4.31rem;
@@ -121,7 +152,7 @@
     .banner {
       .banner-content {
         .banner-title {
-          font-family: "Futura";
+          font-family: "Futura", 'Poppins';
           font-weight: 700;
           font-size: 4.31rem;
           line-height: 4.31rem;
@@ -154,6 +185,7 @@
           background: none;
           width: 70%;
           max-width: 46.69rem;
+        
           .close-btn {
             display: none;
           }
@@ -165,6 +197,30 @@
             justify-content: space-between;
             justify-content: space-between;
             padding-left: 2rem;
+            position: relative;
+            .drop-down{
+              .sublinks{
+               
+                position: absolute;
+                width: auto;
+                display: flex;
+                background: $secondary-color;
+                padding: 2rem;
+                border-radius: .5rem;
+                display: none;
+                h3{
+                  font-size: 1.13rem;
+                  margin-bottom: 1.2rem;
+                }
+                li{
+                  margin-bottom: 1rem;
+                  a{
+                    font-size: 1rem;
+                  }
+                }
+              }
+
+            }
           }
         }
       }
@@ -273,7 +329,7 @@
     .container {
       .features-upper {
         .features-title {
-          font-family: "Futura";
+          font-family: "Futura", 'Poppins';
           font-weight: 700;
           font-size: 3.31rem;
           line-height: 3.98rem;

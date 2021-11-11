@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400&display=swap");
 @font-face {
   font-family: 'futura';
   src: url(../css/fonts/futur.eot);
@@ -373,14 +374,14 @@ template {
 }
 
 .huge {
-  font-family: "Futura";
+  font-family: "Futura", 'Poppins';
   font-weight: 700;
   font-size: 4.31rem;
   line-height: 4.31rem;
 }
 
 .h1 {
-  font-family: "Futura";
+  font-family: "Futura" , 'Poppins';
   font-weight: 700;
   font-size: 3.31rem;
   line-height: 3.98rem;
@@ -423,7 +424,7 @@ template {
 }
 
 .h4, .attorney-profile .container .attorney-details .attorney-content .education .edu-title, .attorney-profile .container .attorney-details .attorney-content .education .admission-title, .laws .laws-cards .law-card .container .law-card-title {
-  font-family: 'futura';
+  font-family: 'futura' , 'Poppins';
   font-weight: 700;
   font-size: 1.56rem;
   line-height: 1.5rem;
@@ -438,7 +439,7 @@ template {
 
 @media screen and (min-width: 1200px) {
   .h2, .time .time-title, .contact-us .contact-us-title, .wrapper .map .map-title, .wrapper .contact-form .container h2, .header .laws-banner .law-banner-content .law-banner-title, .main-text .container .content .service-title, .header .attorney-banner .law-banner-content .law-banner-title, .attorney-profile .container .attorney-info .attorney-name, .about .about-title, .features .container .features-upper .features-title, .practice .container .practice-title, .testimonials .testi-title, .attorney .attorney-title, .laws .laws-title {
-    font-family: "Futura";
+    font-family: "Futura", 'Poppins';
     font-weight: 700;
     font-size: 3.31rem;
     line-height: 3.98rem;
@@ -1173,7 +1174,7 @@ template {
 
 .wrapper .contact-form .container .myform .socials {
   color: #afafaf;
-  font-family: "Futura";
+  font-family: "Futura", 'Poppins';
   font-weight: bold;
   font-size: 1rem;
   width: 18.94rem;
@@ -1639,6 +1640,10 @@ template {
   z-index: 999999;
 }
 
+.show {
+  display: flex !important;
+}
+
 .black {
   color: #000 !important;
 }
@@ -1668,9 +1673,9 @@ template {
 .header .nav .container .links-container {
   position: fixed;
   top: 0;
-  right: -70vw;
+  right: 0vw;
   height: 100vh;
-  width: 70vw;
+  width: 100vw;
   background: #a07178;
   z-index: 9999999999;
   transition: all 0.5s ease-in-out;
@@ -1686,16 +1691,51 @@ template {
 
 .header .nav .container .links-container .nav-links {
   height: 50%;
-  padding-top: 30%;
+  padding-top: 20rem;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   padding-left: 2rem;
 }
 
+.header .nav .container .links-container .nav-links li {
+  margin-bottom: 1rem;
+}
+
 .header .nav .container .links-container .nav-links li .scroll-link {
   font-size: 1.5rem;
   color: #f4f4f4;
+}
+
+.header .nav .container .links-container .nav-links li .sublinks {
+  margin: 1rem 0;
+  margin-left: 1rem;
+  color: #fff;
+}
+
+.header .nav .container .links-container .nav-links li .sublinks h3 {
+  font-family: "medium bt";
+  font-weight: 500;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.header .nav .container .links-container .nav-links li .sublinks img {
+  width: 1.2rem;
+}
+
+.header .nav .container .links-container .nav-links li .sublinks li {
+  margin-bottom: .5rem;
+  margin-left: 1rem;
+}
+
+.header .nav .container .links-container .nav-links li .sublinks li a {
+  font-family: "light bt";
+  font-size: 0.88rem;
+  display: flex;
+  gap: .8rem;
+  color: #fff;
 }
 
 .header .banner {
@@ -1721,7 +1761,7 @@ template {
   font-size: 2.44rem;
   line-height: 2.88rem;
   margin-bottom: 1.31rem;
-  max-width: 33.00rem;
+  max-width: 33rem;
 }
 
 .header .banner .banner-content .banner-subtitle {
@@ -1730,7 +1770,7 @@ template {
 
 @media screen and (min-width: 768px) {
   .header .banner .banner-content .banner-title {
-    font-family: "Futura";
+    font-family: "Futura", 'Poppins';
     font-weight: 700;
     font-size: 3.31rem;
     line-height: 4.31rem;
@@ -1740,7 +1780,7 @@ template {
 
 @media screen and (min-width: 1200px) {
   .header .banner .banner-content .banner-title {
-    font-family: "Futura";
+    font-family: "Futura", 'Poppins';
     font-weight: 700;
     font-size: 4.31rem;
     line-height: 4.31rem;
@@ -1783,6 +1823,26 @@ template {
     justify-content: space-between;
     justify-content: space-between;
     padding-left: 2rem;
+    position: relative;
+  }
+  .header .nav .container .links-container .nav-links .drop-down .sublinks {
+    position: absolute;
+    width: auto;
+    display: flex;
+    background: #a07178;
+    padding: 2rem;
+    border-radius: .5rem;
+    display: none;
+  }
+  .header .nav .container .links-container .nav-links .drop-down .sublinks h3 {
+    font-size: 1.13rem;
+    margin-bottom: 1.2rem;
+  }
+  .header .nav .container .links-container .nav-links .drop-down .sublinks li {
+    margin-bottom: 1rem;
+  }
+  .header .nav .container .links-container .nav-links .drop-down .sublinks li a {
+    font-size: 1rem;
   }
 }
 
@@ -1877,7 +1937,7 @@ template {
 
 @media screen and (min-width: 1200px) {
   .features .container .features-upper .features-title {
-    font-family: "Futura";
+    font-family: "Futura", 'Poppins';
     font-weight: 700;
     font-size: 3.31rem;
     line-height: 3.98rem;

@@ -1,29 +1,72 @@
 const navBar = document.querySelector('#nav')
 
 navBar.innerHTML = `<div class="container">
-  <div class="nav-header">
-    <div class="logo">
-      <a href="./"><img src="./img/logo.png" alt="Abent Law Firm" /></a>
-    </div>
-    <div class="menu">
-      <img src="./img/menu-white.svg" alt="" />
-      
-    </div>
+<div class="nav-header">
+  <div class="logo">
+    <a href="./"><img src="./img/logo.png" alt="Abent Law Firm" /></a>
   </div>
+  <div class="menu">
+    <img src="./img/menu-white.svg" alt="" />
+    
+  </div>
+</div>
 
-  <div class="links-container">
-    <img src="./img/close.svg" class="close-btn" alt="" />
-    <ul class="nav-links">
-      <li><a href="./service.html" class="scroll-link">Our Services</a></li>
-      <li><a href="./attorney.html" class="scroll-link">Attorney</a></li>
-      <li><a href="./about.html" class="scroll-link">About</a></li>
-      <li><a href="./laws.html" class="scroll-link">Laws</a></li>
-      <li><a href="./contact.html" class="scroll-link">Contact</a></li>
-    </ul>
-  </div>
+<div class="links-container">
+  <img src="./img/close.svg" class="close-btn" alt="" />
+  <ul class="nav-links">
+    <li class="drop-down"><a href="#" class="scroll-link drop-down-link">Our Services</a>
+      
+      <ul class="sublinks">
+        <div class="corp-link">
+          <h3>For Corporate Clients</h3>
+          <li><a href="./corp.html">
+           <img src="./img/sublink/bus.svg" alt=""> Corporate and general business council</a></li>
+          <li><a href="./rep.html">
+           <img src="./img/sublink/rep.svg" alt=""> Representation in Litigations and Tribunals </a></li>
+          <li><a href="./legal.html">
+           <img src="./img/sublink/due.svg" alt=""> Legal Due Diligence</a></li>
+          <li><a href="./doc.html">
+           <img src="./img/sublink/doc.svg" alt=""> Document Verification</a></li>
+          <li><a href="./par.html">
+           <img src="./img/sublink/par.svg" alt=""> Long-term Partnership</a></li>
+        </div>
+        <div class="indvidual-link">
+          <h3>For Individual Clients</h3>
+          <li><a href="./general.html">
+           <img src="./img/sublink/general.svg" alt=""> General Legal Consultation</a></li>
+          <li><a href="./civil.html">
+           <img src="./img/sublink/catena.svg" alt=""> Civil Litigation & Criminal Defense</a></li>
+        </div>
+      </ul>
+    
+    </li>
+    <li><a href="./attorney.html" class="scroll-link">Attorney</a></li>
+    <li><a href="./about.html" class="scroll-link">About</a></li>
+    <li><a href="./laws.html" class="scroll-link">Laws</a></li>
+    <li><a href="./contact.html" class="scroll-link">Contact</a></li>
+  </ul>
+</div>
 
 
 </div>`
+
+
+const dropDown = document.querySelector('.drop-down-link')
+const dropDownFull = document.querySelector('.nav-links')
+const sublinks = document.querySelector('.sublinks')
+console.log(sublinks);
+dropDown.addEventListener('mouseover', e => {
+  const text = e.currentTarget.textContent
+  const tempBtn = e.currentTarget.getBoundingClientRect();
+  const center = (tempBtn.width) / 2;
+  sublinks.classList.add('show')
+  sublinks.style.left = `-${center + 5}px`
+  console.log(center);
+})
+
+dropDownFull.addEventListener('mouseleave', () => {
+  sublinks.classList.remove('show')
+})
 
 const menu = document.querySelector('.menu')
 const sidebar = document.querySelector('.links-container')
@@ -33,7 +76,7 @@ menu.addEventListener('click', () => {
   sidebar.style.right = '0'
 })
 close.addEventListener('click', () => {
-  sidebar.style.right = '-80vw'
+  sidebar.style.right = '-100vw'
 })
 
 window.addEventListener('scroll', () => {
