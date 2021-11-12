@@ -387,7 +387,7 @@ template {
   line-height: 3.98rem;
 }
 
-.medium, .features .container .features-lower .feature-card .card-title, .practice .container .practice-card .single-card .single-card-title, .testimonials .container .testi-container .testi-card .testi-footer .testi-name {
+.medium, .clock .clock-title, .features .container .features-lower .feature-card .card-title, .practice .container .practice-card .single-card .single-card-title, .testimonials .container .testi-container .testi-card .testi-footer .testi-name {
   font-family: 'medium bt';
   font-weight: 600;
   font-size: 1.25rem;
@@ -406,8 +406,8 @@ template {
   z-index: -1;
 }
 
-.text, .contact-us .contact-container .contact-card p, .wrapper .contact-form .container p, .wrapper .contact-form .container .myform input,
-.wrapper .contact-form .container .myform textarea, .wrapper .contact-form .container .myform .button, .header .laws-banner .law-banner-content .input-container .input-field, .header .laws-banner .law-banner-content .input-container .input-field::placeholder, .categories .container .btn-container a, .main-text .container .content p, .header .attorney-banner .law-banner-content .input-container .input-field, .header .attorney-banner .law-banner-content .input-container .input-field::placeholder, .attorney-profile .container .attorney-details .attorney-content .profile, .attorney-profile .container .attorney-details .attorney-content .experience, .attorney-profile .container .attorney-details .attorney-content .education ul li, .about .about-container .container .about-text, .features .container .features-upper .features-subtitle, .practice .container .practice-card .single-card .single-card-text, .testimonials .container .testi-container .testi-card .testi-text, .attorney .attorney-container .container .attorney-text, .footer .container .footer-contact .contact-info div p, .footer .container .corporate ul li a, .footer .container .single ul li a {
+.text, .contact-us .contact-us-subtitle, .contact-us .contact-container .contact-card p, .wrapper .contact-form .container p, .wrapper .contact-form .container .myform input,
+.wrapper .contact-form .container .myform textarea, .wrapper .contact-form .container .myform .button, .header .laws-banner .law-banner-content .input-container .input-field, .header .laws-banner .law-banner-content .input-container .input-field::placeholder, .categories .container .btn-container a, .main-text .container .content p, .main-text .container .content strong, .header .attorney-banner .law-banner-content .input-container .input-field, .header .attorney-banner .law-banner-content .input-container .input-field::placeholder, .attorney-profile .container .attorney-details .attorney-content .profile, .attorney-profile .container .attorney-details .attorney-content .experience, .attorney-profile .container .attorney-details .attorney-content .education ul li, .about .about-container .container .about-text, .features .container .features-upper .features-subtitle, .practice .container .practice-card .single-card .practice-link a, .practice .container .practice-card .single-card .single-card-text, .testimonials .container .testi-container .testi-card .testi-text, .attorney .attorney-container .container .attorney-text, .footer .container .footer-contact .contact-info div p, .footer .container .corporate ul li a, .footer .container .single ul li a {
   font-family: "light bt";
   font-size: 1.13rem;
   line-height: 1.75rem;
@@ -644,73 +644,73 @@ template {
     flex: 0 0 8.33333%;
   }
   .col-md-offset-1 {
-    margin-left: 8.33333%;
+    margin-left: 8.33333% !important;
   }
   .col-md-2 {
     flex: 0 0 16.66667%;
   }
   .col-md-offset-2 {
-    margin-left: 16.66667%;
+    margin-left: 16.66667% !important;
   }
   .col-md-3 {
     flex: 0 0 25%;
   }
   .col-md-offset-3 {
-    margin-left: 25%;
+    margin-left: 25% !important;
   }
   .col-md-4 {
     flex: 0 0 33.33333%;
   }
   .col-md-offset-4 {
-    margin-left: 33.33333%;
+    margin-left: 33.33333% !important;
   }
   .col-md-5 {
     flex: 0 0 41.66667%;
   }
   .col-md-offset-5 {
-    margin-left: 41.66667%;
+    margin-left: 41.66667% !important;
   }
   .col-md-6 {
     flex: 0 0 50%;
   }
   .col-md-offset-6 {
-    margin-left: 50%;
+    margin-left: 50% !important;
   }
   .col-md-7 {
     flex: 0 0 58.33333%;
   }
   .col-md-offset-7 {
-    margin-left: 58.33333%;
+    margin-left: 58.33333% !important;
   }
   .col-md-8 {
     flex: 0 0 66.66667%;
   }
   .col-md-offset-8 {
-    margin-left: 66.66667%;
+    margin-left: 66.66667% !important;
   }
   .col-md-9 {
     flex: 0 0 75%;
   }
   .col-md-offset-9 {
-    margin-left: 75%;
+    margin-left: 75% !important;
   }
   .col-md-10 {
     flex: 0 0 83.33333%;
   }
   .col-md-offset-10 {
-    margin-left: 83.33333%;
+    margin-left: 83.33333% !important;
   }
   .col-md-11 {
     flex: 0 0 91.66667%;
   }
   .col-md-offset-11 {
-    margin-left: 91.66667%;
+    margin-left: 91.66667% !important;
   }
   .col-md-12 {
     flex: 0 0 100%;
   }
   .col-md-offset-12 {
-    margin-left: 100%;
+    margin-left: 100% !important;
   }
 }
 
@@ -1035,7 +1035,14 @@ template {
 
 .contact-us .contact-us-title {
   padding-top: 4.81rem;
-  padding-bottom: 4.06rem;
+  padding-bottom: 1.06rem;
+}
+
+.contact-us .contact-us-subtitle {
+  padding-bottom: 3.06rem;
+  max-width: 41.94rem;
+  text-align: center;
+  margin: 0 auto;
 }
 
 .contact-us .contact-container .contact-card {
@@ -1152,12 +1159,14 @@ template {
 }
 
 .wrapper .contact-form .container h2 {
+  font-size: 2rem;
   margin-bottom: 1rem;
 }
 
 .wrapper .contact-form .container p {
   color: #7d7d7d;
   margin-bottom: 2rem;
+  max-width: 38rem;
 }
 
 .wrapper .contact-form .container .myform input,
@@ -1194,12 +1203,28 @@ template {
   text-align: end;
 }
 
+.clock {
+  width: 15rem;
+  background: #fff;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+}
+
+.clock .clock-title {
+  font-size: 1.13rem;
+  text-align: center;
+}
+
 @media screen and (min-width: 768px) {
   .wrapper .contact-blob {
     top: -8.3rem;
   }
   .wrapper .contact-form .container {
     width: 90%;
+  }
+  .wrapper .contact-form .container h2 {
+    font-size: 2.44rem;
   }
   .wrapper .contact-form .container .myform .right-margin {
     margin-right: 1rem;
@@ -1375,6 +1400,11 @@ template {
 
 .main-text .container .content img {
   margin: 2.88rem 0;
+}
+
+.main-text .container .content p a {
+  font-weight: 700;
+  text-decoration: underline;
 }
 
 @media screen and (min-width: 992px) {
@@ -1640,7 +1670,7 @@ template {
   z-index: 999999;
 }
 
-.show {
+.show-links {
   display: flex !important;
 }
 
@@ -1673,9 +1703,9 @@ template {
 .header .nav .container .links-container {
   position: fixed;
   top: 0;
-  right: 0vw;
+  right: -70vw;
   height: 100vh;
-  width: 100vw;
+  width: 70vw;
   background: #a07178;
   z-index: 9999999999;
   transition: all 0.5s ease-in-out;
@@ -1736,6 +1766,11 @@ template {
   display: flex;
   gap: .8rem;
   color: #fff;
+  transition: color .2s linear;
+}
+
+.header .nav .container .links-container .nav-links li .sublinks li a:hover {
+  color: #c2c2c2;
 }
 
 .header .banner {
@@ -1778,7 +1813,16 @@ template {
   }
 }
 
+@media screen and (min-width: 992px) {
+  .header .nav .container .links-container .nav-links li .scroll-link {
+    font-size: 1.13rem;
+  }
+}
+
 @media screen and (min-width: 1200px) {
+  .header .nav .container .links-container .nav-links li .scroll-link {
+    font-size: 1.5rem;
+  }
   .header .banner .banner-content .banner-title {
     font-family: "Futura", 'Poppins';
     font-weight: 700;
@@ -1871,14 +1915,17 @@ template {
 .features .container .features-upper .features-title {
   margin-top: 7.06rem;
   margin-bottom: 1.19rem;
+  text-align: center;
 }
 
 .features .container .features-upper .features-subtitle {
   margin-bottom: 1.69rem;
+  text-align: center;
 }
 
 .features .container .features-lower {
   margin-top: 7.56rem;
+  overflow: visible;
 }
 
 .features .container .features-lower .feature-card {
@@ -1888,6 +1935,7 @@ template {
 
 .features .container .features-lower .feature-card .card-img {
   margin-bottom: 0.75rem;
+  width: auto !important;
 }
 
 .features .container .features-lower .feature-card .card-title {
@@ -1914,9 +1962,11 @@ template {
     top: 50%;
     right: -50%;
   }
+  .features .container {
+    width: 100%;
+  }
   .features .container .features-lower {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    display: flex;
   }
 }
 
@@ -2003,10 +2053,30 @@ template {
   position: relative;
   margin-top: 2.69rem;
   padding: 1.81rem 1.31rem 1.81rem;
-  height: 21.19rem;
   background: #fff;
   box-shadow: 2px 2px 24px rgba(0, 0, 0, 0.12);
   cursor: pointer;
+}
+
+.practice .container .practice-card .single-card .practice-link {
+  margin-top: 1rem;
+  display: flex;
+  align-items: center;
+  gap: .3rem;
+}
+
+.practice .container .practice-card .single-card .practice-link a {
+  line-height: normal;
+  color: #566cfb;
+  height: 100%;
+}
+
+.practice .container .practice-card .single-card .practice-link .right-arrow {
+  height: 100%;
+  padding-bottom: 0;
+  padding-top: .3rem;
+  transition: all .3s ease-in-out;
+  width: 1.2rem;
 }
 
 .practice .container .practice-card .single-card .hover {
@@ -2024,6 +2094,10 @@ template {
 
 .practice .container .practice-card .single-card:hover .hover {
   transform: translateY(1.3rem) rotate(5.54deg);
+}
+
+.practice .container .practice-card .single-card:hover .right-arrow {
+  transform: translateX(0.5rem);
 }
 
 .practice .container .practice-card .single-card img {
@@ -2068,6 +2142,9 @@ template {
   .practice .container .practice-card {
     grid-template-columns: 1fr 1fr 1fr;
   }
+  .practice .container .practice-card .single-card:last-child {
+    grid-column-start: 2;
+  }
 }
 
 @media screen and (min-width: 1200px) {
@@ -2094,6 +2171,7 @@ template {
 
 .testimonials .testi-title {
   margin-top: 2.56rem;
+  margin-bottom: 1.56rem;
   text-align: center;
 }
 
@@ -2440,5 +2518,30 @@ template {
   .footer .container {
     justify-content: center;
   }
+}
+
+.home-map {
+  background: #fff;
+}
+
+.footer-map {
+  margin-top: 2rem;
+  overflow: hidden;
+}
+
+.footer-map .map-container .location .map-responsive {
+  overflow: hidden;
+  padding-bottom: 56.25%;
+  position: relative;
+  height: 17rem;
+  max-height: 31.94rem;
+}
+
+.footer-map .map-container .location .map-responsive iframe {
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  position: absolute;
 }
 /*# sourceMappingURL=style.css.map */

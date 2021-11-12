@@ -1,0 +1,221 @@
+   <section class="features">
+      <img src="./img/feature_circle.png" class="f-circle" alt="" />
+
+      <img src="./img/law-blob.jpg" alt="" class="feature-md" />
+      <div class="container row">
+        <div class="features-upper col-md-6 col-lg-3 col-xl-4">
+          <h1 class="features-title">What Makes You Choose Us?</h1>
+          <p class="features-subtitle">
+            Being passionate about the law & striving for the highest standard
+            of service!
+          </p>
+          <a href="#" class="btn btn-rounded-primary text-small">Learn More</a>
+        </div>
+
+        <div class="features-lower col-lg-7 col-lg-offset-1 ">
+          <div class="feature-card col-md-6">
+            <img src="./img/digital.svg" alt="" class="card-img" />
+            <h2 class="card-title">Digitally Available</h2>
+            <p class="card-text">
+              We offer our services digitally and we are available 16hrs/day for
+              meeting you online.
+            </p>
+          </div>
+
+          <div class="feature-card col-md-6">
+            <img src="./img/idea.svg" alt="" class="card-img" />
+            <h2 class="card-title">Our Philosophy</h2>
+            <p class="card-text">
+              Handling every client’s need/case with a customized and
+              personalized service is key to client satisfaction.
+            </p>
+          </div>
+
+          <div class="feature-card col-md-6">
+            <img src="./img/math.svg" alt="" class="card-img" />
+            <h2 class="card-title">Our Math</h2>
+            <p class="card-text">
+              Fewer cases + customized services = better results + satisfied
+              customers. We take fewer cases and offer customized services.
+            </p>
+          </div>
+
+          <div class="feature-card col-md-6">
+            <img src="./img/mission.svg" alt="" class="card-img" />
+            <h2 class="card-title">Our Mission</h2>
+            <p class="card-text">
+              Serving as a bridge between you and your interest in Ethiopia! We
+              are dedicated to offering the best-in-class legal services in
+              Ethiopia.
+            </p>
+          </div>
+        </div>
+      </div>
+      <svg
+        class="feature-blob"
+        width="906"
+        height="959"
+        viewBox="0 0 906 959"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M127.376 105.672C55.3792 182.731 30.0363 297.169 13.3331 410.457C-3.37019 523.17 -10.8579 635.307 30.6123 729.618C72.6584 823.929 163.662 900.988 267.338 936.067C371.589 971.146 488.512 965.395 586.427 922.84C684.343 880.285 762.675 801.501 822.001 707.191C881.326 612.88 920.492 503.617 900.909 407.006C880.75 309.82 801.842 225.861 714.293 152.252C626.745 78.069 529.982 14.2367 422.851 2.16033C315.719 -9.91604 198.797 29.1884 127.376 105.672Z"
+          fill="url(#paint0_linear_543:6208)"
+          fill-opacity="0.1"
+        />
+        <defs>
+          <linearGradient
+            id="paint0_linear_543:6208"
+            x1="906"
+            y1="959"
+            x2="-79.3826"
+            y2="864.337"
+            gradientUnits="userSpaceOnUse"
+          >
+            <stop stop-color="#4B79A1" />
+            <stop offset="0.19843" stop-color="#3594B6" />
+            <stop offset="0.403365" stop-color="#24AEBF" />
+            <stop offset="0.580183" stop-color="#3FC7BE" />
+            <stop offset="0.776131" stop-color="#71DEB5" />
+          </linearGradient>
+        </defs>
+      </svg>
+    </section>
+
+
+
+
+    
+.features {
+  position: relative;
+  overflow: hidden;
+  .f-circle {
+    position: absolute;
+    top: 1.19rem;
+    right: 10.06rem;
+    z-index: -1;
+  }
+  .feature-md {
+    display: none;
+  }
+  .feature-blob {
+    position: absolute;
+    top: 32.13rem;
+    left: 13.38rem;
+  }
+  .container {
+    .features-upper {
+      .features-title {
+        @extend .h2;
+        margin-top: 7.06rem;
+        margin-bottom: 1.19rem;
+        text-align: center;
+      }
+      .features-subtitle {
+        @extend .text;
+        margin-bottom: 1.69rem;
+        text-align: center;
+      }
+    }
+    .features-lower {
+      margin-top: 7.56rem;
+      .feature-card {
+        margin-bottom: 6.06rem;
+        padding: 2rem;
+        .card-img {
+          margin-bottom: 0.75rem;
+        }
+        .card-title {
+          @extend .medium;
+          margin-bottom: 0.75rem;
+        }
+        .card-text {
+          @extend .text-small;
+          width: 15.94rem;
+        }
+      }
+    }
+  }
+}
+
+@include responsive($md) {
+  .features {
+    .f-circle {
+      top: 0rem;
+      left: -10.06rem;
+      z-index: -1;
+    }
+    .feature-blob {
+      display: none;
+    }
+    .feature-md {
+      display: block;
+      position: absolute;
+      z-index: -1;
+      top: 50%;
+      right: -50%;
+    }
+    .container {
+      .features-lower {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+  }
+}
+@include responsive($lg) {
+  .features {
+    .container {
+      .features-upper {
+        .features-title {
+          font-family: "medium bt";
+          font-weight: 700;
+          font-size: 2rem;
+          line-height: 2.88rem;
+          margin-top: 7.06rem;
+          margin-bottom: 1.19rem;
+        }
+      }
+    }
+    .feature-md {
+      top: 25%;
+      right: -30%;
+    }
+  }
+}
+
+@include responsive($xl) {
+  .features {
+    .container {
+      .features-upper {
+        .features-title {
+          font-family: "Futura", 'Poppins';
+          font-weight: 700;
+          font-size: 3.31rem;
+          line-height: 3.98rem;
+        }
+      }
+      .features-lower {
+        .feature-card {
+          .card-text {
+            font-family: "light bt";
+            font-size: 1.13rem;
+            line-height: 1.75rem;
+          }
+        }
+      }
+    }
+  }
+}
+
+@include responsive($xxl) {
+  .features {
+    .feature-md {
+      right: -15%;
+    }
+    .f-circle {
+      left: 0;
+    }
+  }
+}

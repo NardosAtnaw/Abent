@@ -27,7 +27,7 @@ navBar.innerHTML = `<div class="container">
            <img src="./img/sublink/due.svg" alt=""> Legal Due Diligence</a></li>
           <li><a href="./doc.html">
            <img src="./img/sublink/doc.svg" alt=""> Document Verification</a></li>
-          <li><a href="./par.html">
+          <li><a href="./ltr.html">
            <img src="./img/sublink/par.svg" alt=""> Long-term Partnership</a></li>
         </div>
         <div class="indvidual-link">
@@ -59,13 +59,13 @@ dropDown.addEventListener('mouseover', e => {
   const text = e.currentTarget.textContent
   const tempBtn = e.currentTarget.getBoundingClientRect();
   const center = (tempBtn.width) / 2;
-  sublinks.classList.add('show')
+  sublinks.classList.add('show-links')
   sublinks.style.left = `-${center + 5}px`
   console.log(center);
 })
 
 dropDownFull.addEventListener('mouseleave', () => {
-  sublinks.classList.remove('show')
+  sublinks.classList.remove('show-links')
 })
 
 const menu = document.querySelector('.menu')
@@ -76,7 +76,7 @@ menu.addEventListener('click', () => {
   sidebar.style.right = '0'
 })
 close.addEventListener('click', () => {
-  sidebar.style.right = '-100vw'
+  sidebar.style.right = '-70vw'
 })
 
 window.addEventListener('scroll', () => {
@@ -116,44 +116,51 @@ const app = Vue.createApp({
         {
           id: 1,
           img: './img/business.svg',
-          title: 'Business',
-          text: 'Looking for sound legal advice on matters that arise in your business and/or legal interest in Ethiopia?'
+          title: 'Corporate and general business council',
+          text: 'Looking for sound legal advice on matters that arise in your business and/or legal interest in Ethiopia?',
+          url: './corp.html'
         },
         {
           id: 2,
           img: './img/represent.svg',
-          title: 'Representation',
-          text: 'AbnetLaw represents both international and domestic clients who seek to protect and enforce their legal rights in Ethiopia.'
+          title: 'Representation in Litigations and Tribunals ',
+          text: 'AbnetLaw represents both international and domestic clients who seek to protect and enforce their legal rights in Ethiopia.',
+          url: './rep.html'
         },
         {
           id: 3,
           img: './img/due.svg',
           title: 'Legal Due Diligence',
-          text: 'Do you want to get accurate and detailed information about any laws, procedures, or any legal requirements in Ethiopia?'
+          text: 'Do you want to get accurate and detailed information about any laws, procedures, or any legal requirements in Ethiopia?',
+          url: './legal.html'
         },
         {
           id: 4,
           img: './img/ltr.svg',
           title: 'Long Term Partnership',
-          text: 'We are providing a long-term service on a retainer basis only for our corporate clients. For more information, please contact us by email or by phone.'
+          text: 'We are providing a long-term service on a retainer basis only for our corporate clients. For more information, please contact us by email or by phone.',
+          url: './ltr.html'
         },
         {
           id: 5,
           img: './img/consl.svg',
           title: 'General Legal Consultation',
-          text: 'We provide legal advice and consultation services on a wide range of issues pertaining to your legal questions and needs.'
+          text: 'We provide legal advice and consultation services on a wide range of issues pertaining to your legal questions and needs.',
+          url: './general.html'
         },
         {
           id: 6,
           img: './img/catena.svg',
           title: 'Civil Litigation & Criminal Defense',
-          text: ' We handle a variety of civil litigation, from breach of contract, tortious interference, assault, family disputes, personal injury, and labor dispute'
+          text: ' We handle a variety of civil litigation, from breach of contract, tortious interference, assault, family disputes, personal injury, and labor dispute',
+          url: './civil.html'
         },
         {
           id: 7,
           img: './img/document.svg',
           title: 'Document Verification',
-          text: 'Our Document Verification Service lets our international corporate clients verify any government-issued or other public document from anywhere in the world in just a couple of days.'
+          text: 'Our Document Verification Service lets our international corporate clients verify any government-issued or other public document from anywhere in the world in just a couple of days.',
+          url: './doc.html'
         }
       ]
     }
@@ -294,10 +301,11 @@ const footer = Vue.createApp({
       </h2>
 
       <ul>
-        <li><a href="#">Business</a></li>
-        <li><a href="#">Representation</a></li>
-        <li><a href="#">Legal Due Diligence</a></li>
-        <li><a href="#">Long Term Partnership</a></li>
+      <li><a href="./general.html">Corporate and general business council</a></li>
+      <li><a href="./rep.html">Representation in Litigations and Tribunals </a></li>
+      <li><a href="./legal.html">Legal Due Diligence</a></li>
+      <li><a href="./doc.html">Document Verification</a></li>
+      <li><a href="./ltr.html">Long Term Partnership</a></li>
       </ul>
     </div>
     <div class="single col-12 col-md-6 col-lg-3">
@@ -306,8 +314,8 @@ const footer = Vue.createApp({
       </h2>
 
       <ul>
-        <li><a href="#">General Legal Consultation</a></li>
-        <li><a href="#">Civil Litigation & Criminal Defense</a></li>
+      <li><a href="./general.html">General Legal Consultation</a></li>
+      <li><a href="./civil.html">Civil Litigation & Criminal Defense</a></li>
       </ul>
     </div>
   </div>

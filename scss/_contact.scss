@@ -98,8 +98,15 @@
 .contact-us {
   .contact-us-title {
     padding-top: 4.81rem;
-    padding-bottom: 4.06rem;
+    padding-bottom: 1.06rem;
     @extend .h2;
+  }
+  .contact-us-subtitle{
+    @extend .text;
+    padding-bottom: 3.06rem;
+    max-width: 41.94rem;
+    text-align: center;
+    margin: 0 auto;
   }
   .contact-container {
     .contact-card {
@@ -210,6 +217,8 @@
       }
     }
   }
+
+  
   .contact-form {
     border: 1px solid $primary-color;
     border-radius: 2.5rem;
@@ -229,12 +238,14 @@
       background: transparent;
       h2 {
         @extend .h2;
+        font-size: 2rem;
         margin-bottom: 1rem;
       }
       p {
         @extend .text;
         color: #7d7d7d;
         margin-bottom: 2rem;
+        max-width: 38rem;
       }
       .myform {
         input,
@@ -273,7 +284,18 @@
     }
   }
 }
-
+.clock {
+  width: 15rem;
+  background: #fff;
+  .clock-title{
+    @extend .medium;
+    font-size: 1.13rem;
+    text-align: center;
+  }
+  position: fixed;
+  bottom: 0;
+  right: 0;
+}
 @include responsive($md) {
   .wrapper {
     .contact-blob {
@@ -282,6 +304,9 @@
     .contact-form {
       .container {
         width: 100% - 10%;
+        h2{
+          font-size: 2.44rem;
+        }
         .myform {
           .right-margin {
             margin-right: 1rem;
