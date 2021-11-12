@@ -896,6 +896,8 @@ template {
   background: #566cfb;
   color: #fff;
   margin-bottom: 5px;
+  font-weight: 700;
+  font-size: 1.3rem;
 }
 
 .btn-rounded-primary:hover {
@@ -907,6 +909,8 @@ template {
 .btn-rounded-outline-primary {
   background: transparent;
   color: #566cfb;
+  font-weight: 700;
+  font-size: 1.3rem;
   border-color: #566cfb;
 }
 
@@ -1410,10 +1414,12 @@ template {
 @media screen and (min-width: 992px) {
   .main-text .container {
     align-items: flex-start;
-    gap: 2rem;
+    gap: 1rem;
   }
   .main-text .container .side-links {
     display: block;
+    position: sticky;
+    top: 12.75rem;
   }
   .main-text .container .side-links h3 {
     font-family: "medium bt";
@@ -1803,6 +1809,11 @@ template {
   margin-bottom: 2.56rem;
 }
 
+.header .banner .banner-content .cta-btn {
+  font-size: 1.13rem;
+  font-weight: 700;
+}
+
 @media screen and (min-width: 768px) {
   .header .banner .banner-content .banner-title {
     font-family: "Futura", 'Poppins';
@@ -2067,6 +2078,7 @@ template {
 
 .practice .container .practice-card .single-card .practice-link a {
   line-height: normal;
+  font-weight: 700;
   color: #566cfb;
   height: 100%;
 }

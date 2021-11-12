@@ -183,6 +183,8 @@ $trans: all 0.5s ease-in-out;
   background: $primary-color;
   color: #fff;
   margin-bottom: 5px;
+  font-weight: 700;
+  font-size: 1.3rem;
   &:hover{
     background: transparent;
     color: $primary-color;
@@ -194,6 +196,8 @@ $trans: all 0.5s ease-in-out;
   @extend .btn-rounded;
   background: transparent;
   color: $primary-color;
+  font-weight: 700;
+  font-size: 1.3rem;
   border-color: $primary-color;
   &:hover{
     background: $primary-color;
@@ -224,4 +228,5 @@ $trans: all 0.5s ease-in-out;
   background: transparent;
   color: $primary-color;
   border-color: $primary-color;
+
 }

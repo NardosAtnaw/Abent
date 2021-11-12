@@ -131,6 +131,10 @@
         @extend .text-medium;
         margin-bottom: 2.56rem;
       }
+      .cta-btn{
+        font-size: 1.13rem;
+        font-weight: 700;
+      }
     }
   }
 }
@@ -453,6 +457,8 @@
           a{
             @extend .text;
             line-height: normal;
+            // font-size: 1.3rem;
+            font-weight: 700;
             color: $primary-color;
             height: 100%;
           }

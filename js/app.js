@@ -85,7 +85,7 @@ window.addEventListener('scroll', () => {
   const scrollLink = document.querySelectorAll('.scroll-link')
   const navHeight = nav.getBoundingClientRect().height
   const scrollHeight = window.pageYOffset
-
+  console.log(navHeight);
   if(navHeight < scrollHeight){
     nav.classList.add('fixed')
 

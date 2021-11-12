@@ -31,9 +31,11 @@
   .main-text {
     .container {
       align-items: flex-start;
-      gap: 2rem;
+      gap: 1rem;
       .side-links {
         display: block;
+        position: sticky;
+        top: 12.75rem;
         h3 {
           font-family: "medium bt";
           font-weight: 700;
