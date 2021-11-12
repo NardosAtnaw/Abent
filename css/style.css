@@ -407,7 +407,7 @@ template {
 }
 
 .text, .contact-us .contact-us-subtitle, .contact-us .contact-container .contact-card p, .wrapper .contact-form .container p, .wrapper .contact-form .container .myform input,
-.wrapper .contact-form .container .myform textarea, .wrapper .contact-form .container .myform .button, .header .laws-banner .law-banner-content .input-container .input-field, .header .laws-banner .law-banner-content .input-container .input-field::placeholder, .categories .container .btn-container a, .main-text .container .content p, .main-text .container .content strong, .header .attorney-banner .law-banner-content .input-container .input-field, .header .attorney-banner .law-banner-content .input-container .input-field::placeholder, .attorney-profile .container .attorney-details .attorney-content .profile, .attorney-profile .container .attorney-details .attorney-content .experience, .attorney-profile .container .attorney-details .attorney-content .education ul li, .about .about-container .container .about-text, .features .container .features-upper .features-subtitle, .practice .container .practice-card .single-card .practice-link a, .practice .container .practice-card .single-card .single-card-text, .testimonials .container .testi-container .testi-card .testi-text, .attorney .attorney-container .container .attorney-text, .footer .container .footer-contact .contact-info div p, .footer .container .corporate ul li a, .footer .container .single ul li a {
+.wrapper .contact-form .container .myform textarea, .wrapper .contact-form .container .myform .button, .header .laws-banner .law-banner-content .input-container .input-field, .header .laws-banner .law-banner-content .input-container .input-field::placeholder, .categories .container .btn-container a, .main-text .container .content p, .main-text .container .content strong, .header .attorney-banner .law-banner-content .input-container .input-field, .header .attorney-banner .law-banner-content .input-container .input-field::placeholder, .attorney-profile .container .attorney-details .attorney-content .profile, .attorney-profile .container .attorney-details .attorney-content .experience, .attorney-profile .container .attorney-details .attorney-content .education ul div li, .about .about-container .container .about-text, .features .container .features-upper .features-subtitle, .practice .container .practice-card .single-card .practice-link a, .practice .container .practice-card .single-card .single-card-text, .testimonials .container .testi-container .testi-card .testi-text, .attorney .attorney-container .container .attorney-text, .footer .container .footer-contact .contact-info div p, .footer .container .corporate ul li a, .footer .container .single ul li a {
   font-family: "light bt";
   font-size: 1.13rem;
   line-height: 1.75rem;
@@ -1590,12 +1590,23 @@ template {
   margin-bottom: 3.44rem;
 }
 
-.attorney-profile .container .attorney-details .attorney-content .education ul li {
+.attorney-profile .container .attorney-details .attorney-content .education ul div {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1.94rem;
+}
+
+.attorney-profile .container .attorney-details .attorney-content .education ul div li {
   line-height: normal;
   display: flex;
   align-items: flex-start;
   gap: 0.5rem;
   margin-bottom: 0.94rem;
+}
+
+.attorney-profile .container .attorney-details .attorney-content .education ul div .logo-uni {
+  width: 10rem;
+  text-align: right;
 }
 
 @media screen and (min-width: 768px) {
