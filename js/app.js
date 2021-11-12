@@ -301,7 +301,7 @@ const footer = Vue.createApp({
       </h2>
 
       <ul>
-      <li><a href="./general.html">Corporate and general business council</a></li>
+      <li><a href="./general.html">Corporate and General Business Council</a></li>
       <li><a href="./rep.html">Representation in Litigations and Tribunals </a></li>
       <li><a href="./legal.html">Legal Due Diligence</a></li>
       <li><a href="./doc.html">Document Verification</a></li>
