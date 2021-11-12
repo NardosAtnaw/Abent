@@ -116,7 +116,7 @@ const app = Vue.createApp({
         {
           id: 1,
           img: './img/business.svg',
-          title: 'Corporate and general business council',
+          title: 'Corporate And General Business Council',
           text: 'Looking for sound legal advice on matters that arise in your business and/or legal interest in Ethiopia?',
           url: './corp.html'
         },
