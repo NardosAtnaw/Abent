@@ -997,7 +997,7 @@ template {
 .time .container .right ul li {
   display: flex;
   font-family: "medium bt";
-  font-size: 1rem;
+  font-size: 0.88rem;
   column-gap: 0.63rem;
   margin-bottom: 1rem;
   align-items: flex-start;
@@ -2487,27 +2487,32 @@ template {
 
 .footer .container {
   padding-top: 4.5rem;
-  padding-left: 15%;
-  padding-right: 10%;
 }
 
 .footer .container .footer-logo .logo {
+  margin: 0 auto;
   margin-bottom: 3.25rem;
 }
 
 .footer .container .footer-logo .icon-container {
   display: flex;
   gap: 1rem;
+  justify-content: center;
 }
 
 .footer .container .footer-contact {
   margin-top: 6.38rem;
 }
 
+.footer .container .footer-contact .footer-contact-title {
+  text-align: center;
+}
+
 .footer .container .footer-contact .contact-info {
   display: flex;
   gap: 1rem;
   align-items: flex-start;
+  justify-content: center;
   margin-bottom: 1.19rem;
 }
 
@@ -2524,8 +2529,17 @@ template {
   margin-top: 2.56rem;
 }
 
+.footer .container .corporate .corporate-title {
+  text-align: center;
+}
+
+.footer .container .corporate ul {
+  text-align: center;
+}
+
 .footer .container .corporate ul li {
-  max-width: 11.5rem;
+  max-width: 12.5rem;
+  margin: 0 auto;
   margin-bottom: 1rem;
 }
 
@@ -2539,6 +2553,15 @@ template {
 
 .footer .container .single .single-title {
   margin-top: 4.38rem;
+  text-align: center;
+}
+
+.footer .container .single ul {
+  text-align: center;
+}
+
+.footer .container .single ul li {
+  margin-bottom: 1rem;
 }
 
 .footer .container .single ul li a {
@@ -2558,12 +2581,35 @@ template {
 }
 
 @media screen and (min-width: 768px) {
-  .footer .container {
-    padding-left: 0%;
-    padding-right: 0%;
+  .footer .container .footer-logo .logo {
+    margin: 0 0 3.25rem;
+  }
+  .footer .container .footer-logo .icon-container {
+    justify-content: flex-start;
+  }
+  .footer .container .single .single-title {
+    text-align: left;
+  }
+  .footer .container .single ul {
+    text-align: left;
+  }
+  .footer .container .corporate .corporate-title {
+    text-align: left;
+  }
+  .footer .container .corporate ul {
+    text-align: left;
+  }
+  .footer .container .corporate ul li {
+    margin: 0 0 1rem;
   }
   .footer .container .footer-contact {
     margin-top: 0;
+  }
+  .footer .container .footer-contact .footer-contact-title {
+    text-align: left;
+  }
+  .footer .container .footer-contact .contact-info {
+    justify-content: flex-start;
   }
   .footer .container .corporate {
     margin: 0;
