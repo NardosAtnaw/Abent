@@ -169,6 +169,26 @@ const app = Vue.createApp({
 
 app.mount('#card')
 
+const servicesAside = Vue.createApp({
+  template: ` <h3>For Corporate Clients</h3>
+  <ul>
+
+    <li><a href="./corp.html">Corporate and general business council</a></li>
+    <li><a href="./rep.html">Representation in Litigations and Tribunals </a></li>
+    <li><a href="./legal.html">Legal Due Diligence</a></li>
+    <li><a href="./doc.html">Document Verification</a></li>
+    <li><a href="./ltr.html">Long Term Partnership</a></li>
+  </ul>
+
+  <h3>For Individual Clients</h3>
+  <ul>
+    <li><a href="./general.html">General Legal Consultation</a></li>
+    <li><a href="./civil.html">Civil Litigation & Criminal Defense</a></li>
+  </ul>`
+})
+
+servicesAside.mount('#aside')
+
 const testiApp = Vue.createApp({
   data() {
     return {

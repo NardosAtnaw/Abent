@@ -219,3 +219,31 @@
     }
   }
 }
+
+
+testimonials
+
+  <!-- <div class="testi-container" id="testi">
+          <div class="testi-card" v-for="testi in testiCard" :key="testi.id">
+            <img :src="testi.img" class="testi-img" alt="" />
+
+            <p class="testi-text">{{testi.text}}</p>
+            <div class="testi-footer">
+              <h2 class="testi-name">{{ testi.name }}</h2>
+
+              <div class="icons-container">
+                <a :href="testi.url.twitter">
+                  <img src="./img/twitter.svg" alt="" />
+                </a>
+
+                <a :href="testi.url.linkedin">
+                  <img src="./img/linkedin.svg" alt="" />
+                </a>
+
+                <a :href="testi.url.fb">
+                  <img src="./img/facebook.svg" alt="" />
+                </a>
+              </div>
+            </div>
+          </div>
+        </div> -->

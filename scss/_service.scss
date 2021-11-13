@@ -7,10 +7,11 @@
     .content {
       .service-title {
         @extend .h2;
+        font-size: 1.8rem;
         margin-bottom: 3.88rem;
       }
       img {
-        margin: 2.88rem 0;
+        margin: 2.58rem 0;
       }
       p {
         @extend .text;
@@ -27,6 +28,18 @@
   }
 }
 
+@include responsive($md){
+  .main-text {
+    .container {
+      .content {
+        .service-title {
+          font-size: 2.44rem;
+          margin-bottom: 3.88rem;
+        }
+      }
+    }
+  }
+}
 @include responsive($lg) {
   .main-text {
     .container {

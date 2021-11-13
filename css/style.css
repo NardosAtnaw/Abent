@@ -896,14 +896,19 @@ template {
   background: #566cfb;
   color: #fff;
   margin-bottom: 5px;
-  font-weight: 700;
-  font-size: 1.3rem;
 }
 
 .btn-rounded-primary:hover {
   background: transparent;
   color: #566cfb;
   border: 1px solid #566cfb;
+}
+
+@media screen and (min-width: 992px) {
+  .btn {
+    font-size: 1.2rem;
+    font-weight: 700;
+  }
 }
 
 .btn-rounded-outline-primary {
@@ -1399,16 +1404,24 @@ template {
 }
 
 .main-text .container .content .service-title {
+  font-size: 1.8rem;
   margin-bottom: 3.88rem;
 }
 
 .main-text .container .content img {
-  margin: 2.88rem 0;
+  margin: 2.58rem 0;
 }
 
 .main-text .container .content p a {
   font-weight: 700;
   text-decoration: underline;
+}
+
+@media screen and (min-width: 768px) {
+  .main-text .container .content .service-title {
+    font-size: 2.44rem;
+    margin-bottom: 3.88rem;
+  }
 }
 
 @media screen and (min-width: 992px) {
@@ -2270,12 +2283,20 @@ template {
 }
 
 .attorney .attorney-container .container a {
+  font-size: 1rem;
   margin-top: 2.88rem;
+}
+
+.attorney .attorney-container .container .attorney-btn {
+  text-align: center;
 }
 
 @media screen and (min-width: 768px) {
   .attorney .attorney-container .attorney-img {
     width: 40rem;
+  }
+  .attorney .attorney-container .container .attorney-btn {
+    text-align: left;
   }
 }
 
@@ -2466,6 +2487,8 @@ template {
 
 .footer .container {
   padding-top: 4.5rem;
+  padding-left: 15%;
+  padding-right: 10%;
 }
 
 .footer .container .footer-logo .logo {
@@ -2501,8 +2524,17 @@ template {
   margin-top: 2.56rem;
 }
 
+.footer .container .corporate ul li {
+  max-width: 11.5rem;
+  margin-bottom: 1rem;
+}
+
 .footer .container .corporate ul li a {
   color: #fff;
+}
+
+.footer .container .corporate ul li a:hover {
+  color: #f4f4f4;
 }
 
 .footer .container .single .single-title {
@@ -2526,6 +2558,10 @@ template {
 }
 
 @media screen and (min-width: 768px) {
+  .footer .container {
+    padding-left: 0%;
+    padding-right: 0%;
+  }
   .footer .container .footer-contact {
     margin-top: 0;
   }
