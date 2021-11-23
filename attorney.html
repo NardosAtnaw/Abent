@@ -1,139 +1,153 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="./css/style.css">
-  <script src="https://unpkg.com/vue@3.0.2"></script>
-  <title>Attorney</title>
-</head>
-<body>
-  <header id="app" class="header">
-    <nav class="nav" id="nav">
-      
-    </nav>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <script src="https://unpkg.com/vue@3.0.2"></script>
+    <title>Attorney</title>
+  </head>
+  <body>
+    <header id="app" class="header">
+      <nav class="nav" id="nav"></nav>
 
-    <section class="attorney-banner">
-     
-    </section>
-  </header>
+      <section class="attorney-banner">
+        <h1 class="about-title">Our Attorney</h1>
+      </section>
+    </header>
 
-  <section class="attorney-profile">
-    <div class="container row">
-      <div class="attorney-info col-lg-4">
-        <h1 class="attorney-name">
-          Abnet Solomon
-        </h1>
-        <div class="info-container">
-          <div>
-            <img src="./img/phone-attorney.svg" alt="">
-            <p>+251(09)5394 6049</p>
+    <section class="attorney-profile">
+      <div class="container row">
+        <aside class="attorney-info col-lg-4">
+          <h1 class="attorney-name">Abnet Solomon</h1>
+          <div class="info-container">
+            <div>
+              <img src="./img/phone-attorney.svg" alt="" />
+              <p>+251(09)5394 6049</p>
+            </div>
+
+            <div>
+              <img src="./img/email-attorney.svg" alt="" />
+              <p>abnet@abnetlaw.com</p>
+            </div>
           </div>
 
-          <div>
-            <img src="./img/email-attorney.svg" alt="">
-            <p>abnet@abnetlaw.com</p>
+          <div class="social-icon">
+            <img src="./img/facebook.svg" alt="" />
+            <img src="./img/twitter.svg" alt="" />
+            <img src="./img/linkedin.svg" alt="" />
           </div>
-        </div>
+        </aside>
 
-        <div class="social-icon">
-          <img src="./img/facebook.svg" alt="">
-          <img src="./img/twitter.svg" alt="">
-          <img src="./img/linkedin.svg" alt="">
-        </div>
-      </div>
-
-
-      <div class="attorney-details col-lg-offset-1 col-lg-7" id="tabs">
-
-        <div class="btn-container" @click="toggleshow">
-          <button class="active" data-id="profile" ref="btnPro">Profile</button>
-          <button data-id="experience" ref="btnExp">Education/Admission</button>
-          <button data-id="education" ref="btnEdu">Experience</button>
-        </div>
-
-        <div class="attorney-content">
-          <div class="profile show" ref="profile">
-            <p>Abnet S. Melkamu is the founder and owner of the Law Office of Abnet Solomon (aka AbnetLaw). He is admitted to practice law in all levels of the Federal Courts. He is also admitted to practice before the Addis Ababa city municipality courts. His practices encompass all kinds of business transactions and business disputes.
-  
-            </p>
-            <br>
-            <p>
-              Being an attorney has been a long-standing goal for Abnet, and he founded AbnetLaw in 2018 with the ambition of improving the quality of Ethiopian legal services by introducing a tailor-made, unique legal service and providing all-round, one-stop, multi-level, high-quality services for the best satisfaction of his clients. Since then, his main focus has been continuing to provide customized and personalized legal services to international medium and small businesses.
-            </p>
+        <div class="attorney-details col-lg-offset-1 col-lg-7" id="tabs">
+          <div class="btn-container" @click="toggleshow">
+            <button class="active" data-id="profile" ref="btnPro">
+              Profile
+            </button>
+            <button data-id="experience" ref="btnExp">
+              Education/Admission
+            </button>
+            <button data-id="education" ref="btnEdu">Experience</button>
           </div>
 
+          <div class="attorney-content">
+            <div class="profile" ref="profile">
+              <p>
+                Abnet S. Melkamu is the founder and owner of the Law Office of
+                Abnet Solomon (aka AbnetLaw). He is admitted to practice law in
+                all levels of the Federal Courts. He is also admitted to
+                practice before the Addis Ababa city municipality courts. His
+                practices encompass all kinds of business transactions and
+                business disputes.
+              </p>
+              <br />
+              <p>
+                Being an attorney has been a long-standing goal for Abnet, and
+                he founded AbnetLaw in 2018 with the ambition of improving the
+                quality of Ethiopian legal services by introducing a
+                tailor-made, unique legal service and providing all-round,
+                one-stop, multi-level, high-quality services for the best
+                satisfaction of his clients. Since then, his main focus has been
+                continuing to provide customized and personalized legal services
+                to international medium and small businesses.
+              </p>
+            </div>
 
-          <div class="experience " ref="exp">
-            <p>
-              Before founding his law office, Abnet worked as a senior legal counsel to the Commissioner General of the Ethiopian Federal Police and the Ethiopian Minister of Transport for more than eight years. Prior to that, he had served as a high-ranking police officer with the Ethiopian Federal Police.
-            </p>
-            <br>
-            <p>
-              After founding his own law office, Abnet has been consulting diversified international and domestic firms on their business and legal interests in Ethiopia. He has also represented a multitude of corporate and individual clients before federal courts and administrative agencies, in alternative dispute resolution and through internal investigations. 
-            </p>
-            <br>
-            <p>
-              Abnet has significant experience abroad, including France, Italy, the UK, Germany, China, the Republic of Korea, Brazil, Switzerland, and many African countries. This international experience helps him to understand different cultures and legal regimes, which in turn enables him to offer a real international outlook-based service in Ethiopia.
+            <div class="experience show" ref="exp">
+              <p>
+                Before founding his law office, Abnet worked as a senior legal
+                counsel to the Commissioner General of the Ethiopian Federal
+                Police and the Ethiopian Minister of Transport for more than
+                eight years. Prior to that, he had served as a high-ranking
+                police officer with the Ethiopian Federal Police.
+              </p>
+              <br />
+              <p>
+                After founding his own law office, Abnet has been consulting
+                diversified international and domestic firms on their business
+                and legal interests in Ethiopia. He has also represented a
+                multitude of corporate and individual clients before federal
+                courts and administrative agencies, in alternative dispute
+                resolution and through internal investigations.
+              </p>
+              <br />
+              <p>
+                Abnet has significant experience abroad, including France,
+                Italy, the UK, Germany, China, the Republic of Korea, Brazil,
+                Switzerland, and many African countries. This international
+                experience helps him to understand different cultures and legal
+                regimes, which in turn enables him to offer a real international
+                outlook-based service in Ethiopia.
+              </p>
+            </div>
 
-            </p>
-          </div>
-
-          <div class="education"  ref="edu">
-            <h3 class="edu-title">
-              Education
-            </h3>
-            <ul>
-              <div>
-                
-                <li>
-                  <img src="./img/right.svg" alt="">
-                  The University of Hull (Master of Laws (LL.M.) )
-  
-                  
-                </li>
-                <img src="./img/HullUniversity.svg" class="logo-uni" alt="">
-              </div>
-              <div>
-
-                <li>
-                  <img src="./img/right.svg" alt="">
-                  Ethiopian Civil Service University (Bachelor of Laws (LL.B))
-                  
-                </li>
-                <img src="./img/civilService.png" class="logo-uni" alt="">
-              </div>
-            </ul>
-
-            <h3 class="admission-title">
-              Admission
-            </h3>
-            <ul>
-              <div>
-
-                <li>
-                  <img src="./img/right.svg" alt="">
-                  Hull, UK (2009)
-                </li>
+            <div class="education" ref="edu">
+              <h3 class="edu-title">Education</h3>
+              <ul>
+                <div class="uni-name">
+                  <div>
+                    <li>
+                      <img src="./img/right.svg" alt="" />
+                      The University of Hull (Master of Laws (LL.M.) )
+                    </li>
+                  </div>
+                  <div>
+                    <li>
+                      <img src="./img/right.svg" alt="" />
+                      Ethiopian Civil Service University (Bachelor of Laws
+                      (LL.B))
+                    </li>
+                  </div>
                 </div>
-  <div>
-                <li>
-                  <img src="./img/right.svg" alt="">
-                  Addis Ababa, Ethiopia (2003)
-                </li>
-              </div>
-            </ul>
+                <article class="uni-logo">
+                  <img src="./img/HullUniversity.svg" class="logo-uni" alt="" />
+                  <img src="./img/civilService.png" class="logo-uni" alt="" />
+                </article>
+              </ul>
+
+              <h3 class="admission-title">Admission</h3>
+              <ul class="admission">
+                <div>
+                  <li>
+                    <img src="./img/right.svg" alt="" />
+                    Hull, UK (2009)
+                  </li>
+                </div>
+                <div>
+                  <li>
+                    <img src="./img/right.svg" alt="" />
+                    Addis Ababa, Ethiopia (2003)
+                  </li>
+                </div>
+              </ul>
+            </div>
           </div>
         </div>
-
       </div>
+    </section>
 
-    </div>
-  </section>
-
-  
-  <footer class="footer" id="footer"></footer>
-  <script src="./js/app.js"></script>
-</body>
+    <footer class="footer" id="footer"></footer>
+    <script src="./js/app.js"></script>
+  </body>
 </html>

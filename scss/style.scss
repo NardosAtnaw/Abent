@@ -71,8 +71,7 @@
             }
             .sublinks {
               margin: 1rem 0;
-              // display: flex;
-              margin-left: 1rem;
+            
               color: #fff;
               h3 {
                 font-family: "medium bt";
@@ -91,9 +90,12 @@
                   font-family: "light bt";
                   font-size: 0.88rem;
                   display: flex;
-                  gap: .8rem;
+                  gap: .5rem;
                   color: #fff;
                   transition: color .2s linear;
+                  img{
+                    width: .5rem;
+                  }
                   &:hover{
                     color: #c2c2c2;
                   }
@@ -182,7 +184,7 @@
           .nav-links{
             li{
               .scroll-link{
-                font-size: 1.5rem;
+                // font-size: 1.5rem;
               }
 
             }
@@ -224,8 +226,7 @@
           z-index: 9999999999;
           transition: $trans;
           background: none;
-          width: 70%;
-          max-width: 46.69rem;
+          width: auto;
         
           .close-btn {
             display: none;
@@ -235,8 +236,7 @@
             display: flex;
             padding-top: 0%;
             flex-direction: row;
-            justify-content: space-between;
-            justify-content: space-between;
+            gap: 3rem;
             padding-left: 2rem;
             position: relative;
             .drop-down{
@@ -246,7 +246,7 @@
                 width: auto;
                 display: flex;
                 background: $secondary-color;
-                padding: 2rem;
+                padding: 1.2rem 1rem 1rem .5rem;
                 border-radius: .5rem;
                 display: none;
                 h3{
@@ -256,7 +256,7 @@
                 li{
                   margin-bottom: 1rem;
                   a{
-                    font-size: 1rem;
+                    font-size: 1.13rem;
                   }
                 }
               }
@@ -269,6 +269,150 @@
   }
 }
 
+.reach-out{
+  position: fixed;
+  z-index: 999;
+  bottom: 50%;
+  right: 0;
+  transform: rotate(-90deg) translateY(130%);
+  button{
+    background: $lime-green;
+    border: none;
+    color: $primary-color;
+    padding: .4rem 2rem;
+    @extend .text;
+    font-size: 1.3rem;
+  }
+}
+
+.show-modal{
+  display: grid !important;
+}
+.show-modal-inner{
+  left: 0 !important;
+  animation: slideIN .3s ease-in-out;
+}
+
+@keyframes slideIn {
+  from{
+    left: 60%; 
+  }
+  to{
+    left: 0;
+  }
+}
+
+.contact-modal{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background:rgba(0, 0, 0, 0.6);
+  display: none;
+  place-items: center;
+  z-index: 99999;
+  .modal-inner{
+    position: absolute;
+    left: 60%;
+    background: #fff;
+    border-radius: 8px;
+    padding-left: 1.31rem;
+    padding-top: 1.75rem;
+    padding-right: 4.56rem;
+    position: relative;
+    transition: left .3s linear;
+    .close-modal-btn{
+      position: absolute;
+      right: 0.75rem;
+      top: 0.75rem;
+      cursor: pointer;
+    }
+    .emergency{
+      @extend .text;
+    }
+    .modal-title{
+      font-family: 'medium bt';
+      font-weight: bold;
+      color: $primary-color;
+      font-size: 1.94rem;
+      margin-top: .81rem;
+      margin-bottom: 2.63rem;
+    }
+    li{
+      display: flex;
+      align-items: center;
+      gap: 1.81rem;
+      margin-bottom: 1.56rem;
+      a{
+        @extend .text;
+      }
+      div{
+        display: flex;
+        flex-direction: column;
+      }
+    }
+    .social-cont{
+      display: flex;
+      gap: 1.31rem;
+    
+      p{
+        font-family: 'medium bt';
+        font-weight: 700;
+        font-size: 1.13rem;
+      }
+      .modal-link{
+        display: flex;
+        gap: 1.38rem;
+        img{
+          // width: 1rem;
+        }
+      }
+    }
+    .emergency{
+      margin-top: 1.94rem;
+      margin-bottom: 1.69rem;
+      a{
+        color: red;
+      }
+    }
+  }
+}
+.intro{
+  margin-top: 3rem;
+  .container{
+    .intro-title{
+      font-family: 'medium bt';
+      font-weight: 700;
+      font-size: 2.44rem;
+      line-height: 2.44rem;
+      text-align: center;
+      margin-bottom: 2.44rem;
+    }
+    .intro-content{
+      @extend .text;
+      margin: 0 auto;
+      margin-bottom: 2rem;
+      text-align: center;
+      max-width: 42rem;
+      .intro-link{
+        color: $primary-color;
+        font-weight: bold;
+        cursor: pointer;
+        &:hover{
+          text-decoration: underline;
+        }
+      }
+    }
+    .intro-btn{
+      text-align: center;
+      a{
+        @extend .text;
+      }
+
+    }
+  }
+}
 .features {
   position: relative;
   overflow: hidden;
@@ -301,10 +445,28 @@
       }
     }
     .features-lower {
+      max-width: 90%;
+      margin: 0 auto;
       margin-top: 7.56rem;
       overflow: visible;
+      .owl-nav{
+        display: flex;
+        justify-content: space-between;
+        position: absolute;
+        width: 100%;
+        top: 40%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        img{
+          width: 2rem;
+        }
+      }
       .feature-card {
         margin-bottom: 6.06rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
         padding: 2rem;
         .card-img {
           margin-bottom: 0.75rem;
@@ -313,10 +475,13 @@
         .card-title {
           @extend .medium;
           margin-bottom: 0.75rem;
+          text-align: center;
         }
         .card-text {
           @extend .text-small;
           width: 15.94rem;
+          text-align: center;
+
         }
       }
     }
@@ -542,11 +707,7 @@
       width: 90%;
       .practice-card {
         grid-template-columns: 1fr 1fr 1fr;
-        .single-card {
-          &:last-child{
-            grid-column-start: 2;
-          }
-        }
+       
       }
     }
   }
@@ -648,6 +809,7 @@
     .container {
       .attorney-text {
         @extend .text;
+        max-width: 40rem;
         line-height: 2.31rem;
         margin-top: 4.44rem;
       }
@@ -682,6 +844,7 @@
     .attorney-container {
       display: grid;
       grid-template-columns: 1fr 1fr;
+      align-items: center;
       .container {
         a {
           margin-top: 0.88rem;
@@ -856,17 +1019,18 @@
     }
   }
 }
+.title {
+  font-family: "medium bt";
+  font-size: 1.5rem;
+  color: #fff;
+  margin-bottom: 2.25rem;
+}
 .footer {
   background: $blue;
   margin-top: 10.94rem;
   
   overflow-x: hidden;
-  .title {
-    font-family: "medium bt";
-    font-size: 1.5rem;
-    color: #fff;
-    margin-bottom: 2.25rem;
-  }
+ 
   .container {
     padding-top: 4.5rem;
     .footer-logo {

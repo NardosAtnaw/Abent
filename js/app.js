@@ -14,35 +14,32 @@ navBar.innerHTML = `<div class="container">
 <div class="links-container">
   <img src="./img/close.svg" class="close-btn" alt="" />
   <ul class="nav-links">
-    <li class="drop-down"><a href="#" class="scroll-link drop-down-link">Our Services</a>
+    <li><a href="./" class="scroll-link"> Home</a></li>
+    <li><a href="./about.html" class="scroll-link">About Us</a></li>
+    <li class="drop-down"><a href="#" class="scroll-link drop-down-link">Practice Area</a>
       
       <ul class="sublinks">
         <div class="corp-link">
-          <h3>For Corporate Clients</h3>
+       
           <li><a href="./corp.html">
-           <img src="./img/sublink/bus.svg" alt=""> Corporate and general business council</a></li>
+           Corporate business council</a></li>
           <li><a href="./rep.html">
-           <img src="./img/sublink/rep.svg" alt=""> Representation in Litigations and Tribunals </a></li>
+          Legal Representation</a></li>
           <li><a href="./legal.html">
-           <img src="./img/sublink/due.svg" alt=""> Legal Due Diligence</a></li>
-          <li><a href="./doc.html">
-           <img src="./img/sublink/doc.svg" alt=""> Document Verification</a></li>
-          <li><a href="./ltr.html">
-           <img src="./img/sublink/par.svg" alt=""> Long-term Partnership</a></li>
-        </div>
-        <div class="indvidual-link">
-          <h3>For Individual Clients</h3>
-          <li><a href="./general.html">
-           <img src="./img/sublink/general.svg" alt=""> General Legal Consultation</a></li>
+          Legal Due Diligence</a></li>
+          <li><a href="./doc.html">Document Verification</a></li>
+         
+          <li><a href="./general.html">Legal Consultation</a></li>
           <li><a href="./civil.html">
-           <img src="./img/sublink/catena.svg" alt=""> Civil Litigation & Criminal Defense</a></li>
+          Litigation & Criminal Defense</a></li>
+          <li><a href="./ltr.html"> Long-term Partnership</a></li>
         </div>
+        
       </ul>
     
     </li>
-    <li><a href="./attorney.html" class="scroll-link">Attorney</a></li>
-    <li><a href="./about.html" class="scroll-link">About</a></li>
-    <li><a href="./laws.html" class="scroll-link">Laws</a></li>
+    <li><a href="./attorney.html" class="scroll-link">Our Attorney</a></li>
+    <li><a href="./laws.html" class="scroll-link">Legal Resources</a></li>
     <li><a href="./contact.html" class="scroll-link">Contact</a></li>
   </ul>
 </div>
@@ -60,7 +57,7 @@ dropDown.addEventListener('mouseover', e => {
   const tempBtn = e.currentTarget.getBoundingClientRect();
   const center = (tempBtn.width) / 2;
   sublinks.classList.add('show-links')
-  sublinks.style.left = `-${center + 5}px`
+  // sublinks.style.left = `-${center + 5}px`
   console.log(center);
 })
 
@@ -78,20 +75,34 @@ menu.addEventListener('click', () => {
 close.addEventListener('click', () => {
   sidebar.style.right = '-70vw'
 })
+const scrollLink = document.querySelectorAll('.scroll-link')
+window.addEventListener('load', () => {
 
+  scrollLink.forEach(link => {
+    if(link.href === path){
+      link.style.color = '#71deb5'
+      link.style.fontWeight = "bold"
+    }
+  })
+})
 window.addEventListener('scroll', () => {
   const nav = document.querySelector('.nav')
   const menu =document.querySelector('.menu')
-  const scrollLink = document.querySelectorAll('.scroll-link')
+  
   const navHeight = nav.getBoundingClientRect().height
   const scrollHeight = window.pageYOffset
   console.log(navHeight);
+ 
   if(navHeight < scrollHeight){
     nav.classList.add('fixed')
 
     if(window.innerWidth > 768){
       scrollLink.forEach( link => {
         link.classList.add('black')
+        if(link.href === path){
+          link.classList.remove('black')
+          link.style.color = '#71deb5'
+        }
       })
     }
     menu.innerHTML = `<img src="./img/menu-black.svg" alt="" />`
@@ -109,6 +120,7 @@ window.addEventListener('scroll', () => {
   }
 })
 
+
 const app = Vue.createApp({
   data() {
     return {
@@ -116,14 +128,14 @@ const app = Vue.createApp({
         {
           id: 1,
           img: './img/business.svg',
-          title: 'Corporate And General Business Council',
+          title: 'Corporate Business Council',
           text: 'Looking for sound legal advice on matters that arise in your business and/or legal interest in Ethiopia?',
           url: './corp.html'
         },
         {
           id: 2,
           img: './img/represent.svg',
-          title: 'Representation in Litigations and Tribunals ',
+          title: 'Legal Representation',
           text: 'AbnetLaw represents both international and domestic clients who seek to protect and enforce their legal rights in Ethiopia.',
           url: './rep.html'
         },
@@ -136,32 +148,26 @@ const app = Vue.createApp({
         },
         {
           id: 4,
-          img: './img/ltr.svg',
-          title: 'Long Term Partnership',
-          text: 'We are providing a long-term service on a retainer basis only for our corporate clients. For more information, please contact us by email or by phone.',
-          url: './ltr.html'
+          img: './img/document.svg',
+          title: 'Document Verification',
+          text: 'Our Document Verification Service lets our international corporate clients verify any government-issued or other public document from anywhere in the world in just a couple of days.',
+          url: './doc.html'
         },
         {
           id: 5,
           img: './img/consl.svg',
-          title: 'General Legal Consultation',
+          title: 'Legal Consultation',
           text: 'We provide legal advice and consultation services on a wide range of issues pertaining to your legal questions and needs.',
           url: './general.html'
         },
         {
           id: 6,
           img: './img/catena.svg',
-          title: 'Civil Litigation & Criminal Defense',
+          title: 'Litigation & Criminal Defense',
           text: ' We handle a variety of civil litigation, from breach of contract, tortious interference, assault, family disputes, personal injury, and labor dispute',
           url: './civil.html'
         },
-        {
-          id: 7,
-          img: './img/document.svg',
-          title: 'Document Verification',
-          text: 'Our Document Verification Service lets our international corporate clients verify any government-issued or other public document from anywhere in the world in just a couple of days.',
-          url: './doc.html'
-        }
+        
       ]
     }
   }
@@ -170,25 +176,58 @@ const app = Vue.createApp({
 app.mount('#card')
 
 const servicesAside = Vue.createApp({
-  template: ` <h3>For Corporate Clients</h3>
+  template: `
   <ul>
-
-    <li><a href="./corp.html">Corporate and general business council</a></li>
-    <li><a href="./rep.html">Representation in Litigations and Tribunals </a></li>
-    <li><a href="./legal.html">Legal Due Diligence</a></li>
-    <li><a href="./doc.html">Document Verification</a></li>
-    <li><a href="./ltr.html">Long Term Partnership</a></li>
-  </ul>
-
-  <h3>For Individual Clients</h3>
-  <ul>
-    <li><a href="./general.html">General Legal Consultation</a></li>
-    <li><a href="./civil.html">Civil Litigation & Criminal Defense</a></li>
+   <h3> Our Services </h3>
+    <li><a href="./corp.html" class="side-link">Corporate Business council</a></li>
+    <li><a href="./rep.html" class="side-link"> Legal Representation </a></li>
+    <li><a href="./legal.html" class="side-link">Legal Due Diligence</a></li>
+    <li><a href="./doc.html" class="side-link">Document Verification</a></li>
+    <li><a href="./general.html" class="side-link">Legal Consultation</a></li>
+    <li><a href="./civil.html" class="side-link">Litigation & Criminal Defense</a></li>
+    <div class="line"> </div>
+    <li><a href="./ltr.html" class="side-link">Long Term Partnership</a></li>
   </ul>`
 })
 
 servicesAside.mount('#aside')
 
+const sideContact = Vue.createApp({
+  template: `<div class="side-email">
+  <h3>Email Us</h3>
+  <div class="email-container">
+    <a href="mailto:info@abnetlaw.com">info@abnetlaw.com</a>
+    <a href="mailto:abnet@abnetlaw.com">abnet@abnetlaw.com</a>
+
+  </div>
+</div>
+<div class="side-call">
+  <h3>Call Us</h3>
+  <div class="icon-container">
+    <a href="tel:+251953946049"> <img src="./img/phone-side.svg" alt="" /></a>
+    <a href="">
+      <img src="./img/whatsapp-side.svg" alt="" />
+    </a>
+    <a href="">
+      <img src="./img/telegram-side.svg" alt="" />
+
+    </a>
+  </div>
+</div>
+
+<div class="side-address">
+  <h3>Our Address</h3>
+  <div class="add">
+    <img src="./img/location-side.svg" alt="" />
+    <p>
+      Liberia Street, Lideta Merkato Mall, 3rd Floor, Office # 364
+      Addis Ababa, Ethiopia
+    </p>
+  </div>
+</div>`
+})
+
+sideContact.mount('#side-contact')
 const testiApp = Vue.createApp({
   data() {
     return {
@@ -321,11 +360,10 @@ const footer = Vue.createApp({
       </h2>
 
       <ul>
-      <li><a href="./general.html">Corporate and General Business Council</a></li>
-      <li><a href="./rep.html">Representation in Litigations and Tribunals </a></li>
+      <li><a href="./general.html">Corporate Business Council</a></li>
+      <li><a href="./rep.html">Legal Representation</a></li>
       <li><a href="./legal.html">Legal Due Diligence</a></li>
       <li><a href="./doc.html">Document Verification</a></li>
-      <li><a href="./ltr.html">Long Term Partnership</a></li>
       </ul>
     </div>
     <div class="single col-12 col-md-6 col-lg-3">
@@ -334,8 +372,8 @@ const footer = Vue.createApp({
       </h2>
 
       <ul>
-      <li><a href="./general.html">General Legal Consultation</a></li>
-      <li><a href="./civil.html">Civil Litigation & Criminal Defense</a></li>
+      <li><a href="./general.html">Legal Consultation</a></li>
+      <li><a href="./civil.html">Litigation & Criminal Defense</a></li>
       </ul>
     </div>
   </div>
@@ -446,3 +484,33 @@ const tabs = Vue.createApp({
 })
 
 tabs.mount('#tabs')
+const sideLink = document.querySelectorAll('.side-link')
+var path = window.location.href
+window.addEventListener('load', (e) =>{
+  
+  sideLink.forEach(link => {
+    if(link.href === path){
+      link.classList.add('active-link')
+    }
+  })
+ 
+
+})
+const reachOut = document.querySelector('.reach-out')
+const contactModal = document.querySelector('.contact-modal')
+const modalInner = document.querySelector('.modal-inner')
+const closeBtn = document.querySelector('.close-modal-btn')
+
+reachOut.addEventListener('click', () => {
+  contactModal.classList.add('show-modal')
+  modalInner.classList.add('show-modal-inner')
+})
+closeBtn.addEventListener('click', () => {
+  contactModal.classList.remove('show-modal')
+  modalInner.classList.remove('show-modal-inner')
+})
+contactModal.addEventListener('click', e =>{
+  e.stopPropagation()
+  contactModal.classList.remove('show-modal')
+  modalInner.classList.remove('show-modal-inner')
+})

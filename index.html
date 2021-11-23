@@ -6,18 +6,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./css/style.css" />
     <script src="https://unpkg.com/vue@3.0.2"></script>
-    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.js"
+      integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+      crossorigin="anonymous"
+    ></script>
 
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+      integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+      integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-   
     <title>Abent Law Office</title>
   </head>
 
   <body>
     <header id="app" class="header">
-      <nav class="nav" id="nav"></nav>
+      <nav class="nav" id="nav">
+        
+      </nav>
 
       <section class="banner">
         <div class="banner-content container">
@@ -25,13 +41,75 @@
           <p class="banner-subtitle">
             The Law Office of Abnet Solomon (aka AbnetLaw)
           </p>
-          <a href="./contact.html" class="btn btn-rounded-secondary text cta-btn"
+          <a
+            href="./contact.html"
+            class="btn btn-rounded-secondary text cta-btn"
             >Contact Us</a
           >
         </div>
       </section>
     </header>
+    <div  class="contact-modal">
+      <ul class="modal-inner">
+        <img src="./img/close-modal.svg" class="close-modal-btn" alt="">
+        <h3 class="modal-title">
+          Reach Out
+        </h3>
+        <li>
+          <img src="./img/phone-modal.svg" alt="">
+          <a href="tel:+251946634663">+251946634663</a>
+        </li>
+        <li>
+          <img src="./img/email-modal.svg" alt="">
+          <div>
+            <a href="mailto:info@abnetlaw.com">info@abnetlaw.com</a>
+             <a href="mailto:abnet@abnetlaw.com">abnet@abnetlaw.com</a>
+         
 
+          </div>
+        </li>
+        <div class="social-cont">
+          <p>Socials:</p>
+          <div class="modal-link">
+            <a href="">
+              <img src="./img/whatsapp-side.svg" alt="">
+            </a>
+            <a href="">
+              <img src="./img/telegram-side.svg" alt="">
+            </a>
+
+          </div>
+        </div>
+
+        <p class="emergency">
+         <a href="tel:+251946634663">
+          24hrs Emergency: +251946634663
+         </a> 
+        </p>
+      </ul>
+    </div>
+<article class="reach-out">
+  <button>
+    Reach out
+  </button>
+</article>
+    <section class="intro">
+      <div class="container">
+        <h1 class="intro-title">Welcome To Abnet Solomon Law Office</h1>
+        <p class="intro-content">
+          Based in Addis Ababa, Abnet Solomon Law Office (aka AbnetLaw) offers
+          full-fledged, high standard professional legal services, from legal
+          consultation to trial representation mainly for
+          <a href="./corp.html" class="intro-link">
+            multinational firms, foreign nationals, and Ethiopian expats in the
+            diaspora.
+          </a>
+        </p>
+        <div class="intro-btn">
+          <a href="./about.html" class="btn btn-rounded-primary"> Learn More</a>
+        </div>
+      </div>
+    </section>
     <section class="features">
       <img src="./img/feature_circle.png" class="f-circle" alt="" />
 
@@ -44,63 +122,64 @@
             of service!
           </p>
         </div>
+        <div class="owl-container">
+          <div class="features-lower owl-carousel owl-theme">
+            <div class="feature-card item">
+              <img src="./img/digital.svg" alt="" class="card-img" />
+              <h2 class="card-title">Digitally Available</h2>
+              <p class="card-text">
+                We offer our services digitally and we are available 16hrs/day
+                for meeting you online.
+              </p>
+            </div>
 
-        <div class="features-lower owl-carousel">
-          <div class="feature-card">
-            <img src="./img/digital.svg" alt="" class="card-img" />
-            <h2 class="card-title">Digitally Available</h2>
-            <p class="card-text">
-              We offer our services digitally and we are available 16hrs/day for
-              meeting you online.
-            </p>
-          </div>
+            <div class="feature-card item">
+              <img src="./img/idea.svg" alt="" class="card-img" />
+              <h2 class="card-title">Our Philosophy</h2>
+              <p class="card-text">
+                Handling every client’s need/case with a customized and
+                personalized service is key to client satisfaction.
+              </p>
+            </div>
 
-          <div class="feature-card">
-            <img src="./img/idea.svg" alt="" class="card-img" />
-            <h2 class="card-title">Our Philosophy</h2>
-            <p class="card-text">
-              Handling every client’s need/case with a customized and
-              personalized service is key to client satisfaction.
-            </p>
-          </div>
+            <div class="feature-card item">
+              <img src="./img/math.svg" alt="" class="card-img" />
+              <h2 class="card-title">Our Math</h2>
+              <p class="card-text">
+                Fewer cases + customized services = better results + satisfied
+                customers. We take fewer cases and offer customized services.
+              </p>
+            </div>
 
-          <div class="feature-card">
-            <img src="./img/math.svg" alt="" class="card-img" />
-            <h2 class="card-title">Our Math</h2>
-            <p class="card-text">
-              Fewer cases + customized services = better results + satisfied
-              customers. We take fewer cases and offer customized services.
-            </p>
-          </div>
+            <div class="feature-card item">
+              <img src="./img/mission.svg" alt="" class="card-img" />
+              <h2 class="card-title">Our Mission</h2>
+              <p class="card-text">
+                Serving as a bridge between you and your interest in Ethiopia!
+                We are dedicated to offering the best-in-class legal services in
+                Ethiopia.
+              </p>
+            </div>
 
-          <div class="feature-card">
-            <img src="./img/mission.svg" alt="" class="card-img" />
-            <h2 class="card-title">Our Mission</h2>
-            <p class="card-text">
-              Serving as a bridge between you and your interest in Ethiopia! We
-              are dedicated to offering the best-in-class legal services in
-              Ethiopia.
-            </p>
-          </div>
+            <div class="feature-card item">
+              <img src="./img/agree.svg" alt="" class="card-img" />
+              <h2 class="card-title">What Can't We Agree On More?</h2>
+              <p class="card-text">
+                Ready-made solutions are not really “ready” to solve all
+                problems. We always propose a tailor-made approach to offer
+                personalized legal services.
+              </p>
+            </div>
 
-          <div class="feature-card">
-            <img src="./img/agree.svg" alt="" class="card-img" />
-            <h2 class="card-title">What Can't We Agree On More?</h2>
-            <p class="card-text">
-              Ready-made solutions are not really “ready” to solve all problems.
-              We always propose a tailor-made approach to offer personalized
-              legal services.
-            </p>
-          </div>
-
-          <div class="feature-card">
-            <img src="./img/law.svg" alt="" class="card-img" />
-            <h2 class="card-title">We Know It! We Live With It!</h2>
-            <p class="card-text">
-              Every legal problem is unique – and so are our clients.
-Therefore two legal cases and their respective solutions will never be the same.
-
-            </p>
+            <div class="feature-card item">
+              <img src="./img/law.svg" alt="" class="card-img" />
+              <h2 class="card-title">We Know It! We Live With It!</h2>
+              <p class="card-text">
+                Every legal problem is unique – and so are our clients.
+                Therefore two legal cases and their respective solutions will
+                never be the same.
+              </p>
+            </div>
           </div>
         </div>
       </div>
@@ -211,47 +290,11 @@ Therefore two legal cases and their respective solutions will never be the same.
             <h2 class="single-card-title">{{ practice.title }}</h2>
             <p class="single-card-text">{{ practice.text }}</p>
             <div class="practice-link">
+              <a :href="practice.url">Learn More </a>
 
-              <a :href="practice.url" >Learn More </a>
-           
-                <img src="./img/arrow-right.svg" class="right-arrow" alt="">
-
-            
+              <img src="./img/arrow-right.svg" class="right-arrow" alt="" />
             </div>
             <div class="hover"></div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section class="attorney">
-      <h1 class="attorney-title">About Us</h1>
-      <div class="attorney-container">
-        <img src="./img/attorney.jpg" class="attorney-img" alt="" />
-        <div class="container">
-          <p class="attorney-text">
-            Abnet Solomon Law Office (aka AbnetLaw) is an Addis Ababa-based
-            legal services provider we were founded with the inspiration to
-            elevate the legal services experience in Ethiopia to a higher level
-            of efficiency, and with the clear goal of becoming a client-focused,
-            customized, and individualized leading legal services provider in
-            Ethiopia defined through a reputation of consistent professionalism
-            and diligence.
-            <br />
-            <br />
-
-            At AbnetLaw our philosophy is guided by representing fewer clients
-            at a time. We believe that this mode of operation allows us to
-            provide more intimate attention to each of our clients and their
-            cases, we consider our firm to be client-centric and a best-in-class
-            legal services provider in Ethiopia. We assure our clients that
-            AbnetLaw is uniquely positioned to personalize the client experience
-            by means of offering both dedicated and personalized attention to
-            each client and their respective case.
-          </p>
-          <div class="attorney-btn">
-            <a href="./about.html" class="btn btn-rounded-outline-primary text">
-              Learn More
-            </a>
           </div>
         </div>
       </div>
@@ -259,9 +302,8 @@ Therefore two legal cases and their respective solutions will never be the same.
     <section class="testimonials">
       <h1 class="testi-title">Testimonials</h1>
       <div class="container">
-      
         <script src="https://apps.elfsight.com/p/platform.js" defer></script>
-<div class="elfsight-app-557f9e9b-254b-488f-9bfc-4a88ed3d7cc7"></div>
+        <div class="elfsight-app-557f9e9b-254b-488f-9bfc-4a88ed3d7cc7"></div>
       </div>
     </section>
 
@@ -276,17 +318,6 @@ Therefore two legal cases and their respective solutions will never be the same.
             of the Federal Courts. He is also admitted to practice before the
             Addis Ababa city municipality courts. His practices encompass all
             kinds of business transactions and business disputes.
-
-            <br />
-            <br />
-            Being an attorney has been a long-standing goal for Abnet, and he
-            founded AbnetLaw in 2018 with the ambition of improving the quality
-            of Ethiopian legal services by introducing a tailor-made, unique
-            legal service and providing all-round, one-stop, multi-level,
-            high-quality services for the best satisfaction of his clients.
-            Since then, his main focus has been continuing to provide customized
-            and personalized legal services to international medium and small
-            businesses.
           </p>
           <div class="attorney-btn">
             <a
@@ -320,47 +351,32 @@ Therefore two legal cases and their respective solutions will never be the same.
       <img src="./img/law-blob2.jpg" class="law-lower" alt="" />
     </section>
 
-    <div class="wrapper home-map">
-      <section class="map">
-        <h1 class="map-title text-center"> Our Location</h1>
-        <div class="map-container">
-            <div class="location">
-            
-            
-                <div class="map-responsive">
-                  <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d31524.79637381019!2d38.7352328!3d9.008945!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x348dd376367ef740!2sAbnet%20Solomon%20Law%20Office!5e0!3m2!1sen!2sus!4v1636356237473!5m2!1sen!2sus" width="800" height="600" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-                </div>
-                
-             </div>
-        </div>
-        
-     </section>
-
-    </div>
-
-    <footer class="footer" id="footer">
-    </footer>
+    <footer class="footer" id="footer"></footer>
     <script src="./js/app.js" type="module"></script>
     <script>
+      const nexticon = `<img src="./img/right2.svg" alt="">`;
+      const previcon = `<img src="./img/left2.svg" alt="">`;
       $(".features-lower").owlCarousel({
+        nav: true,
         loop: true,
         autoplay: true,
-        autoplayTimeout: 3000,
+        navText: [previcon, nexticon],
+        autoplayTimeout: 2000,
         autoplayHoverPause: true,
         responsive: {
-          0:{
+          0: {
             items: 1,
-            nav: false
+            nav: false,
           },
-          600:{
+          600: {
             items: 2,
-            nav: false
+            nav: false,
           },
           1000: {
             items: 3,
-            nav: false
-          }
-        }
+            nav: false,
+          },
+        },
       });
     </script>
   </body>

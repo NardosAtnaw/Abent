@@ -1,10 +1,6 @@
 .about {
   margin-top: 4.44rem;
-  .about-title {
-    @extend .h2;
-    text-align: center;
-    margin-bottom: 4rem;
-  }
+  
   .right{
     display: flex;
     flex-direction: column-reverse;

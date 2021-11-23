@@ -407,7 +407,7 @@ template {
 }
 
 .text, .contact-us .contact-us-subtitle, .contact-us .contact-container .contact-card p, .wrapper .contact-form .container p, .wrapper .contact-form .container .myform input,
-.wrapper .contact-form .container .myform textarea, .wrapper .contact-form .container .myform .button, .header .laws-banner .law-banner-content .input-container .input-field, .header .laws-banner .law-banner-content .input-container .input-field::placeholder, .categories .container .btn-container a, .main-text .container .content p, .main-text .container .content strong, .header .attorney-banner .law-banner-content .input-container .input-field, .header .attorney-banner .law-banner-content .input-container .input-field::placeholder, .attorney-profile .container .attorney-details .attorney-content .profile, .attorney-profile .container .attorney-details .attorney-content .experience, .attorney-profile .container .attorney-details .attorney-content .education ul div li, .about .about-container .container .about-text, .features .container .features-upper .features-subtitle, .practice .container .practice-card .single-card .practice-link a, .practice .container .practice-card .single-card .single-card-text, .testimonials .container .testi-container .testi-card .testi-text, .attorney .attorney-container .container .attorney-text, .footer .container .footer-contact .contact-info div p, .footer .container .corporate ul li a, .footer .container .single ul li a {
+.wrapper .contact-form .container .myform textarea, .wrapper .contact-form .container .myform .button, .header .laws-banner .law-banner-content .input-container .input-field, .header .laws-banner .law-banner-content .input-container .input-field::placeholder, .categories .container .btn-container a, .main-text .container .side-contact .side-email .email-container a, .main-text .container .side-contact .side-address .add p, .main-text .container .content p, .main-text .container .content strong, .header .attorney-banner .law-banner-content .input-container .input-field, .header .attorney-banner .law-banner-content .input-container .input-field::placeholder, .attorney-profile .container .attorney-details .attorney-content .profile, .attorney-profile .container .attorney-details .attorney-content .experience, .attorney-profile .container .attorney-details .attorney-content .education ul .uni-name div li, .attorney-profile .container .attorney-details .attorney-content .education .admission div li, .about .about-container .container .about-text, .reach-out button, .contact-modal .modal-inner .emergency, .contact-modal .modal-inner li a, .intro .container .intro-content, .intro .container .intro-btn a, .features .container .features-upper .features-subtitle, .practice .container .practice-card .single-card .practice-link a, .practice .container .practice-card .single-card .single-card-text, .testimonials .container .testi-container .testi-card .testi-text, .attorney .attorney-container .container .attorney-text, .footer .container .footer-contact .contact-info div p, .footer .container .corporate ul li a, .footer .container .single ul li a {
   font-family: "light bt";
   font-size: 1.13rem;
   line-height: 1.75rem;
@@ -430,7 +430,7 @@ template {
   line-height: 1.5rem;
 }
 
-.h2, .time .time-title, .contact-us .contact-us-title, .wrapper .map .map-title, .wrapper .contact-form .container h2, .header .laws-banner .law-banner-content .law-banner-title, .main-text .container .content .service-title, .header .attorney-banner .law-banner-content .law-banner-title, .attorney-profile .container .attorney-info .attorney-name, .about .about-title, .features .container .features-upper .features-title, .practice .container .practice-title, .testimonials .testi-title, .attorney .attorney-title, .laws .laws-title {
+.h2, .time .time-title, .contact-us .contact-us-title, .wrapper .map .map-title, .wrapper .contact-form .container h2, .header .laws-banner .law-banner-content .law-banner-title, .main-text .container .content .service-title, .header .attorney-banner .about-title, .header .attorney-banner .law-banner-content .law-banner-title, .attorney-profile .container .attorney-info .attorney-name, .features .container .features-upper .features-title, .practice .container .practice-title, .testimonials .testi-title, .attorney .attorney-title, .laws .laws-title {
   font-family: 'medium bt';
   font-weight: 700;
   font-size: 2.44rem;
@@ -438,7 +438,7 @@ template {
 }
 
 @media screen and (min-width: 1200px) {
-  .h2, .time .time-title, .contact-us .contact-us-title, .wrapper .map .map-title, .wrapper .contact-form .container h2, .header .laws-banner .law-banner-content .law-banner-title, .main-text .container .content .service-title, .header .attorney-banner .law-banner-content .law-banner-title, .attorney-profile .container .attorney-info .attorney-name, .about .about-title, .features .container .features-upper .features-title, .practice .container .practice-title, .testimonials .testi-title, .attorney .attorney-title, .laws .laws-title {
+  .h2, .time .time-title, .contact-us .contact-us-title, .wrapper .map .map-title, .wrapper .contact-form .container h2, .header .laws-banner .law-banner-content .law-banner-title, .main-text .container .content .service-title, .header .attorney-banner .about-title, .header .attorney-banner .law-banner-content .law-banner-title, .attorney-profile .container .attorney-info .attorney-name, .features .container .features-upper .features-title, .practice .container .practice-title, .testimonials .testi-title, .attorney .attorney-title, .laws .laws-title {
     font-family: "Futura", 'Poppins';
     font-weight: 700;
     font-size: 3.31rem;
@@ -1400,7 +1400,98 @@ template {
 }
 
 .main-text .container .side-links {
+  margin-top: 3rem;
   display: none;
+}
+
+.main-text .container .side-links h3 {
+  font-family: "medium bt";
+  font-weight: 700;
+  font-size: 1.5rem;
+  line-height: 1.5rem;
+  margin-bottom: 1.81rem;
+}
+
+.main-text .container .side-links ul {
+  margin-bottom: 3.5rem;
+}
+
+.main-text .container .side-links ul .line {
+  width: 14.19rem;
+  background: #000;
+  height: 1px;
+  margin-top: 2.38rem;
+  margin-bottom: 1.19rem;
+}
+
+.main-text .container .side-links ul li {
+  margin-bottom: 1rem;
+}
+
+.main-text .container .side-links ul li a {
+  font-family: "light bt";
+  font-size: 1.13rem;
+  line-height: 1.75rem;
+}
+
+.main-text .container .side-links ul li a:hover {
+  color: #566cfb;
+}
+
+.main-text .container .side-contact {
+  margin-top: 3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.main-text .container .side-contact .side-call, .main-text .container .side-contact .side-email, .main-text .container .side-contact .side-address {
+  margin-bottom: 1.56rem;
+}
+
+.main-text .container .side-contact h3 {
+  text-align: center;
+  margin-bottom: 1.56rem;
+  color: #000 !important;
+}
+
+.main-text .container .side-contact .side-email .email-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.main-text .container .side-contact .side-email .email-container a {
+  text-decoration: underline;
+  margin-bottom: 1rem;
+  cursor: pointer;
+}
+
+.main-text .container .side-contact .side-email .email-container a:hover {
+  color: #566cfb;
+}
+
+.main-text .container .side-contact .side-call .icon-container {
+  display: flex;
+  gap: 2.13rem;
+}
+
+.main-text .container .side-contact .side-address {
+  margin-top: 2.94rem;
+}
+
+.main-text .container .side-contact .side-address .add {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.81rem;
+}
+
+.main-text .container .side-contact .side-address .add img {
+  margin-top: .35rem;
+}
+
+.main-text .container .side-contact .side-address .add p {
+  width: 9.5rem;
 }
 
 .main-text .container .content .service-title {
@@ -1417,6 +1508,11 @@ template {
   text-decoration: underline;
 }
 
+.active-link {
+  color: #566cfb;
+  font-weight: bold;
+}
+
 @media screen and (min-width: 768px) {
   .main-text .container .content .service-title {
     font-size: 2.44rem;
@@ -1427,6 +1523,7 @@ template {
 @media screen and (min-width: 992px) {
   .main-text .container {
     align-items: flex-start;
+    flex-direction: row;
     gap: 1rem;
   }
   .main-text .container .side-links {
@@ -1449,24 +1546,33 @@ template {
     font-size: 1.13rem;
     line-height: 1.75rem;
   }
+  .main-text .container .side-contact {
+    position: sticky;
+    top: 12.75rem;
+  }
 }
 
 @media screen and (min-width: 1200px) {
   .main-text .container .content img,
   .main-text .container .content p {
-    width: 58.19rem;
+    width: auto;
   }
 }
 
 .header .attorney-banner {
-  background: url("../img/attorney1.jpg") rgba(0, 0, 0, 0.35) no-repeat;
-  background-position: center center;
+  background: url("../img/abnetpic1.jpg") rgba(0, 0, 0, 0.5) no-repeat;
+  background-position: top center;
   background-size: cover;
   background-blend-mode: overlay;
-  height: 50vh;
+  height: 60vh;
   display: grid;
-  justify-content: center;
-  align-items: flex-end;
+  place-items: center;
+}
+
+.header .attorney-banner .about-title {
+  text-align: center;
+  margin-top: 8rem;
+  color: #fff;
 }
 
 .header .attorney-banner .law-banner-content {
@@ -1600,16 +1706,17 @@ template {
 }
 
 .attorney-profile .container .attorney-details .attorney-content .education ul {
-  margin-bottom: 3.44rem;
-}
-
-.attorney-profile .container .attorney-details .attorney-content .education ul div {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 1.94rem;
 }
 
-.attorney-profile .container .attorney-details .attorney-content .education ul div li {
+.attorney-profile .container .attorney-details .attorney-content .education ul .uni-name div {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+
+.attorney-profile .container .attorney-details .attorney-content .education ul .uni-name div li {
   line-height: normal;
   display: flex;
   align-items: flex-start;
@@ -1617,24 +1724,54 @@ template {
   margin-bottom: 0.94rem;
 }
 
-.attorney-profile .container .attorney-details .attorney-content .education ul div .logo-uni {
+.attorney-profile .container .attorney-details .attorney-content .education ul .uni-logo .logo-uni {
   width: 10rem;
+  margin-bottom: 2rem;
   text-align: right;
 }
 
+.attorney-profile .container .attorney-details .attorney-content .education ul .uni-logo .logo-uni:last-child {
+  width: 7rem;
+}
+
+.attorney-profile .container .attorney-details .attorney-content .education .admission {
+  display: flex;
+  flex-direction: column;
+}
+
+.attorney-profile .container .attorney-details .attorney-content .education .admission div {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+
+.attorney-profile .container .attorney-details .attorney-content .education .admission div li {
+  line-height: normal;
+  display: flex;
+  align-items: flex-start;
+  gap: 0.5rem;
+  margin-bottom: 0.94rem;
+}
+
 @media screen and (min-width: 768px) {
+  .attorney-profile .container {
+    height: auto;
+  }
   .attorney-profile .container .attorney-details .btn-container button {
     font-size: 1.13rem;
   }
 }
 
-.about {
-  margin-top: 4.44rem;
+@media screen and (min-width: 992px) {
+  .attorney-profile .container .attorney-info {
+    display: block;
+    position: sticky;
+    top: 0rem;
+  }
 }
 
-.about .about-title {
-  text-align: center;
-  margin-bottom: 4rem;
+.about {
+  margin-top: 4.44rem;
 }
 
 .about .right {
@@ -1769,7 +1906,6 @@ template {
 
 .header .nav .container .links-container .nav-links li .sublinks {
   margin: 1rem 0;
-  margin-left: 1rem;
   color: #fff;
 }
 
@@ -1794,9 +1930,13 @@ template {
   font-family: "light bt";
   font-size: 0.88rem;
   display: flex;
-  gap: .8rem;
+  gap: .5rem;
   color: #fff;
   transition: color .2s linear;
+}
+
+.header .nav .container .links-container .nav-links li .sublinks li a img {
+  width: .5rem;
 }
 
 .header .nav .container .links-container .nav-links li .sublinks li a:hover {
@@ -1855,9 +1995,6 @@ template {
 }
 
 @media screen and (min-width: 1200px) {
-  .header .nav .container .links-container .nav-links li .scroll-link {
-    font-size: 1.5rem;
-  }
   .header .banner .banner-content .banner-title {
     font-family: "Futura", 'Poppins';
     font-weight: 700;
@@ -1888,8 +2025,7 @@ template {
     z-index: 9999999999;
     transition: all 0.5s ease-in-out;
     background: none;
-    width: 70%;
-    max-width: 46.69rem;
+    width: auto;
   }
   .header .nav .container .links-container .close-btn {
     display: none;
@@ -1899,8 +2035,7 @@ template {
     display: flex;
     padding-top: 0%;
     flex-direction: row;
-    justify-content: space-between;
-    justify-content: space-between;
+    gap: 3rem;
     padding-left: 2rem;
     position: relative;
   }
@@ -1909,7 +2044,7 @@ template {
     width: auto;
     display: flex;
     background: #a07178;
-    padding: 2rem;
+    padding: 1.2rem 1rem 1rem .5rem;
     border-radius: .5rem;
     display: none;
   }
@@ -1921,8 +2056,153 @@ template {
     margin-bottom: 1rem;
   }
   .header .nav .container .links-container .nav-links .drop-down .sublinks li a {
-    font-size: 1rem;
+    font-size: 1.13rem;
   }
+}
+
+.reach-out {
+  position: fixed;
+  z-index: 999;
+  bottom: 50%;
+  right: 0;
+  transform: rotate(-90deg) translateY(130%);
+}
+
+.reach-out button {
+  background: #71deb5;
+  border: none;
+  color: #566cfb;
+  padding: .4rem 2rem;
+  font-size: 1.3rem;
+}
+
+.show-modal {
+  display: grid !important;
+}
+
+.show-modal-inner {
+  left: 0 !important;
+  animation: slideIN .3s ease-in-out;
+}
+
+@keyframes slideIn {
+  from {
+    left: 60%;
+  }
+  to {
+    left: 0;
+  }
+}
+
+.contact-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  display: none;
+  place-items: center;
+  z-index: 99999;
+}
+
+.contact-modal .modal-inner {
+  position: absolute;
+  left: 60%;
+  background: #fff;
+  border-radius: 8px;
+  padding-left: 1.31rem;
+  padding-top: 1.75rem;
+  padding-right: 4.56rem;
+  position: relative;
+  transition: left .3s linear;
+}
+
+.contact-modal .modal-inner .close-modal-btn {
+  position: absolute;
+  right: 0.75rem;
+  top: 0.75rem;
+  cursor: pointer;
+}
+
+.contact-modal .modal-inner .modal-title {
+  font-family: 'medium bt';
+  font-weight: bold;
+  color: #566cfb;
+  font-size: 1.94rem;
+  margin-top: .81rem;
+  margin-bottom: 2.63rem;
+}
+
+.contact-modal .modal-inner li {
+  display: flex;
+  align-items: center;
+  gap: 1.81rem;
+  margin-bottom: 1.56rem;
+}
+
+.contact-modal .modal-inner li div {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-modal .modal-inner .social-cont {
+  display: flex;
+  gap: 1.31rem;
+}
+
+.contact-modal .modal-inner .social-cont p {
+  font-family: 'medium bt';
+  font-weight: 700;
+  font-size: 1.13rem;
+}
+
+.contact-modal .modal-inner .social-cont .modal-link {
+  display: flex;
+  gap: 1.38rem;
+}
+
+.contact-modal .modal-inner .emergency {
+  margin-top: 1.94rem;
+  margin-bottom: 1.69rem;
+}
+
+.contact-modal .modal-inner .emergency a {
+  color: red;
+}
+
+.intro {
+  margin-top: 3rem;
+}
+
+.intro .container .intro-title {
+  font-family: 'medium bt';
+  font-weight: 700;
+  font-size: 2.44rem;
+  line-height: 2.44rem;
+  text-align: center;
+  margin-bottom: 2.44rem;
+}
+
+.intro .container .intro-content {
+  margin: 0 auto;
+  margin-bottom: 2rem;
+  text-align: center;
+  max-width: 42rem;
+}
+
+.intro .container .intro-content .intro-link {
+  color: #566cfb;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.intro .container .intro-content .intro-link:hover {
+  text-decoration: underline;
+}
+
+.intro .container .intro-btn {
+  text-align: center;
 }
 
 .features {
@@ -1959,12 +2239,32 @@ template {
 }
 
 .features .container .features-lower {
+  max-width: 90%;
+  margin: 0 auto;
   margin-top: 7.56rem;
   overflow: visible;
 }
 
+.features .container .features-lower .owl-nav {
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  width: 100%;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.features .container .features-lower .owl-nav img {
+  width: 2rem;
+}
+
 .features .container .features-lower .feature-card {
   margin-bottom: 6.06rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   padding: 2rem;
 }
 
@@ -1975,10 +2275,12 @@ template {
 
 .features .container .features-lower .feature-card .card-title {
   margin-bottom: 0.75rem;
+  text-align: center;
 }
 
 .features .container .features-lower .feature-card .card-text {
   width: 15.94rem;
+  text-align: center;
 }
 
 @media screen and (min-width: 768px) {
@@ -2178,9 +2480,6 @@ template {
   .practice .container .practice-card {
     grid-template-columns: 1fr 1fr 1fr;
   }
-  .practice .container .practice-card .single-card:last-child {
-    grid-column-start: 2;
-  }
 }
 
 @media screen and (min-width: 1200px) {
@@ -2278,6 +2577,7 @@ template {
 }
 
 .attorney .attorney-container .container .attorney-text {
+  max-width: 40rem;
   line-height: 2.31rem;
   margin-top: 4.44rem;
 }
@@ -2307,6 +2607,7 @@ template {
   .attorney .attorney-container {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    align-items: center;
   }
   .attorney .attorney-container .container a {
     margin-top: 0.88rem;
@@ -2472,17 +2773,17 @@ template {
   }
 }
 
-.footer {
-  background: #3d5a80;
-  margin-top: 10.94rem;
-  overflow-x: hidden;
-}
-
-.footer .title, .footer .container .footer-contact .footer-contact-title, .footer .container .corporate .corporate-title, .footer .container .single .single-title {
+.title, .main-text .container .side-contact h3, .footer .container .footer-contact .footer-contact-title, .footer .container .corporate .corporate-title, .footer .container .single .single-title {
   font-family: "medium bt";
   font-size: 1.5rem;
   color: #fff;
   margin-bottom: 2.25rem;
+}
+
+.footer {
+  background: #3d5a80;
+  margin-top: 10.94rem;
+  overflow-x: hidden;
 }
 
 .footer .container {
