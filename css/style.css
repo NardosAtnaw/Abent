@@ -1853,7 +1853,7 @@ template {
   position: absolute;
   width: 100%;
   z-index: 999;
-  padding-bottom: 1rem;
+  padding: 1rem 0;
   transition: all 0.3s linear;
 }
 
@@ -1861,6 +1861,11 @@ template {
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
+
+.header .nav .container .nav-header .logo a img {
+  width: 100%;
+  max-width: 15.75rem;
 }
 
 .header .nav .container .nav-header .menu {
@@ -2035,7 +2040,7 @@ template {
     display: flex;
     padding-top: 0%;
     flex-direction: row;
-    gap: 3rem;
+    gap: 1.4rem;
     padding-left: 2rem;
     position: relative;
   }
@@ -2057,6 +2062,12 @@ template {
   }
   .header .nav .container .links-container .nav-links .drop-down .sublinks li a {
     font-size: 1.13rem;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .header .nav .container .links-container .nav-links {
+    gap: 3rem;
   }
 }
 
@@ -2781,7 +2792,7 @@ template {
 }
 
 .footer {
-  background: #3d5a80;
+  background: #a07178;
   margin-top: 10.94rem;
   overflow-x: hidden;
 }
@@ -2793,6 +2804,7 @@ template {
 .footer .container .footer-logo .logo {
   margin: 0 auto;
   margin-bottom: 3.25rem;
+  width: 10.5rem;
 }
 
 .footer .container .footer-logo .icon-container {

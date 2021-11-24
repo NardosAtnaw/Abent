@@ -27,13 +27,26 @@
     position: absolute;
     width: 100%;
     z-index: 999;
-    padding-bottom: 1rem;
+    padding: 1rem 0;
     transition: all 0.3s linear;
     .container {
       .nav-header {
+      
         display: flex;
         align-items: center;
         justify-content: space-between;
+        .logo{
+          a{
+            img{
+              width: 100%;
+              max-width: 15.75rem;
+            }
+            // .mobile-logo{
+            //   width: 5rem;
+            // }
+          }
+         
+        }
         .menu {
           width: 3rem;
         }
@@ -236,7 +249,7 @@
             display: flex;
             padding-top: 0%;
             flex-direction: row;
-            gap: 3rem;
+            gap: 1.4rem;
             padding-left: 2rem;
             position: relative;
             .drop-down{
@@ -269,6 +282,21 @@
   }
 }
 
+@include responsive($xl){
+  .header{
+    .nav{
+      .container{
+        .links-container{
+
+          .nav-links{
+            gap: 3rem;
+          }
+        }
+
+      }
+    }
+  }
+}
 .reach-out{
   position: fixed;
   z-index: 999;
@@ -1026,7 +1054,7 @@
   margin-bottom: 2.25rem;
 }
 .footer {
-  background: $blue;
+  background: $secondary-color;
   margin-top: 10.94rem;
   
   overflow-x: hidden;
@@ -1037,6 +1065,7 @@
       .logo {
         margin: 0 auto;
         margin-bottom: 3.25rem;
+        width: 10.5rem;
       }
       .icon-container {
         display: flex;

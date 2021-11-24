@@ -3,7 +3,7 @@ const navBar = document.querySelector('#nav')
 navBar.innerHTML = `<div class="container">
 <div class="nav-header">
   <div class="logo">
-    <a href="./"><img src="./img/logo.png" alt="Abent Law Firm" /></a>
+    <a href="./"> <img src="./img/ABNET-logo-wh.svg" alt=""></a>
   </div>
   <div class="menu">
     <img src="./img/menu-white.svg" alt="" />
@@ -88,14 +88,17 @@ window.addEventListener('load', () => {
 window.addEventListener('scroll', () => {
   const nav = document.querySelector('.nav')
   const menu =document.querySelector('.menu')
-  
+  const logo = document.querySelector('.logo a')
   const navHeight = nav.getBoundingClientRect().height
   const scrollHeight = window.pageYOffset
-  console.log(navHeight);
  
   if(navHeight < scrollHeight){
     nav.classList.add('fixed')
-
+    logo.innerHTML = `<picture>
+    <source media="(min-width:650px)" srcset="./img/ABNET-logo.svg">
+    <img src="./img/mobile-logo.svg" class="mobile-logo" alt="Abnet Solomon Law Office" />
+  </picture>`
+   
     if(window.innerWidth > 768){
       scrollLink.forEach( link => {
         link.classList.add('black')
@@ -105,16 +108,22 @@ window.addEventListener('scroll', () => {
         }
       })
     }
+   
     menu.innerHTML = `<img src="./img/menu-black.svg" alt="" />`
   }else{
     nav.classList.remove('fixed')
-   
-      if(window.innerWidth > 768){
-        scrollLink.forEach( link => {
-          link.classList.remove('black')
-        })
+    logo.innerHTML = `<picture>
+    <source media="(min-width:650px)" srcset="./img/ABNET-logo-wh.svg">
+    <img src="./img/mobile-logo-wh.svg" class="mobile-logo" alt="Abnet Solomon Law Office" />
+  </picture>`
 
-      }
+  if(window.innerWidth > 768){
+    scrollLink.forEach( link => {
+      link.classList.remove('black')
+    })
+
+  }
+
   
     menu.innerHTML = `<img src="./img/menu-white.svg" alt="" />`
   }
@@ -313,7 +322,7 @@ laws.mount('#laws')
 const footer = Vue.createApp({
   template: `<div class="container row">
     <div class="footer-logo col-12 col-md-6 col-lg-3">
-      <img src="./img/logo.png" alt="" class="logo">
+      <img src="./img/footer_logo.svg" alt="" class="logo">
       <div class="icon-container">
         <a href="#">
           <img src="./img/fb-wh.svg" alt="">
