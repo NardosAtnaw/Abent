@@ -16,7 +16,7 @@ navBar.innerHTML = `<div class="container">
   <ul class="nav-links">
     <li><a href="./" class="scroll-link"> Home</a></li>
     <li><a href="./about.html" class="scroll-link">About Us</a></li>
-    <li class="drop-down"><a href="#" class="scroll-link drop-down-link">Practice Area</a>
+    <li class="drop-down"><a href="./corp.html" class="scroll-link drop-down-link">Practice Area</a>
       
       <ul class="sublinks">
         <div class="corp-link">
@@ -237,6 +237,8 @@ const sideContact = Vue.createApp({
 })
 
 sideContact.mount('#side-contact')
+
+
 const testiApp = Vue.createApp({
   data() {
     return {
@@ -365,7 +367,7 @@ const footer = Vue.createApp({
     </div>
     <div class="corporate col-12 col-md-6 col-lg-3">
       <h2 class="corporate-title">
-        For Corporate Client
+        Practice Areas
       </h2>
 
       <ul>
@@ -373,16 +375,21 @@ const footer = Vue.createApp({
       <li><a href="./rep.html">Legal Representation</a></li>
       <li><a href="./legal.html">Legal Due Diligence</a></li>
       <li><a href="./doc.html">Document Verification</a></li>
+      <li><a href="./general.html">Legal Consultation</a></li>
+      <li><a href="./civil.html">Litigation & Criminal Defense</a></li>
       </ul>
     </div>
     <div class="single col-12 col-md-6 col-lg-3">
       <h2 class="single-title">
-        For Individual Client
+        Quick Links
       </h2>
 
       <ul>
-      <li><a href="./general.html">Legal Consultation</a></li>
-      <li><a href="./civil.html">Litigation & Criminal Defense</a></li>
+      <li><a href="./">Home</a></li>
+      <li><a href="./about.html">About</a></li>
+      <li><a href="./about.html">Our Attorney</a></li>
+      <li><a href="./about.html">Legal Resources</a></li>
+      <li><a href="./about.html">Contact</a></li>
       </ul>
     </div>
   </div>

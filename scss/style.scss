@@ -15,7 +15,7 @@
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
   z-index: 999999;
 }
-.show-links{
+.show-links {
   display: flex !important;
 }
 .black {
@@ -31,13 +31,12 @@
     transition: all 0.3s linear;
     .container {
       .nav-header {
-      
         display: flex;
         align-items: center;
         justify-content: space-between;
-        .logo{
-          a{
-            img{
+        .logo {
+          a {
+            img {
               width: 100%;
               max-width: 15.75rem;
             }
@@ -45,7 +44,6 @@
             //   width: 5rem;
             // }
           }
-         
         }
         .menu {
           width: 3rem;
@@ -80,11 +78,10 @@
               @extend .text-medium;
               font-size: 1.5rem;
               color: #f4f4f4;
-              
             }
             .sublinks {
               margin: 1rem 0;
-            
+
               color: #fff;
               h3 {
                 font-family: "medium bt";
@@ -97,19 +94,19 @@
                 width: 1.2rem;
               }
               li {
-                margin-bottom: .5rem;
+                margin-bottom: 0.5rem;
                 margin-left: 1rem;
                 a {
                   font-family: "light bt";
                   font-size: 0.88rem;
                   display: flex;
-                  gap: .5rem;
+                  gap: 0.5rem;
                   color: #fff;
-                  transition: color .2s linear;
-                  img{
-                    width: .5rem;
+                  transition: color 0.2s linear;
+                  img {
+                    width: 0.5rem;
                   }
-                  &:hover{
+                  &:hover {
                     color: #c2c2c2;
                   }
                 }
@@ -146,7 +143,7 @@
         @extend .text-medium;
         margin-bottom: 2.56rem;
       }
-      .cta-btn{
+      .cta-btn {
         font-size: 1.13rem;
         font-weight: 700;
       }
@@ -156,11 +153,10 @@
 
 @include responsive($md) {
   .header {
-    
     .banner {
       .banner-content {
         .banner-title {
-          font-family: "Futura", 'Poppins';
+          font-family: "Futura", "Poppins";
           font-weight: 700;
           font-size: 3.31rem;
           line-height: 4.31rem;
@@ -171,17 +167,16 @@
   }
 }
 
-@include responsive($lg){
-  .header{
-    .nav{
-      .container{
-        .links-container{
-          .nav-links{
-            li{
-              .scroll-link{
+@include responsive($lg) {
+  .header {
+    .nav {
+      .container {
+        .links-container {
+          .nav-links {
+            li {
+              .scroll-link {
                 font-size: 1.13rem;
               }
-
             }
           }
         }
@@ -191,15 +186,14 @@
 }
 @include responsive($xl) {
   .header {
-    .nav{
-      .container{
-        .links-container{
-          .nav-links{
-            li{
-              .scroll-link{
+    .nav {
+      .container {
+        .links-container {
+          .nav-links {
+            li {
+              .scroll-link {
                 // font-size: 1.5rem;
               }
-
             }
           }
         }
@@ -208,7 +202,7 @@
     .banner {
       .banner-content {
         .banner-title {
-          font-family: "Futura", 'Poppins';
+          font-family: "Futura", "Poppins";
           font-weight: 700;
           font-size: 4.31rem;
           line-height: 4.31rem;
@@ -240,7 +234,7 @@
           transition: $trans;
           background: none;
           width: auto;
-        
+
           .close-btn {
             display: none;
           }
@@ -252,28 +246,26 @@
             gap: 1.4rem;
             padding-left: 2rem;
             position: relative;
-            .drop-down{
-              .sublinks{
-               
+            .drop-down {
+              .sublinks {
                 position: absolute;
                 width: auto;
                 display: flex;
                 background: $secondary-color;
-                padding: 1.2rem 1rem 1rem .5rem;
-                border-radius: .5rem;
+                padding: 1.2rem 1rem 1rem 0.5rem;
+                border-radius: 0.5rem;
                 display: none;
-                h3{
+                h3 {
                   font-size: 1.13rem;
                   margin-bottom: 1.2rem;
                 }
-                li{
+                li {
                   margin-bottom: 1rem;
-                  a{
+                  a {
                     font-size: 1.13rem;
                   }
                 }
               }
-
             }
           }
         }
@@ -282,65 +274,64 @@
   }
 }
 
-@include responsive($xl){
-  .header{
-    .nav{
-      .container{
-        .links-container{
-
-          .nav-links{
+@include responsive($xl) {
+  .header {
+    .nav {
+      .container {
+        .links-container {
+          .nav-links {
             gap: 3rem;
           }
         }
-
       }
     }
   }
 }
-.reach-out{
+.reach-out {
   position: fixed;
   z-index: 999;
   bottom: 50%;
   right: 0;
   transform: rotate(-90deg) translateY(130%);
-  button{
+  button {
     background: $lime-green;
     border: none;
-    color: $primary-color;
-    padding: .4rem 2rem;
+    color: rgb(29, 29, 29);
+    padding: 0.4rem 2rem;
     @extend .text;
     font-size: 1.3rem;
+    font-weight: 700;
   }
 }
 
-.show-modal{
+.show-modal {
   display: grid !important;
 }
-.show-modal-inner{
+.show-modal-inner {
   left: 0 !important;
-  animation: slideIN .3s ease-in-out;
+  animation: slideIN 0.3s ease-in-out;
 }
 
 @keyframes slideIn {
-  from{
-    left: 60%; 
+  from {
+    left: 60%;
   }
-  to{
+  to {
     left: 0;
   }
 }
 
-.contact-modal{
+.contact-modal {
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background:rgba(0, 0, 0, 0.6);
+  background: rgba(0, 0, 0, 0.6);
   display: none;
   place-items: center;
   z-index: 99999;
-  .modal-inner{
+  .modal-inner {
     position: absolute;
     left: 60%;
     background: #fff;
@@ -349,98 +340,104 @@
     padding-top: 1.75rem;
     padding-right: 4.56rem;
     position: relative;
-    transition: left .3s linear;
-    .close-modal-btn{
+    transition: left 0.3s linear;
+    .close-modal-btn {
       position: absolute;
       right: 0.75rem;
       top: 0.75rem;
       cursor: pointer;
     }
-    .emergency{
+    .emergency {
       @extend .text;
     }
-    .modal-title{
-      font-family: 'medium bt';
+    .modal-title {
+      font-family: "medium bt";
       font-weight: bold;
       color: $primary-color;
       font-size: 1.94rem;
-      margin-top: .81rem;
+      margin-top: 0.81rem;
       margin-bottom: 2.63rem;
     }
-    li{
+    li {
       display: flex;
       align-items: center;
       gap: 1.81rem;
       margin-bottom: 1.56rem;
-      a{
+      a {
         @extend .text;
       }
-      div{
+      div {
         display: flex;
         flex-direction: column;
       }
     }
-    .social-cont{
+    .social-cont {
       display: flex;
       gap: 1.31rem;
-    
-      p{
-        font-family: 'medium bt';
+
+      p {
+        font-family: "medium bt";
         font-weight: 700;
         font-size: 1.13rem;
       }
-      .modal-link{
+      .modal-link {
         display: flex;
         gap: 1.38rem;
-        img{
+        img {
           // width: 1rem;
         }
       }
     }
-    .emergency{
+    .emergency {
       margin-top: 1.94rem;
       margin-bottom: 1.69rem;
-      a{
+      a {
         color: red;
       }
     }
   }
 }
-.intro{
-  margin-top: 3rem;
-  .container{
-    .intro-title{
-      font-family: 'medium bt';
+.intro {
+  margin-top: 4rem;
+  .container {
+    .intro-title {
+      font-family: "medium bt";
       font-weight: 700;
       font-size: 2.44rem;
       line-height: 2.44rem;
       text-align: center;
       margin-bottom: 2.44rem;
     }
-    .intro-content{
+    .intro-content {
       @extend .text;
       margin: 0 auto;
       margin-bottom: 2rem;
       text-align: center;
       max-width: 42rem;
-      .intro-link{
+      .intro-link {
         color: $primary-color;
         font-weight: bold;
         cursor: pointer;
-        &:hover{
+        &:hover {
           text-decoration: underline;
         }
       }
     }
-    .intro-btn{
+    .intro-btn {
       text-align: center;
-      a{
+      a {
         @extend .text;
       }
-
     }
   }
 }
+@include responsive($lg) {
+  .intro {
+    margin-top: 6rem;
+    margin-bottom: 4rem;
+  }
+}
+
 .features {
   position: relative;
   overflow: hidden;
@@ -459,6 +456,7 @@
     left: 13.38rem;
   }
   .container {
+    width: 100%;
     .features-upper {
       .features-title {
         @extend .h2;
@@ -468,29 +466,33 @@
       }
       .features-subtitle {
         @extend .text;
+        font-size: 1.5rem;
+        font-weight: 500;
         margin-bottom: 1.69rem;
         text-align: center;
       }
     }
     .features-lower {
-      max-width: 90%;
+      width: 98%;
       margin: 0 auto;
       margin-top: 7.56rem;
       overflow: visible;
-      .owl-nav{
+      .owl-nav {
         display: flex;
         justify-content: space-between;
         position: absolute;
         width: 100%;
         top: 40%;
         left: 50%;
-        transform: translate(-50%,-50%);
-        img{
+        transform: translate(-50%, -50%);
+        img {
           width: 2rem;
         }
       }
       .feature-card {
         margin-bottom: 6.06rem;
+        // background: lightblue;
+        margin-left: 1rem;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -507,9 +509,8 @@
         }
         .card-text {
           @extend .text-small;
-          width: 15.94rem;
+          width: 17.94rem;
           text-align: center;
-
         }
       }
     }
@@ -536,7 +537,7 @@
     .container {
       width: 100%;
       .features-lower {
-      display: flex;
+        display: flex;
       }
     }
   }
@@ -567,7 +568,7 @@
     .container {
       .features-upper {
         .features-title {
-          font-family: "Futura", 'Poppins';
+          font-family: "Futura", "Poppins";
           font-weight: 700;
           font-size: 3.31rem;
           line-height: 3.98rem;
@@ -642,12 +643,12 @@
         background: #fff;
         box-shadow: 2px 2px 24px rgba(0, 0, 0, 0.12);
         cursor: pointer;
-        .practice-link{
+        .practice-link {
           margin-top: 1rem;
           display: flex;
           align-items: center;
-          gap: .3rem;
-          a{
+          gap: 0.3rem;
+          a {
             @extend .text;
             line-height: normal;
             // font-size: 1.3rem;
@@ -655,11 +656,11 @@
             color: $primary-color;
             height: 100%;
           }
-          .right-arrow{
+          .right-arrow {
             height: 100%;
             padding-bottom: 0;
-            padding-top: .3rem;
-            transition: all .3s ease-in-out;
+            padding-top: 0.3rem;
+            transition: all 0.3s ease-in-out;
             width: 1.2rem;
           }
         }
@@ -678,8 +679,8 @@
         &:hover .hover {
           transform: translateY(1.3rem) rotate(5.54deg);
         }
-        &:hover .right-arrow{
-          transform: translateX(.5rem);
+        &:hover .right-arrow {
+          transform: translateX(0.5rem);
         }
         img {
           padding-bottom: 1.81rem;
@@ -695,7 +696,43 @@
     }
   }
 }
+.ltr {
 
+  background: url(../img/ltrpic.jpg) rgba(0, 0, 0, 0.6) no-repeat;
+  background-position: center center;
+  background-size: cover;
+  background-blend-mode: overlay;
+  background-attachment: fixed;
+  .container {
+    padding: 2.5rem 0 4rem;
+    .ltr-content {
+      max-width: 32.69rem;
+      h1 {
+        @extend .h2;
+        color: #fff;
+        margin-bottom: 1.69rem;
+      }
+      p {
+        font-family: Futura Md BT;
+        font-weight: normal;
+        font-size: 1.13;
+        line-height: 1.75rem;
+        color: #fff;
+        margin-bottom: 1.2rem;
+        max-width: 28.19rem;
+      }
+      a {
+        @extend .text;
+      }
+    }
+  }
+}
+@include responsive($lg){
+  .ltr{
+    margin: 7rem 0;
+    background-attachment: none;
+  }
+}
 @include responsive($md) {
   .practice {
     .practice-blob1 {
@@ -735,7 +772,6 @@
       width: 90%;
       .practice-card {
         grid-template-columns: 1fr 1fr 1fr;
-       
       }
     }
   }
@@ -845,7 +881,7 @@
         font-size: 1rem;
         margin-top: 2.88rem;
       }
-      .attorney-btn{
+      .attorney-btn {
         text-align: center;
       }
     }
@@ -857,8 +893,8 @@
       .attorney-img {
         width: 40rem;
       }
-      .container{
-        .attorney-btn{
+      .container {
+        .attorney-btn {
           text-align: left;
         }
       }
@@ -1056,9 +1092,9 @@
 .footer {
   background: $secondary-color;
   margin-top: 10.94rem;
-  
+
   overflow-x: hidden;
- 
+
   .container {
     padding-top: 4.5rem;
     .footer-logo {
@@ -1112,7 +1148,7 @@
           a {
             color: #fff;
             @extend .text;
-            &:hover{
+            &:hover {
               color: #f4f4f4;
             }
           }
@@ -1154,39 +1190,39 @@
 @include responsive($md) {
   .footer {
     .container {
-      .footer-logo{
-        .logo{
+      .footer-logo {
+        .logo {
           margin: 0 0 3.25rem;
         }
-        .icon-container{
+        .icon-container {
           justify-content: flex-start;
         }
       }
-      .single{
-        .single-title{
+      .single {
+        .single-title {
           text-align: left;
         }
-        ul{
+        ul {
           text-align: left;
         }
       }
-      .corporate{
-        .corporate-title{
+      .corporate {
+        .corporate-title {
           text-align: left;
         }
-        ul{
+        ul {
           text-align: left;
-          li{
+          li {
             margin: 0 0 1rem;
           }
         }
       }
       .footer-contact {
         margin-top: 0;
-        .footer-contact-title{
+        .footer-contact-title {
           text-align: left;
         }
-        .contact-info{
+        .contact-info {
           justify-content: flex-start;
         }
       }
@@ -1211,7 +1247,7 @@
   }
 }
 
-.home-map{
+.home-map {
   background: #fff;
 }
 .footer-map {

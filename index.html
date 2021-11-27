@@ -56,11 +56,11 @@
           Reach Out
         </h3>
         <li>
-          <img src="./img/phone-modal.svg" alt="">
+          <a href="tel:+251946634663"><img src="./img/phone-modal.svg" alt=""></a>
           <a href="tel:+251946634663">+251946634663</a>
         </li>
         <li>
-          <img src="./img/email-modal.svg" alt="">
+          <a href="mailto:info@abnetlaw.com"><img src="./img/email-modal.svg" alt=""></a>
           <div>
             <a href="mailto:info@abnetlaw.com">info@abnetlaw.com</a>
              <a href="mailto:abnet@abnetlaw.com">abnet@abnetlaw.com</a>
@@ -147,7 +147,7 @@
               <h2 class="card-title">Our Math</h2>
               <p class="card-text">
                 Fewer cases + customized services = better results + satisfied
-                customers. We take fewer cases and offer customized services.
+                customers.
               </p>
             </div>
 
@@ -156,8 +156,7 @@
               <h2 class="card-title">Our Mission</h2>
               <p class="card-text">
                 Serving as a bridge between you and your interest in Ethiopia!
-                We are dedicated to offering the best-in-class legal services in
-                Ethiopia.
+               
               </p>
             </div>
 
@@ -166,8 +165,7 @@
               <h2 class="card-title">What Can't We Agree On More?</h2>
               <p class="card-text">
                 Ready-made solutions are not really “ready” to solve all
-                problems. We always propose a tailor-made approach to offer
-                personalized legal services.
+                problems. 
               </p>
             </div>
 
@@ -176,8 +174,6 @@
               <h2 class="card-title">We Know It! We Live With It!</h2>
               <p class="card-text">
                 Every legal problem is unique – and so are our clients.
-                Therefore two legal cases and their respective solutions will
-                never be the same.
               </p>
             </div>
           </div>
@@ -299,6 +295,17 @@
         </div>
       </div>
     </section>
+
+    <section class="ltr">
+      <div class="container">
+        <div class="ltr-content">
+
+          <h1>Do You Need Long Term Partnership? </h1>
+          <p>We are providing a long-term service on a retainer basis only for our corporate clients. For more information, please contact us.</p>
+          <a href="./contact.html" class="btn btn-rounded-primary">Contact Today!</a>
+        </div>
+      </div>
+    </section>
     <section class="testimonials">
       <h1 class="testi-title">Testimonials</h1>
       <div class="container">
@@ -333,7 +340,7 @@
 
     <section class="laws">
       <img src="./img/law-blob.jpg" class="law-upper" alt="" />
-      <h1 class="laws-title text-center">Laws</h1>
+      <h1 class="laws-title text-center">Legal Resources</h1>
       <div class="laws-cards container" id="laws">
         <div class="law-card" v-for="law in lawCard" :key="law.id">
           <img :src="law.img" class="law-card-img" alt="" />
@@ -361,7 +368,7 @@
         loop: true,
         autoplay: true,
         navText: [previcon, nexticon],
-        autoplayTimeout: 2000,
+        autoplayTimeout: 6000,
         autoplayHoverPause: true,
         responsive: {
           0: {
