@@ -118,7 +118,7 @@
     }
   }
   .banner {
-    background: url("../img/banner.jpg") rgba(0, 0, 0, 0.35) no-repeat;
+    background: url("../img/2.jpg") rgba(0, 0, 0, 0.35) no-repeat;
     background-position: center center;
     background-size: cover;
     background-blend-mode: overlay;
@@ -191,9 +191,9 @@
         .links-container {
           .nav-links {
             li {
-              .scroll-link {
-                // font-size: 1.5rem;
-              }
+              // .scroll-link {
+              //   // font-size: 1.5rem;
+              // }
             }
           }
         }
@@ -213,7 +213,7 @@
   }
 }
 
-@include responsive($lg) {
+@include responsive($xl) {
   .header {
     .nav {
       padding-top: 1.75rem;
@@ -383,9 +383,9 @@
       .modal-link {
         display: flex;
         gap: 1.38rem;
-        img {
-          // width: 1rem;
-        }
+        // img {
+        //   // width: 1rem;
+        // }
       }
     }
     .emergency {
@@ -698,7 +698,7 @@
 }
 .ltr {
 
-  background: url(../img/ltrpic.jpg) rgba(0, 0, 0, 0.6) no-repeat;
+  background: url(../img/8.jpg) rgba(0, 0, 0, 0.6) no-repeat;
   background-position: center center;
   background-size: cover;
   background-blend-mode: overlay;
@@ -1090,18 +1090,34 @@
   margin-bottom: 2.25rem;
 }
 .footer {
-  background: $secondary-color;
-  margin-top: 10.94rem;
-
+  background: #8E92B5;
+  margin-top: 8.94rem;
+  font-size: 0.88rem;
   overflow-x: hidden;
 
   .container {
-    padding-top: 4.5rem;
+    padding-top: 2.06rem;
+    .footer-line{
+      height: 1px;
+      width: 100%;
+      background: #fff;
+      margin-top: 2rem;
+      margin-bottom: 1rem;
+    }
     .footer-logo {
       .logo {
         margin: 0 auto;
         margin-bottom: 3.25rem;
-        width: 10.5rem;
+        width: 9.25rem;
+      }
+      p{
+        @extend .text;
+        color: #fff;
+        font-size: 1rem;
+        margin: 0 auto;
+        margin-bottom: 2.31rem;
+        max-width: 15.44rem;
+        text-align: center;
       }
       .icon-container {
         display: flex;
@@ -1123,11 +1139,15 @@
         margin-bottom: 1.19rem;
         div {
           .location {
-            width: 9.85rem;
+            max-width: 13.69rem;
+          }
+          a{
+            font-size: 1rem;
           }
           p {
             margin-bottom: 0.5rem;
             @extend .text;
+            font-size: 1rem;
             color: #fff;
           }
         }
@@ -1148,6 +1168,8 @@
           a {
             color: #fff;
             @extend .text;
+            font-size: 1rem;
+            line-height: 0.88rem;
             &:hover {
               color: #f4f4f4;
             }
@@ -1168,21 +1190,46 @@
           a {
             color: #fff;
             @extend .text;
+            font-size: 1rem;
+            line-height: 0.88rem;
           }
         }
       }
     }
   }
 
-  .copyright {
-    margin-top: 7rem;
-    @extend .text-small;
-    text-align: center;
-    font-size: 14px;
-    color: #fff;
+  .footer-foot{
     padding-bottom: 2.38rem;
-    a {
-      color: #fff;
+    .container{
+      .copyright {
+        @extend .text-small;
+        text-align: center;
+        font-size: 14px;
+        color: #fff;
+        margin-bottom: 1rem;
+        a {
+          color: #fff;
+          &:hover{
+            color: $primary-color;
+            text-decoration: underline;
+
+          }
+        }
+      }
+      .terms{
+        color: #fff;
+        text-align: center;
+        a{
+          @extend .text;
+          font-size: 1rem;
+          color: #fff;
+          &:hover{
+            color: $primary-color;
+            text-decoration: underline;
+
+          }
+        }
+      }
     }
   }
 }
@@ -1190,9 +1237,14 @@
 @include responsive($md) {
   .footer {
     .container {
+      row-gap: 2rem;
       .footer-logo {
+      
         .logo {
-          margin: 0 0 3.25rem;
+          margin: 0 0 1.88rem;
+        }
+        p{
+          margin-left: 0;
         }
         .icon-container {
           justify-content: flex-start;
@@ -1235,6 +1287,22 @@
         }
       }
     }
+    .footer-foot{
+      .container{
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        .copyright{ 
+          margin: 0;
+        }
+        .terms{
+          a{
+            margin: 0 .4rem 0 .4rem;
+
+          }
+        }
+      }
+    }
   }
 }
 
@@ -1243,6 +1311,22 @@
     .container {
       // gap: 1rem;
       justify-content: center;
+    }
+  }
+}
+
+@include responsive($xl){
+  .footer {
+    .container{
+      row-gap: 0;
+      .corporate, .single, .footer-contact{
+        margin-top: 1.3rem;
+      }
+      .footer-contact{
+        .contact-info{
+          margin-bottom: 0;
+        }
+      }
     }
   }
 }

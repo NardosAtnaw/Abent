@@ -39,7 +39,7 @@ navBar.innerHTML = `<div class="container">
     
     </li>
     <li><a href="./attorney.html" class="scroll-link">Our Attorney</a></li>
-    <li><a href="./laws.html" class="scroll-link">Legal Resources</a></li>
+    <li><a href="./laws.php" class="scroll-link">Legal Resources</a></li>
     <li><a href="./contact.html" class="scroll-link">Contact</a></li>
   </ul>
 </div>
@@ -203,7 +203,8 @@ servicesAside.mount('#aside')
 
 const sideContact = Vue.createApp({
   template: `<div class="side-email">
-  <h3>Email Us</h3>
+  <img src="./img/email2.svg" class="about-email">
+  <!-- <h3>Email Us</h3> -->
   <div class="email-container">
     <a href="mailto:info@abnetlaw.com">info@abnetlaw.com</a>
     <a href="mailto:abnet@abnetlaw.com">abnet@abnetlaw.com</a>
@@ -212,22 +213,28 @@ const sideContact = Vue.createApp({
 </div>
 <div class="side-call">
   <h3>Call Us</h3>
+ 
   <div class="icon-container">
-    <a href="tel:+251953946049"> <img src="./img/phone-side.svg" alt="" /></a>
-    <a href="">
-      <img src="./img/whatsapp-side.svg" alt="" />
+    <a href="tel:+251953946049">  
+      <img src="./img/about-phone.svg" alt="">
+      <p>+251953946049</p>
     </a>
     <a href="">
-      <img src="./img/telegram-side.svg" alt="" />
-
+      <img src="./img/about-whatsapp.svg" alt="" />
+      <p>+251953946049</p>
+    </a>
+    <a href="">
+      <img src="./img/about-telegram.svg" alt="" />
+      <p>+251953946049</p>
     </a>
   </div>
 </div>
 
 <div class="side-address">
-  <h3>Our Address</h3>
+<img src="./img/iPhone 11 Pro/location.svg" class="about-address">
+
   <div class="add">
-    <img src="./img/location-side.svg" alt="" />
+  
     <p>
       Liberia Street, Lideta Merkato Mall, 3rd Floor, Office # 364
       Addis Ababa, Ethiopia
@@ -298,19 +305,19 @@ const laws = Vue.createApp({
       lawCard: [
         {
           id: 1,
-          img: './img/law1.jpg',
+          img: './img/7.jpg',
           date: '9 January, 2021',
           title: 'Lacus interdum lorem dui auctor quam.'
         },
         {
           id: 2,
-          img: './img/law2.jpg',
+          img: './img/1.png',
           date: '9 October, 2021',
           title: 'Lacus interdum lorem dui auctor quam.'
         },
         {
           id: 3,
-          img: './img/law3.jpg',
+          img: './img/6.jpg',
           date: '9 May, 2021',
           title: 'Lacus interdum lorem dui auctor quam.'
         }
@@ -322,82 +329,100 @@ const laws = Vue.createApp({
 laws.mount('#laws')
 
 const footer = Vue.createApp({
-  template: `<div class="container row">
-    <div class="footer-logo col-12 col-md-6 col-lg-3">
-      <img src="./img/footer_logo.svg" alt="" class="logo">
-      <div class="icon-container">
-        <a href="#">
-          <img src="./img/fb-wh.svg" alt="">
-        </a>
-        <a href="#">
-          <img src="./img/twitter-wh.svg" alt="">
-        </a>
-        <a href="#">
-          <img src="./img/link-wh.svg" alt="">
-        </a>
-      </div>
-    </div>
-    <div class="footer-contact col-12 col-md-6 col-lg-3">
-      <h2 class="footer-contact-title">
-        Contact Details
-      </h2>
-        <div class="contact-info">
-          <img src="./img/phone.svg" alt="">
-          <div>
-            <a href="#"><p>+251(09)5394 6049</p></a>
-            <a href="#"><p>+251(09)4663 4663</p></a>
-          </div>
-        </div>
-
-        <div class="contact-info">
-          <img src="./img/email.svg" alt="">
-          <div>
-            <a href="#"><p>info@abnetlaw.com</p></a>
-            <a href="#"><p>abnet@abnetlaw.com</p></a>
-          </div>
-        </div>
-
-        <div class="contact-info">
-          <img src="./img/location.svg" alt="">
-          <div>
-            <p class="location">Liberia Street, Lideta Merkato Mall, 3rd Floor, Office # 364
-              Addis Ababa, Ethiopia</p>
-          </div>
-        </div>
-    </div>
-    <div class="corporate col-12 col-md-6 col-lg-3">
-      <h2 class="corporate-title">
-        Practice Areas
-      </h2>
-
-      <ul>
-      <li><a href="./general.html">Corporate Business Council</a></li>
-      <li><a href="./rep.html">Legal Representation</a></li>
-      <li><a href="./legal.html">Legal Due Diligence</a></li>
-      <li><a href="./doc.html">Document Verification</a></li>
-      <li><a href="./general.html">Legal Consultation</a></li>
-      <li><a href="./civil.html">Litigation & Criminal Defense</a></li>
-      </ul>
-    </div>
-    <div class="single col-12 col-md-6 col-lg-3">
-      <h2 class="single-title">
-        Quick Links
-      </h2>
-
-      <ul>
-      <li><a href="./">Home</a></li>
-      <li><a href="./about.html">About</a></li>
-      <li><a href="./about.html">Our Attorney</a></li>
-      <li><a href="./about.html">Legal Resources</a></li>
-      <li><a href="./about.html">Contact</a></li>
-      </ul>
+  template: ` <div class="container row">
+  <div class="footer-logo col-12 col-md-6 col-lg-4 col-xl-3">
+    <img src="./img/footer_logo.svg" alt="" class="logo">
+    <p>
+      Looking for sound legal advice on matters that arise in your business and/or legal interest in Ethiopia?
+    </p>
+    <div class="icon-container">
+      <a href="#">
+        <img src="./img/fb-wh.svg" alt="">
+      </a>
+      <a href="#">
+        <img src="./img/twitter-wh.svg" alt="">
+      </a>
+      <a href="#">
+        <img src="./img/link-wh.svg" alt="">
+      </a>
     </div>
   </div>
+  <div class="corporate col-12 col-md-6 col-lg-3">
+    <h2 class="corporate-title">
+      Practice Areas
+    </h2>
 
-  <p class="copyright">
-    CopyRight 2021. Designed By
-    <a href="https://www.versavvymedia.com/">Versavvy Media PLC</a>
-  </p>
+    <ul>
+    <li><a href="./general.html">Corporate Business Council</a></li>
+    <li><a href="./rep.html">Legal Representation</a></li>
+    <li><a href="./legal.html">Legal Due Diligence</a></li>
+    <li><a href="./doc.html">Document Verification</a></li>
+    <li><a href="./general.html">Legal Consultation</a></li>
+    <li><a href="./civil.html">Litigation & Criminal Defense</a></li>
+    </ul>
+  </div>
+  <div class="single col-12 col-md-6 col-lg-2 col-xl-3">
+    <h2 class="single-title">
+      Quick Links
+    </h2>
+
+    <ul>
+    <li><a href="./">Home</a></li>
+    <li><a href="./about.html">About</a></li>
+    <li><a href="./about.html">Our Attorney</a></li>
+    <li><a href="./about.html">Legal Resources</a></li>
+    <li><a href="./about.html">Contact</a></li>
+    </ul>
+  </div>
+  
+  
+  <div class="footer-contact col-12 col-md-6 col-lg-3">
+    <h2 class="footer-contact-title">
+      Contact Details
+    </h2>
+      <div class="contact-info">
+        <img src="./img/phone.svg" alt="">
+        <div>
+          <a href="#"><p>+251(09)5394 6049</p></a>
+          <a href="#"><p>+251(09)4663 4663</p></a>
+        </div>
+      </div>
+
+      <div class="contact-info">
+        <img src="./img/email.svg" alt="">
+        <div>
+          <a href="#"><p>info@abnetlaw.com</p></a>
+          <a href="#"><p>abnet@abnetlaw.com</p></a>
+        </div>
+      </div>
+
+      <div class="contact-info">
+        <img src="./img/location.svg" alt="">
+        <div>
+          <p class="location">Liberia Street, Lideta Merkato Mall, 3rd Floor, Office # 364
+            Addis Ababa, Ethiopia</p>
+        </div>
+      </div>
+  </div>
+  <div class="footer-line"></div>
+
+</div>
+<div class="footer-foot">
+  <div class="container">
+    <p class="copyright">
+      CopyRight 2021. Designed By
+      <a href="https://www.versavvymedia.com/">Versavvy Media PLC</a>
+    </p>
+
+    <div class="terms">
+      <a href="#">Terms of Service </a> |
+      <a href="#">Privacy Policy</a> |
+      <a href="#">Terms of Service</a>
+    </div>
+
+  </div>
+</div>
+
     `
 })
 

@@ -37,7 +37,7 @@
         }
     }
     .side-contact {
-      margin-top: 7rem;
+      margin-top: 17rem;
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -52,16 +52,22 @@
         color: #000 !important;
       }
       .side-email{
+        .about-email{
+          margin: 0 auto;
+          margin-bottom: 2rem;
+        }
         .email-container{
           display: flex;
           flex-direction: column;
+    
           a{
             @extend .text;
-            text-decoration: underline;
+            
             margin-bottom: 1rem;
             cursor: pointer;
             &:hover{
               color: $primary-color;
+              text-decoration: underline;
             }
           }
         }
@@ -69,11 +75,27 @@
       .side-call{
         .icon-container{
           display: flex;
+          flex-direction: column;
           gap: 2.13rem;
+          a{
+            display: flex;
+            gap: 1rem;
+            p{
+              @extend .text;
+            }
+            &:hover{
+              color: $primary-color;
+              text-decoration: underline;
+            }
+          }
         }
       }
       .side-address{
         margin-top: 2.94rem;
+        .about-address{
+          margin: 0 auto;
+          margin-bottom: 2rem;
+        }
         .add{
           display: flex;
           align-items: flex-start;
@@ -82,7 +104,8 @@
             margin-top: .35rem;
           }
           p{
-            width: 9.5rem;
+            max-width: 13.5rem;
+            text-align: center;
             @extend .text;
           }
         }

@@ -407,7 +407,7 @@ template {
 }
 
 .text, .contact-us .contact-us-subtitle, .contact-us .contact-container .contact-card p, .wrapper .contact-form .container p, .wrapper .contact-form .container .myform input,
-.wrapper .contact-form .container .myform textarea, .wrapper .contact-form .container .myform .button, .header .laws-banner .law-banner-content .input-container .input-field, .header .laws-banner .law-banner-content .input-container .input-field::placeholder, .categories .container .btn-container a, .main-text .container .side-contact .side-email .email-container a, .main-text .container .side-contact .side-address .add p, .main-text .container .content p, .main-text .container .content strong, .header .attorney-banner .law-banner-content .input-container .input-field, .header .attorney-banner .law-banner-content .input-container .input-field::placeholder, .attorney-profile .container .attorney-details .attorney-content .profile, .attorney-profile .container .attorney-details .attorney-content .experience, .attorney-profile .container .attorney-details .attorney-content .education ul .uni-name div li, .attorney-profile .container .attorney-details .attorney-content .education .admission div li, .about .about-container .container .about-text, .reach-out button, .contact-modal .modal-inner .emergency, .contact-modal .modal-inner li a, .intro .container .intro-content, .intro .container .intro-btn a, .features .container .features-upper .features-subtitle, .practice .container .practice-card .single-card .practice-link a, .practice .container .practice-card .single-card .single-card-text, .ltr .container .ltr-content a, .testimonials .container .testi-container .testi-card .testi-text, .attorney .attorney-container .container .attorney-text, .footer .container .footer-contact .contact-info div p, .footer .container .corporate ul li a, .footer .container .single ul li a {
+.wrapper .contact-form .container .myform textarea, .wrapper .contact-form .container .myform .button, .header .laws-banner .law-banner-content .input-container .input-field, .header .laws-banner .law-banner-content .input-container .input-field::placeholder, .categories .container .btn-container a, .main-text .container .side-contact .side-email .email-container a, .main-text .container .side-contact .side-call .icon-container a p, .main-text .container .side-contact .side-address .add p, .main-text .container .content p, .main-text .container .content strong, .header .attorney-banner .law-banner-content .input-container .input-field, .header .attorney-banner .law-banner-content .input-container .input-field::placeholder, .attorney-profile .container .attorney-details .attorney-content .profile, .attorney-profile .container .attorney-details .attorney-content .experience, .attorney-profile .container .attorney-details .attorney-content .education ul .uni-name div li, .attorney-profile .container .attorney-details .attorney-content .education .admission div li, .main-text .container .about-contact .side-email .email-container a, .main-text .container .about-contact .side-call .icon-container a p, .main-text .container .about-contact .side-address .add p, .reach-out button, .contact-modal .modal-inner .emergency, .contact-modal .modal-inner li a, .intro .container .intro-content, .intro .container .intro-btn a, .features .container .features-upper .features-subtitle, .practice .container .practice-card .single-card .practice-link a, .practice .container .practice-card .single-card .single-card-text, .ltr .container .ltr-content a, .testimonials .container .testi-container .testi-card .testi-text, .attorney .attorney-container .container .attorney-text, .footer .container .footer-logo p, .footer .container .footer-contact .contact-info div p, .footer .container .corporate ul li a, .footer .container .single ul li a, .footer .footer-foot .container .terms a {
   font-family: "light bt";
   font-size: 1.13rem;
   line-height: 1.75rem;
@@ -415,7 +415,7 @@ template {
 
 @media screen and (min-width: 992px) {
   .text, .contact-us .contact-us-subtitle, .contact-us .contact-container .contact-card p, .wrapper .contact-form .container p, .wrapper .contact-form .container .myform input,
-  .wrapper .contact-form .container .myform textarea, .wrapper .contact-form .container .myform .button, .header .laws-banner .law-banner-content .input-container .input-field, .header .laws-banner .law-banner-content .input-container .input-field::placeholder, .categories .container .btn-container a, .main-text .container .side-contact .side-email .email-container a, .main-text .container .side-contact .side-address .add p, .main-text .container .content p, .main-text .container .content strong, .header .attorney-banner .law-banner-content .input-container .input-field, .header .attorney-banner .law-banner-content .input-container .input-field::placeholder, .attorney-profile .container .attorney-details .attorney-content .profile, .attorney-profile .container .attorney-details .attorney-content .experience, .attorney-profile .container .attorney-details .attorney-content .education ul .uni-name div li, .attorney-profile .container .attorney-details .attorney-content .education .admission div li, .about .about-container .container .about-text, .reach-out button, .contact-modal .modal-inner .emergency, .contact-modal .modal-inner li a, .intro .container .intro-content, .intro .container .intro-btn a, .features .container .features-upper .features-subtitle, .practice .container .practice-card .single-card .practice-link a, .practice .container .practice-card .single-card .single-card-text, .ltr .container .ltr-content a, .testimonials .container .testi-container .testi-card .testi-text, .attorney .attorney-container .container .attorney-text, .footer .container .footer-contact .contact-info div p, .footer .container .corporate ul li a, .footer .container .single ul li a {
+  .wrapper .contact-form .container .myform textarea, .wrapper .contact-form .container .myform .button, .header .laws-banner .law-banner-content .input-container .input-field, .header .laws-banner .law-banner-content .input-container .input-field::placeholder, .categories .container .btn-container a, .main-text .container .side-contact .side-email .email-container a, .main-text .container .side-contact .side-call .icon-container a p, .main-text .container .side-contact .side-address .add p, .main-text .container .content p, .main-text .container .content strong, .header .attorney-banner .law-banner-content .input-container .input-field, .header .attorney-banner .law-banner-content .input-container .input-field::placeholder, .attorney-profile .container .attorney-details .attorney-content .profile, .attorney-profile .container .attorney-details .attorney-content .experience, .attorney-profile .container .attorney-details .attorney-content .education ul .uni-name div li, .attorney-profile .container .attorney-details .attorney-content .education .admission div li, .main-text .container .about-contact .side-email .email-container a, .main-text .container .about-contact .side-call .icon-container a p, .main-text .container .about-contact .side-address .add p, .reach-out button, .contact-modal .modal-inner .emergency, .contact-modal .modal-inner li a, .intro .container .intro-content, .intro .container .intro-btn a, .features .container .features-upper .features-subtitle, .practice .container .practice-card .single-card .practice-link a, .practice .container .practice-card .single-card .single-card-text, .ltr .container .ltr-content a, .testimonials .container .testi-container .testi-card .testi-text, .attorney .attorney-container .container .attorney-text, .footer .container .footer-logo p, .footer .container .footer-contact .contact-info div p, .footer .container .corporate ul li a, .footer .container .single ul li a, .footer .footer-foot .container .terms a {
     font-size: 1.3rem;
     line-height: 2rem;
   }
@@ -454,7 +454,7 @@ template {
   }
 }
 
-.text-small, .attorney-profile .container .attorney-info .info-container div p, .attorney-profile .container .attorney-details .btn-container button, .features .container .features-lower .feature-card .card-text, .laws .laws-cards .law-card .container .law-card-date, .footer .copyright {
+.text-small, .attorney-profile .container .attorney-info .info-container div p, .attorney-profile .container .attorney-details .btn-container button, .features .container .features-lower .feature-card .card-text, .laws .laws-cards .law-card .container .law-card-date, .footer .footer-foot .container .copyright {
   font-family: "light bt";
   font-weight: 300;
   font-size: 1rem;
@@ -474,6 +474,14 @@ template {
 
 .col {
   flex: 1 0 0%;
+}
+
+.col-0 {
+  flex: 0 0 0%;
+}
+
+.col-offset-0 {
+  margin-left: 0%;
 }
 
 .col-1 {
@@ -573,6 +581,12 @@ template {
 }
 
 @media screen and (min-width: 576px) {
+  .col-sm-0 {
+    flex: 0 0 0%;
+  }
+  .col-sm-offset-0 {
+    margin-left: 0%;
+  }
   .col-sm-1 {
     flex: 0 0 8.33333%;
   }
@@ -648,81 +662,93 @@ template {
 }
 
 @media screen and (min-width: 768px) {
+  .col-md-0 {
+    flex: 0 0 0%;
+  }
+  .col-md-offset-0 {
+    margin-left: 0%;
+  }
   .col-md-1 {
     flex: 0 0 8.33333%;
   }
   .col-md-offset-1 {
-    margin-left: 8.33333% !important;
+    margin-left: 8.33333%;
   }
   .col-md-2 {
     flex: 0 0 16.66667%;
   }
   .col-md-offset-2 {
-    margin-left: 16.66667% !important;
+    margin-left: 16.66667%;
   }
   .col-md-3 {
     flex: 0 0 25%;
   }
   .col-md-offset-3 {
-    margin-left: 25% !important;
+    margin-left: 25%;
   }
   .col-md-4 {
     flex: 0 0 33.33333%;
   }
   .col-md-offset-4 {
-    margin-left: 33.33333% !important;
+    margin-left: 33.33333%;
   }
   .col-md-5 {
     flex: 0 0 41.66667%;
   }
   .col-md-offset-5 {
-    margin-left: 41.66667% !important;
+    margin-left: 41.66667%;
   }
   .col-md-6 {
     flex: 0 0 50%;
   }
   .col-md-offset-6 {
-    margin-left: 50% !important;
+    margin-left: 50%;
   }
   .col-md-7 {
     flex: 0 0 58.33333%;
   }
   .col-md-offset-7 {
-    margin-left: 58.33333% !important;
+    margin-left: 58.33333%;
   }
   .col-md-8 {
     flex: 0 0 66.66667%;
   }
   .col-md-offset-8 {
-    margin-left: 66.66667% !important;
+    margin-left: 66.66667%;
   }
   .col-md-9 {
     flex: 0 0 75%;
   }
   .col-md-offset-9 {
-    margin-left: 75% !important;
+    margin-left: 75%;
   }
   .col-md-10 {
     flex: 0 0 83.33333%;
   }
   .col-md-offset-10 {
-    margin-left: 83.33333% !important;
+    margin-left: 83.33333%;
   }
   .col-md-11 {
     flex: 0 0 91.66667%;
   }
   .col-md-offset-11 {
-    margin-left: 91.66667% !important;
+    margin-left: 91.66667%;
   }
   .col-md-12 {
     flex: 0 0 100%;
   }
   .col-md-offset-12 {
-    margin-left: 100% !important;
+    margin-left: 100%;
   }
 }
 
 @media screen and (min-width: 992px) {
+  .col-lg-0 {
+    flex: 0 0 0%;
+  }
+  .col-lg-offset-0 {
+    margin-left: 0%;
+  }
   .col-lg-1 {
     flex: 0 0 8.33333%;
   }
@@ -798,6 +824,12 @@ template {
 }
 
 @media screen and (min-width: 1200px) {
+  .col-xl-0 {
+    flex: 0 0 0%;
+  }
+  .col-xl-offset-0 {
+    margin-left: 0%;
+  }
   .col-xl-1 {
     flex: 0 0 8.33333%;
   }
@@ -961,7 +993,7 @@ template {
 }
 
 .header .contact-banner {
-  background: url("../img/contact.jpg") rgba(0, 0, 0, 0.35) no-repeat;
+  background: url("../img/9.jpg") rgba(0, 0, 0, 0.35) no-repeat;
   background-position: center center;
   background-size: cover;
   background-blend-mode: overlay;
@@ -1295,7 +1327,7 @@ template {
 }
 
 .header .laws-banner {
-  background: url("../img/laws.jpg") rgba(0, 0, 0, 0.35) no-repeat;
+  background: url("../img/9.jpg") rgba(0, 0, 0, 0.35) no-repeat;
   background-position: center center;
   background-size: cover;
   background-blend-mode: overlay;
@@ -1447,7 +1479,7 @@ template {
 }
 
 .main-text .container .side-contact {
-  margin-top: 7rem;
+  margin-top: 17rem;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -1464,28 +1496,49 @@ template {
   color: #000 !important;
 }
 
+.main-text .container .side-contact .side-email .about-email {
+  margin: 0 auto;
+  margin-bottom: 2rem;
+}
+
 .main-text .container .side-contact .side-email .email-container {
   display: flex;
   flex-direction: column;
 }
 
 .main-text .container .side-contact .side-email .email-container a {
-  text-decoration: underline;
   margin-bottom: 1rem;
   cursor: pointer;
 }
 
 .main-text .container .side-contact .side-email .email-container a:hover {
   color: #566cfb;
+  text-decoration: underline;
 }
 
 .main-text .container .side-contact .side-call .icon-container {
   display: flex;
+  flex-direction: column;
   gap: 2.13rem;
+}
+
+.main-text .container .side-contact .side-call .icon-container a {
+  display: flex;
+  gap: 1rem;
+}
+
+.main-text .container .side-contact .side-call .icon-container a:hover {
+  color: #566cfb;
+  text-decoration: underline;
 }
 
 .main-text .container .side-contact .side-address {
   margin-top: 2.94rem;
+}
+
+.main-text .container .side-contact .side-address .about-address {
+  margin: 0 auto;
+  margin-bottom: 2rem;
 }
 
 .main-text .container .side-contact .side-address .add {
@@ -1499,7 +1552,8 @@ template {
 }
 
 .main-text .container .side-contact .side-address .add p {
-  width: 9.5rem;
+  max-width: 13.5rem;
+  text-align: center;
 }
 
 .main-text .container .content .service-title {
@@ -1568,7 +1622,7 @@ template {
 }
 
 .header .attorney-banner {
-  background: url("../img/abnetpic1.jpg") rgba(0, 0, 0, 0.5) no-repeat;
+  background: url("../img/8.jpg") rgba(0, 0, 0, 0.5) no-repeat;
   background-position: top center;
   background-size: cover;
   background-blend-mode: overlay;
@@ -1778,62 +1832,107 @@ template {
   }
 }
 
-.about {
-  margin-top: 4.44rem;
-}
-
-.about .right {
-  display: flex;
+.main-text .container {
   flex-direction: column-reverse;
 }
 
-.about .about-container .about-img {
-  margin-top: 3.69rem;
-  width: 22.25rem;
+.main-text .container .about-contact {
+  margin-top: 7rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
 }
 
-.about .about-container .about-img-right {
-  margin-top: 3.69rem;
+.main-text .container .about-contact .side-call, .main-text .container .about-contact .side-email, .main-text .container .about-contact .side-address {
+  margin-bottom: 1.56rem;
 }
 
-.about .about-container .container .about-text {
-  line-height: 2.31rem;
-  margin-top: 4.44rem;
+.main-text .container .about-contact h3 {
+  text-align: center;
+  margin-bottom: 1.56rem;
+  color: #000 !important;
 }
 
-.about .about-container .container a {
-  margin-top: 2.88rem;
+.main-text .container .about-contact .side-email .about-email {
+  margin: 0 auto;
+  margin-bottom: 2rem;
+}
+
+.main-text .container .about-contact .side-email .email-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.main-text .container .about-contact .side-email .email-container a {
+  margin-bottom: 1rem;
+  cursor: pointer;
+}
+
+.main-text .container .about-contact .side-email .email-container a:hover {
+  color: #566cfb;
+  text-decoration: underline;
+}
+
+.main-text .container .about-contact .side-call .icon-container {
+  display: flex;
+  flex-direction: column;
+  gap: 2.13rem;
+}
+
+.main-text .container .about-contact .side-call .icon-container a {
+  display: flex;
+  gap: 1rem;
+}
+
+.main-text .container .about-contact .side-call .icon-container a:hover {
+  color: #566cfb;
+  text-decoration: underline;
+}
+
+.main-text .container .about-contact .side-address {
+  margin-top: 2.94rem;
+}
+
+.main-text .container .about-contact .side-address .about-address {
+  margin: 0 auto;
+  margin-bottom: 2rem;
+}
+
+.main-text .container .about-contact .side-address .add {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.81rem;
+}
+
+.main-text .container .about-contact .side-address .add img {
+  margin-top: .35rem;
+}
+
+.main-text .container .about-contact .side-address .add p {
+  max-width: 13.5rem;
+  text-align: center;
 }
 
 @media screen and (min-width: 768px) {
-  .about .about-container .about-img {
-    width: 40rem;
+  .main-text .container {
+    flex-direction: row;
+  }
+  .main-text .container .about-contact {
+    align-items: flex-start;
+    position: sticky;
+    top: 8.06rem;
   }
 }
 
-@media screen and (min-width: 992px) {
-  .about {
-    margin: 7rem 0;
+@media screen and (min-width: 1200px) {
+  .main-text .container {
+    flex-direction: row;
   }
-  .about .about-container {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    align-items: center;
-  }
-  .about .about-container .container a {
-    margin-top: 0.88rem;
-  }
-}
-
-@media screen and (min-width: 1920px) {
-  .about .about-container {
-    align-items: center;
-  }
-  .about .about-container .about-img, .about .about-container .about-img-right {
-    width: 58rem;
-  }
-  .about .about-container .container .about-text {
-    font-size: 1.13rem;
+  .main-text .container .about-contact {
+    align-items: flex-start;
+    position: sticky;
+    top: 7.06rem;
   }
 }
 
@@ -1957,7 +2056,7 @@ template {
 }
 
 .header .banner {
-  background: url("../img/banner.jpg") rgba(0, 0, 0, 0.35) no-repeat;
+  background: url("../img/2.jpg") rgba(0, 0, 0, 0.35) no-repeat;
   background-position: center center;
   background-size: cover;
   background-blend-mode: overlay;
@@ -2017,7 +2116,7 @@ template {
   }
 }
 
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 1200px) {
   .header .nav {
     padding-top: 1.75rem;
   }
@@ -2481,7 +2580,7 @@ template {
 }
 
 .ltr {
-  background: url(../img/ltrpic.jpg) rgba(0, 0, 0, 0.6) no-repeat;
+  background: url(../img/8.jpg) rgba(0, 0, 0, 0.6) no-repeat;
   background-position: center center;
   background-size: cover;
   background-blend-mode: overlay;
@@ -2845,7 +2944,7 @@ template {
   }
 }
 
-.title, .main-text .container .side-contact h3, .footer .container .footer-contact .footer-contact-title, .footer .container .corporate .corporate-title, .footer .container .single .single-title {
+.title, .main-text .container .side-contact h3, .main-text .container .about-contact h3, .footer .container .footer-contact .footer-contact-title, .footer .container .corporate .corporate-title, .footer .container .single .single-title {
   font-family: "medium bt";
   font-size: 1.5rem;
   color: #fff;
@@ -2853,19 +2952,37 @@ template {
 }
 
 .footer {
-  background: #a07178;
-  margin-top: 10.94rem;
+  background: #8E92B5;
+  margin-top: 8.94rem;
+  font-size: 0.88rem;
   overflow-x: hidden;
 }
 
 .footer .container {
-  padding-top: 4.5rem;
+  padding-top: 2.06rem;
+}
+
+.footer .container .footer-line {
+  height: 1px;
+  width: 100%;
+  background: #fff;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
 }
 
 .footer .container .footer-logo .logo {
   margin: 0 auto;
   margin-bottom: 3.25rem;
-  width: 10.5rem;
+  width: 9.25rem;
+}
+
+.footer .container .footer-logo p {
+  color: #fff;
+  font-size: 1rem;
+  margin: 0 auto;
+  margin-bottom: 2.31rem;
+  max-width: 15.44rem;
+  text-align: center;
 }
 
 .footer .container .footer-logo .icon-container {
@@ -2891,11 +3008,16 @@ template {
 }
 
 .footer .container .footer-contact .contact-info div .location {
-  width: 9.85rem;
+  max-width: 13.69rem;
+}
+
+.footer .container .footer-contact .contact-info div a {
+  font-size: 1rem;
 }
 
 .footer .container .footer-contact .contact-info div p {
   margin-bottom: 0.5rem;
+  font-size: 1rem;
   color: #fff;
 }
 
@@ -2919,6 +3041,8 @@ template {
 
 .footer .container .corporate ul li a {
   color: #fff;
+  font-size: 1rem;
+  line-height: 0.88rem;
 }
 
 .footer .container .corporate ul li a:hover {
@@ -2940,23 +3064,54 @@ template {
 
 .footer .container .single ul li a {
   color: #fff;
+  font-size: 1rem;
+  line-height: 0.88rem;
 }
 
-.footer .copyright {
-  margin-top: 7rem;
-  text-align: center;
-  font-size: 14px;
-  color: #fff;
+.footer .footer-foot {
   padding-bottom: 2.38rem;
 }
 
-.footer .copyright a {
+.footer .footer-foot .container .copyright {
+  text-align: center;
+  font-size: 14px;
+  color: #fff;
+  margin-bottom: 1rem;
+}
+
+.footer .footer-foot .container .copyright a {
   color: #fff;
 }
 
+.footer .footer-foot .container .copyright a:hover {
+  color: #566cfb;
+  text-decoration: underline;
+}
+
+.footer .footer-foot .container .terms {
+  color: #fff;
+  text-align: center;
+}
+
+.footer .footer-foot .container .terms a {
+  font-size: 1rem;
+  color: #fff;
+}
+
+.footer .footer-foot .container .terms a:hover {
+  color: #566cfb;
+  text-decoration: underline;
+}
+
 @media screen and (min-width: 768px) {
+  .footer .container {
+    row-gap: 2rem;
+  }
   .footer .container .footer-logo .logo {
-    margin: 0 0 3.25rem;
+    margin: 0 0 1.88rem;
+  }
+  .footer .container .footer-logo p {
+    margin-left: 0;
   }
   .footer .container .footer-logo .icon-container {
     justify-content: flex-start;
@@ -2991,11 +3146,34 @@ template {
   .footer .container .single .single-title {
     margin-top: 0;
   }
+  .footer .footer-foot .container {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+  }
+  .footer .footer-foot .container .copyright {
+    margin: 0;
+  }
+  .footer .footer-foot .container .terms a {
+    margin: 0 .4rem 0 .4rem;
+  }
 }
 
 @media screen and (min-width: 992px) {
   .footer .container {
     justify-content: center;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .footer .container {
+    row-gap: 0;
+  }
+  .footer .container .corporate, .footer .container .single, .footer .container .footer-contact {
+    margin-top: 1.3rem;
+  }
+  .footer .container .footer-contact .contact-info {
+    margin-bottom: 0;
   }
 }
 

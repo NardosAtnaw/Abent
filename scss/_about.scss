@@ -1,68 +1,105 @@
-.about {
-  margin-top: 4.44rem;
-  
-  .right{
-    display: flex;
+.main-text{
+  .container{
     flex-direction: column-reverse;
-
-  }
-  .about-container {
-    .about-img {
-      margin-top: 3.69rem;
-      width: 22.25rem;
-    }
-    .about-img-right{
-      margin-top: 3.69rem;
-    }
-    .container {
-      .about-text {
-        @extend .text;
-        line-height: 2.31rem;
-        margin-top: 4.44rem;
-      }
-      a {
-        margin-top: 2.88rem;
-      }
-    }
-  }
-}
-@include responsive($md) {
-  .about {
-    .about-container {
-      .about-img {
-        width: 40rem;
-      }
-    }
-  }
-}
-
-@include responsive($lg) {
-  .about {
-    margin: 7rem 0;
-    .about-container {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
+    .about-contact{
+      margin-top: 7rem;
+      display: flex;
+      flex-direction: column;
       align-items: center;
-      .container {
-        a {
-          margin-top: 0.88rem;
+      width: 100%;
+      .side-call, .side-email, .side-address {
+        margin-bottom: 1.56rem;
+      }
+      h3{
+        text-align: center;
+        margin-bottom: 1.56rem;
+        @extend .title;
+        color: #000 !important;
+      }
+      .side-email{
+        .about-email{
+          margin: 0 auto;
+          margin-bottom: 2rem;
+        }
+        .email-container{
+          display: flex;
+          flex-direction: column;
+    
+          a{
+            @extend .text;
+            
+            margin-bottom: 1rem;
+            cursor: pointer;
+            &:hover{
+              color: $primary-color;
+              text-decoration: underline;
+            }
+          }
+        }
+      }
+      .side-call{
+        .icon-container{
+          display: flex;
+          flex-direction: column;
+          gap: 2.13rem;
+          a{
+            display: flex;
+            gap: 1rem;
+            p{
+              @extend .text;
+            }
+            &:hover{
+              color: $primary-color;
+              text-decoration: underline;
+            }
+          }
+        }
+      }
+      .side-address{
+        margin-top: 2.94rem;
+        .about-address{
+          margin: 0 auto;
+          margin-bottom: 2rem;
+        }
+        .add{
+          display: flex;
+          align-items: flex-start;
+          gap: 0.81rem;
+          img{
+            margin-top: .35rem;
+          }
+          p{
+            max-width: 13.5rem;
+            text-align: center;
+            @extend .text;
+          }
         }
       }
     }
   }
 }
-@include responsive($xxl) {
-  .about {
-    .about-container {
-      align-items: center;
-      .about-img, .about-img-right {
-        width: 58rem;
-      }
 
-      .container {
-        .about-text {
-          font-size: 1.13rem;
-        }
+@include responsive($md){
+  .main-text{
+    .container{
+      flex-direction: row;
+      .about-contact{
+        align-items: flex-start;
+        position: sticky;
+        top: 8.06rem;
+      }
+    }
+  }
+}
+
+@include responsive($xl){
+  .main-text{
+    .container{
+      flex-direction: row;
+      .about-contact{
+        align-items: flex-start;
+        position: sticky;
+        top: 7.06rem;
       }
     }
   }

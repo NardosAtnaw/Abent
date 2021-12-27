@@ -96,7 +96,7 @@ $trans: all 0.5s ease-in-out;
   flex: 1 0 0%;
 }
 //default col
-@for $i from 1 through $columns {
+@for $i from 0 through $columns {
   .col-#{$i} {
     flex: 0 0 100% / $columns * $i;
   }
@@ -108,7 +108,7 @@ $trans: all 0.5s ease-in-out;
 // // Small devices (landscape phones, 576px and up)
 
 @include responsive($sm) {
-  @for $i from 1 through $columns {
+  @for $i from 0 through $columns {
     .col-sm-#{$i} {
       flex: 0 0 100% / $columns * $i;
     }
@@ -120,19 +120,19 @@ $trans: all 0.5s ease-in-out;
 
 // Medium devices (tablets, 768px and up)
 @include responsive($md) {
-  @for $i from 1 through $columns {
+  @for $i from 0 through $columns {
     .col-md-#{$i} {
       flex: 0 0 100% / $columns * $i;
     }
     .col-md-offset-#{$i} {
-      margin-left: 100% / $columns * $i !important;
+      margin-left: 100% / $columns * $i;
     }
   }
 }
 
 // Large devices (desktops, 992px and up)
 @include responsive($lg) {
-  @for $i from 1 through $columns {
+  @for $i from 0 through $columns {
     .col-lg-#{$i} {
       flex: 0 0 100% / $columns * $i;
     }
@@ -144,7 +144,7 @@ $trans: all 0.5s ease-in-out;
 
 // Extra large devices (large desktops, 1200px and up)
 @include responsive($xl) {
-  @for $i from 1 through $columns {
+  @for $i from 0 through $columns {
     .col-xl-#{$i} {
       flex: 0 0 100% / $columns * $i;
     }

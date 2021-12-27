@@ -1,0 +1,157 @@
+<!-- [BEGIN] Metadata added via All-Meta-Tags plugin by Space X-Chimp ( https://www.spacexchimp.com ) -->
+<meta
+  name="description"
+  content="Law Office of Abnet Solomon offers full-fledged professional legal services from consultation to trial representation for its international &amp;amp; domestic clients."
+/>
+<meta
+  name="keywords"
+  content="law office, lawyer in ethiopia, law, attorney "
+/>
+<meta name="author" content="Law Office of Abnet Solomon" />
+<meta name="designer" content="Ephrem Firew Asrat" />
+<meta name="contact" content="contact@abnetlaw.com" />
+<meta name="copyright" content="Copyright 2021 © Law Office of Abnet Solomon" />
+<!-- [END] Metadata added via All-Meta-Tags plugin by Space X-Chimp ( https://www.spacexchimp.com ) -->
+
+<script>
+  (function (html) {
+    html.className = html.className.replace(/\bno-js\b/, "js");
+  })(document.documentElement);
+</script>
+<meta
+  name="viewport"
+  content="width=device-width, initial-scale=1, maximum-scale=1"
+/>
+<!-- Search Engine Optimization by Rank Math - https://s.rankmath.com/home -->
+<title>Abnet Solomon Law Office in Ethiopia</title>
+<meta
+  name="description"
+  content="Law Office of Abnet Solomon offers full-fledged professional legal services from consultation to trial representation for its international &amp; domestic clients."
+/>
+<meta
+  name="robots"
+  content="follow, index, max-snippet:-1, max-video-preview:-1, max-image-preview:large"
+/>
+<link rel="canonical" href="https://www.abnetlaw.com/" />
+<meta property="og:locale" content="en_US" />
+<meta property="og:type" content="website" />
+<meta property="og:title" content="Abnet Solomon Law Office in Ethiopia" />
+<meta
+  property="og:description"
+  content="Law Office of Abnet Solomon offers full-fledged professional legal services from consultation to trial representation for its international &amp; domestic clients."
+/>
+<meta property="og:url" content="https://www.abnetlaw.com/" />
+<meta property="og:site_name" content="Law Office of Abnet Solomon" />
+<meta property="og:updated_time" content="2021-10-07T10:47:21+03:00" />
+<meta
+  property="og:image"
+  content="https://www.abnetlaw.com/alcnt/uploads/2021/02/Abnet-Solomon-Law-Office-Logo-Horizontal-1024x280.jpg"
+/>
+<meta
+  property="og:image:secure_url"
+  content="https://www.abnetlaw.com/alcnt/uploads/2021/02/Abnet-Solomon-Law-Office-Logo-Horizontal-1024x280.jpg"
+/>
+<meta property="og:image:width" content="1020" />
+<meta property="og:image:height" content="279" />
+<meta property="og:image:alt" content="law office" />
+<meta property="og:image:type" content="image/jpeg" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="Abnet Solomon Law Office in Ethiopia" />
+<meta
+  name="twitter:description"
+  content="Law Office of Abnet Solomon offers full-fledged professional legal services from consultation to trial representation for its international &amp; domestic clients."
+/>
+<meta
+  name="twitter:image"
+  content="https://www.abnetlaw.com/alcnt/uploads/2021/02/Abnet-Solomon-Law-Office-Logo-Horizontal-1024x280.jpg"
+/>
+<script type="application/ld+json" class="rank-math-schema">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Organization",
+        "@id": "https://www.abnetlaw.com/#organization",
+        "name": "Law Office of Abnet Solomon",
+        "url": "https://www.abnetlaw.com",
+        "logo": {
+          "@type": "ImageObject",
+          "@id": "https://www.abnetlaw.com/#logo",
+          "url": "https://www.abnetlaw.com/alcnt/uploads/2021/02/Abnet-Solomon-Law-Office-Logo-Horizontal.jpg",
+          "caption": "Law Office of Abnet Solomon",
+          "inLanguage": "en-US",
+          "width": "2560",
+          "height": "700"
+        }
+      },
+      {
+        "@type": "WebSite",
+        "@id": "https://www.abnetlaw.com/#website",
+        "url": "https://www.abnetlaw.com",
+        "name": "Law Office of Abnet Solomon",
+        "publisher": { "@id": "https://www.abnetlaw.com/#organization" },
+        "inLanguage": "en-US",
+        "potentialAction": {
+          "@type": "SearchAction",
+          "target": "https://www.abnetlaw.com/?s={search_term_string}",
+          "query-input": "required name=search_term_string"
+        }
+      },
+      {
+        "@type": "ImageObject",
+        "@id": "https://www.abnetlaw.com/alcnt/uploads/2021/02/Abnet-Solomon-Law-Office-Logo-Horizontal.jpg",
+        "url": "https://www.abnetlaw.com/alcnt/uploads/2021/02/Abnet-Solomon-Law-Office-Logo-Horizontal.jpg",
+        "width": "2560",
+        "height": "700",
+        "inLanguage": "en-US"
+      },
+      {
+        "@type": "Person",
+        "@id": "https://www.abnetlaw.com/author/aswpadmin/",
+        "name": "AbnetSolomonLawOfficeAdmin Official",
+        "url": "https://www.abnetlaw.com/author/aswpadmin/",
+        "image": {
+          "@type": "ImageObject",
+          "@id": "https://secure.gravatar.com/avatar/bfb22e5917ed52e22bd0b98bd332680e?s=96&amp;r=g",
+          "url": "https://secure.gravatar.com/avatar/bfb22e5917ed52e22bd0b98bd332680e?s=96&amp;r=g",
+          "caption": "AbnetSolomonLawOfficeAdmin Official",
+          "inLanguage": "en-US"
+        },
+        "sameAs": ["https://www.abnetlaw.com"],
+        "worksFor": { "@id": "https://www.abnetlaw.com/#organization" }
+      },
+      {
+        "@type": "WebPage",
+        "@id": "https://www.abnetlaw.com/#webpage",
+        "url": "https://www.abnetlaw.com/",
+        "name": "Abnet Solomon Law Office in Ethiopia",
+        "datePublished": "2021-02-17T11:54:41+03:00",
+        "dateModified": "2021-10-07T10:47:21+03:00",
+        "author": { "@id": "https://www.abnetlaw.com/author/aswpadmin/" },
+        "isPartOf": { "@id": "https://www.abnetlaw.com/#website" },
+        "primaryImageOfPage": {
+          "@id": "https://www.abnetlaw.com/alcnt/uploads/2021/02/Abnet-Solomon-Law-Office-Logo-Horizontal.jpg"
+        },
+        "inLanguage": "en-US"
+      },
+      {
+        "@type": "Article",
+        "headline": "Abnet Solomon Law Office in Ethiopia",
+        "keywords": "law office,law office of abnet solomon,law,lawyer in ethiopia,attorney",
+        "datePublished": "2021-02-17T11:54:41+03:00",
+        "dateModified": "2021-10-07T10:47:21+03:00",
+        "author": { "@id": "https://www.abnetlaw.com/author/aswpadmin/" },
+        "publisher": { "@id": "https://www.abnetlaw.com/#organization" },
+        "description": "Law Office of Abnet Solomon offers full-fledged professional legal services from consultation to trial representation for its international &amp; domestic clients.",
+        "name": "Abnet Solomon Law Office in Ethiopia",
+        "@id": "https://www.abnetlaw.com/#richSnippet",
+        "isPartOf": { "@id": "https://www.abnetlaw.com/#webpage" },
+        "image": {
+          "@id": "https://www.abnetlaw.com/alcnt/uploads/2021/02/Abnet-Solomon-Law-Office-Logo-Horizontal.jpg"
+        },
+        "inLanguage": "en-US",
+        "mainEntityOfPage": { "@id": "https://www.abnetlaw.com/#webpage" }
+      }
+    ]
+  }
+</script>

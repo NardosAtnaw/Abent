@@ -35,37 +35,15 @@
     <section class="categories">
       <div class="container">
       <div class="btn-container">
-        <a href="#" class="btn btn-rounded-outline-category">
-          Category 1
-        </a>
-        <a href="#" class="btn btn-rounded-outline-category">
-          Category 1
-        </a>
-        <a href="#" class="btn btn-rounded-outline-category">
-          Category 1
-        </a>
-        <a href="#" class="btn btn-rounded-outline-category">
-          Category 1
-        </a>
+      <?php include './includes/sidebar.php'; ?>
       </div>
       </div>
     </section>
 
     <section class="laws laws-marign">
-        <div class="laws-cards container" id="laws1">
-          <div class="law-card"  v-for="law in lawCard" :key="law.id">
-            <img :src="law.img" class="law-card-img" alt="">
-
-            <div class="container">
-              
-              <p class="law-card-date">{{ law.date }}</p>
-  
-              <h2 class="law-card-title">{{ law.title }}</h2>
-            </div>
-
-          </div>
-         
-          </div>
+    <div class="laws-cards container" id="laws1">
+      <?php include './includes/posts.php'; ?>
+      </div>
     </section>
 
     <footer id="footer" class="footer laws-footer"></footer>
