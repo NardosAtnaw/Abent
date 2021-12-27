@@ -118,7 +118,7 @@
     }
   }
   .banner {
-    background: url("../img/2.jpg") rgba(0, 0, 0, 0.35) no-repeat;
+    background: url("../img/home3.jpg") rgba(0, 0, 0, 0.35) no-repeat;
     background-position: center center;
     background-size: cover;
     background-blend-mode: overlay;
@@ -138,11 +138,54 @@
         line-height: 2.88rem;
         margin-bottom: 1.31rem;
         max-width: 33rem;
+       span:before{
+          content: 'CONSOLIDATED WITH';
+          animation: animate 20s ease-in-out infinite;
+
+
+
+        }
+        @keyframes animate {
+         0%{
+            content: 'CONSOLIDATED WITH';
+          }
+       
+        50%{
+            content: 'SERVING AS';
+          }
+          
+         100%{
+            content: 'PROVIDING';
+          }
+        }
       }
       .banner-subtitle {
         @extend .text-medium;
         margin-bottom: 2.56rem;
+        font-size: 1.5rem;
+        span:before{
+          content: 'profound local knowledge and immense international experience!';
+          animation: animate2 20s ease-in-out infinite;
+
+
+
+        }
+        @keyframes animate2 {
+         0%{
+            content: '
+            profound local knowledge and immense international experience!';
+          }
+       
+        50%{
+            content: ' a legal bridge between you and your interest in Ethiopia!';
+          }
+          
+         100%{
+            content: 'a full-ranged one-stop legal solution!';
+          }
+        }
       }
+    
       .cta-btn {
         font-size: 1.13rem;
         font-weight: 700;

@@ -36,10 +36,11 @@
       </nav>
 
       <section class="banner">
+       
         <div class="banner-content container">
-          <h1 class="banner-title">Enim nisi diam et ultrices elit.</h1>
+          <h1 class="banner-title"> <span> </span></h1>
           <p class="banner-subtitle">
-            The Law Office of Abnet Solomon (aka AbnetLaw)
+            <span> </span>
           </p>
           <a
             href="./contact.html"
@@ -362,6 +363,29 @@
      
     </footer>
     <script src="./js/app.js" type="module"></script>
+    <!-- <script type="text/javascript">
+      let bannerimg = document.getElementById('banner-img');
+      let bannerimgs = ['home1.jpg','home2.jpg', 'home3.jpg']
+      setInterval(function(){
+        let random = Math.floor(Math.radom() * 4);
+      bannerimg.src = bannerimgs[random];
+    },800);
+      
+      
+    </script> -->
+    <script>
+      function changeBg(){
+        const images = [
+      'url("./img/home1.jpg")',
+      'url("./img/home2.jpg")',
+   
+        ]
+        const bannerimg = document.querySelector('.banner')
+        const bg = images[Math.floor(Math.random() * images.length)];
+        bannerimg.style.backgroundImage = bg;
+      }
+      setInterval(changeBg, 6000)
+    </script>
     <script>
       const nexticon = `<img src="./img/right2.svg" alt="">`;
       const previcon = `<img src="./img/left2.svg" alt="">`;
@@ -388,5 +412,6 @@
         },
       });
     </script>
+
   </body>
 </html>

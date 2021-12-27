@@ -993,7 +993,7 @@ template {
 }
 
 .header .contact-banner {
-  background: url("../img/9.jpg") rgba(0, 0, 0, 0.35) no-repeat;
+  background: url("../img/15.jpg") rgba(0, 0, 0, 0.35) no-repeat;
   background-position: center center;
   background-size: cover;
   background-blend-mode: overlay;
@@ -1622,7 +1622,7 @@ template {
 }
 
 .header .attorney-banner {
-  background: url("../img/8.jpg") rgba(0, 0, 0, 0.5) no-repeat;
+  background: url("../img/9.jpg") rgba(0, 0, 0, 0.5) no-repeat;
   background-position: top center;
   background-size: cover;
   background-blend-mode: overlay;
@@ -2056,7 +2056,7 @@ template {
 }
 
 .header .banner {
-  background: url("../img/2.jpg") rgba(0, 0, 0, 0.35) no-repeat;
+  background: url("../img/home3.jpg") rgba(0, 0, 0, 0.35) no-repeat;
   background-position: center center;
   background-size: cover;
   background-blend-mode: overlay;
@@ -2081,8 +2081,43 @@ template {
   max-width: 33rem;
 }
 
+.header .banner .banner-content .banner-title span:before {
+  content: 'CONSOLIDATED WITH';
+  animation: animate 20s ease-in-out infinite;
+}
+
+@keyframes animate {
+  0% {
+    content: 'CONSOLIDATED WITH';
+  }
+  50% {
+    content: 'SERVING AS';
+  }
+  100% {
+    content: 'PROVIDING';
+  }
+}
+
 .header .banner .banner-content .banner-subtitle {
   margin-bottom: 2.56rem;
+  font-size: 1.5rem;
+}
+
+.header .banner .banner-content .banner-subtitle span:before {
+  content: 'profound local knowledge and immense international experience!';
+  animation: animate2 20s ease-in-out infinite;
+}
+
+@keyframes animate2 {
+  0% {
+    content: ' profound local knowledge and immense international experience!';
+  }
+  50% {
+    content: ' a legal bridge between you and your interest in Ethiopia!';
+  }
+  100% {
+    content: 'a full-ranged one-stop legal solution!';
+  }
 }
 
 .header .banner .banner-content .cta-btn {
