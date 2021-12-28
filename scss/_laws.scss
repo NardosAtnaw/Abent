@@ -1,6 +1,6 @@
 .header {
   .laws-banner {
-    background: url("../img/9.jpg") rgba(0, 0, 0, 0.35) no-repeat;
+    background: url("../img/16.jpg") rgba(0, 0, 0, 0.35) no-repeat;
     background-position: center center;
     background-size: cover;
     background-blend-mode: overlay;
@@ -8,7 +8,8 @@
     display: grid;
     justify-content: center;
     align-items: flex-end;
-    .law-banner-content{
+    .law-banner-
+    {
       // z-index: 999;
       .law-banner-title{
         @extend .h2;

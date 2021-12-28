@@ -118,7 +118,7 @@
     }
   }
   .banner {
-    background: url("../img/home3.jpg") rgba(0, 0, 0, 0.35) no-repeat;
+    background: url("../img/home.jpg") no-repeat;
     background-position: center center;
     background-size: cover;
     background-blend-mode: overlay;
@@ -138,62 +138,92 @@
         line-height: 2.88rem;
         margin-bottom: 1.31rem;
         max-width: 33rem;
-       span:before{
-          content: 'CONSOLIDATED WITH';
-          animation: animate 20s ease-in-out infinite;
+      //  span:before{
+      //     content: 'CONSOLIDATED WITH';
+      //     animation: animate 30s ease-in-out infinite;
 
 
 
-        }
-        @keyframes animate {
-         0%{
-            content: 'CONSOLIDATED WITH';
-          }
+      //   }
+      //   @keyframes animate {
+      //    0%{
+      //       content: 'CONSOLIDATED WITH';
+      //     }
        
-        50%{
-            content: 'SERVING AS';
-          }
+      //   50%{
+      //       content: 'SERVING AS';
+      //     }
           
-         100%{
-            content: 'PROVIDING';
-          }
-        }
+      //    100%{
+      //       content: 'PROVIDING';
+      //     }
+      //   }
       }
       .banner-subtitle {
         @extend .text-medium;
         margin-bottom: 2.56rem;
         font-size: 1.5rem;
-        span:before{
-          content: 'profound local knowledge and immense international experience!';
-          animation: animate2 20s ease-in-out infinite;
+        // span:before{
+        //   content: 'profound local knowledge and immense international experience!';
+        //   animation: animate2 20s ease-in-out infinite;
 
 
 
-        }
-        @keyframes animate2 {
-         0%{
-            content: '
-            profound local knowledge and immense international experience!';
-          }
+        // }
+        // @keyframes animate2 {
+        //  0%{
+        //     content: '
+        //     profound local knowledge and immense international experience!';
+        //   }
        
-        50%{
-            content: ' a legal bridge between you and your interest in Ethiopia!';
-          }
+        // 50%{
+        //     content: ' a legal bridge between you and your interest in Ethiopia!';
+        //   }
           
-         100%{
-            content: 'a full-ranged one-stop legal solution!';
-          }
-        }
+        //  100%{
+        //     content: 'a full-ranged one-stop legal solution!';
+        //   }
+        // }
       }
     
       .cta-btn {
+        margin-top: 12rem;
         font-size: 1.13rem;
         font-weight: 700;
       }
+   
     }
   }
 }
+.how-can{
+  div{
+   margin-top: 3rem;
+    h1{
+      text-align: center;
+      font-family: 'medium bt';
+  font-weight: 600;
+  font-size: 2rem;
+  line-height: 1.88rem;
+    }
+    p{
 
+    margin-left: 2rem;
+    margin-right: 2rem;
+        line-height: 2rem;
+        margin-top: 2.44rem; 
+        font-size:1.3rem ;
+        font-family: "light bt";
+        .intro-link {
+          color: $primary-color;
+          font-weight: bold;
+          cursor: pointer;
+          &:hover {
+            text-decoration: underline;
+          }
+        }
+    }
+  }
+}
 @include responsive($md) {
   .header {
     .banner {
@@ -205,6 +235,34 @@
           line-height: 4.31rem;
           margin-bottom: 2.31rem;
         }
+      }
+    }
+  }
+  .how-can{
+    div{
+    
+      h1{
+       
+    font-weight: 600;
+    font-size: 2rem;
+    line-height: 2.88rem;
+      }
+      p{
+
+      margin-left: 5rem;
+      margin-right: 5rem;
+          line-height: 2.31rem;
+          margin-top: 2.44rem; 
+          font-size:1.3rem ;
+          font-family: "light bt";
+          .intro-link {
+            color: $primary-color;
+            font-weight: bold;
+            cursor: pointer;
+            &:hover {
+              text-decoration: underline;
+            }
+          }
       }
     }
   }
@@ -251,6 +309,24 @@
           line-height: 4.31rem;
           margin-bottom: 2.31rem;
         }
+      }
+    }
+  }
+  .how-can{
+    div{
+      text-align: center;
+      h1{
+        font-family: "Futura", 'Poppins';
+        font-weight: 700;
+        font-size: 3rem;
+        line-height: 3.98rem;
+      }
+      p{
+        text-align: center;
+      margin-left: 10rem;
+      margin-right: 10rem;
+          line-height: 2.31rem;
+          margin-top: 4.44rem; 
       }
     }
   }

@@ -123,8 +123,16 @@
       p {
         @extend .text;
         a{
-          font-weight: 700;
-          text-decoration: underline;
+          // font-weight: 700;
+          // text-decoration: underline;
+        }
+        .intro-link {
+          color: $primary-color;
+          font-weight: bold;
+          cursor: pointer;
+          &:hover {
+            text-decoration: underline;
+          }
         }
       }
       strong{

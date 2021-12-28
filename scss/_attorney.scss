@@ -1,6 +1,6 @@
 .header {
   .attorney-banner {
-    background: url("../img/9.jpg") rgba(0, 0, 0, 0.5) no-repeat;
+    background: url("../img/atto.jpg") rgba(0, 0, 0, 0.5) no-repeat;
     background-position: top center;
     background-size: cover;
     background-blend-mode: overlay;
@@ -68,10 +68,16 @@
         @extend .h2;
         margin-bottom: 2.94rem;
       }
+      div{
+        .attornery{
+          width: 50rem;
+        }
+      }
       .info-container {
         div {
           display: flex;
-          align-items: flex-start;
+          // align-items: center;
+          justify-content: center;
           gap: 0.5rem;
           margin-bottom: 2.13rem;
           p {
@@ -82,6 +88,7 @@
 
       .social-icon {
         display: flex;
+        justify-content: center;
         gap: 1rem;
       }
     }
@@ -124,10 +131,44 @@
         .profile{
           @extend .text;
           margin-top: 4.56rem;
+          p{
+            .intro-link {
+              color: $primary-color;
+              font-weight: bold;
+              cursor: pointer;
+              &:hover {
+                text-decoration: underline;
+              }
+            }
+          }
         }
         .experience{
           @extend .text;
           margin-top: 4.56rem;
+          div{
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 1rem;
+            li{
+              @extend .text;
+              line-height: normal;
+              // width: 100%;
+              display: flex;
+              align-items: flex-start;
+              gap: 0.5rem;
+              margin-bottom: 0.94rem;
+            }
+          }
+          p{
+            .intro-link {
+              color: $primary-color;
+              font-weight: bold;
+              cursor: pointer;
+              &:hover {
+                text-decoration: underline;
+              }
+            }
+          }
         }
         .education{
           margin-top: 4.56rem;
@@ -158,6 +199,7 @@
             .uni-logo{
               .logo-uni{
                 width: 10rem;
+                margin-left: 1rem;
                 margin-bottom: 2rem;
                 text-align: right;
                 &:last-child{

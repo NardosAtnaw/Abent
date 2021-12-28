@@ -137,14 +137,14 @@ const app = Vue.createApp({
         {
           id: 1,
           img: './img/business.svg',
-          title: 'Corporate Business Council',
+          title: 'General Business Council',
           text: 'Looking for sound legal advice on matters that arise in your business and/or legal interest in Ethiopia?',
           url: './corp.html'
         },
         {
           id: 2,
           img: './img/represent.svg',
-          title: 'Legal Representation',
+          title: 'Representation & Business Litigation',
           text: 'AbnetLaw represents both international and domestic clients who seek to protect and enforce their legal rights in Ethiopia.',
           url: './rep.html'
         },
@@ -165,14 +165,14 @@ const app = Vue.createApp({
         {
           id: 5,
           img: './img/consl.svg',
-          title: 'Legal Consultation',
+          title: 'Consultation and Civil Litigation',
           text: 'We provide legal advice and consultation services on a wide range of issues pertaining to your legal questions and needs.',
           url: './general.html'
         },
         {
           id: 6,
           img: './img/catena.svg',
-          title: 'Litigation & Criminal Defense',
+          title: 'Criminal Defense',
           text: ' We handle a variety of civil litigation, from breach of contract, tortious interference, assault, family disputes, personal injury, and labor dispute',
           url: './civil.html'
         },
@@ -188,12 +188,12 @@ const servicesAside = Vue.createApp({
   template: `
   <ul>
    <h3> Our Services </h3>
-    <li><a href="./corp.html" class="side-link">Corporate Business council</a></li>
-    <li><a href="./rep.html" class="side-link"> Legal Representation </a></li>
+    <li><a href="./corp.html" class="side-link">General Business Council</a></li>
+    <li><a href="./rep.html" class="side-link"> Representation & Business Litigation </a></li>
     <li><a href="./legal.html" class="side-link">Legal Due Diligence</a></li>
     <li><a href="./doc.html" class="side-link">Document Verification</a></li>
-    <li><a href="./general.html" class="side-link">Legal Consultation</a></li>
-    <li><a href="./civil.html" class="side-link">Litigation & Criminal Defense</a></li>
+    <li><a href="./general.html" class="side-link">Consultation and Civil Litigation</a></li>
+    <li><a href="./civil.html" class="side-link">Criminal Defense</a></li>
     <div class="line"> </div>
     <li><a href="./ltr.html" class="side-link">Long Term Partnership</a></li>
   </ul>`
