@@ -4,9 +4,10 @@
     background-position: top center;
     background-size: cover;
     background-blend-mode: overlay;
-    height: 60vh;
+    height: 90vh;
     display: grid;
     place-items: center;
+
     .about-title {
       @extend .h2;
       text-align: center;
