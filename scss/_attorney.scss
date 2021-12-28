@@ -1,6 +1,6 @@
 .header {
   .attorney-banner {
-    background: url("../img/atto.jpg") rgba(0, 0, 0, 0.5) no-repeat;
+    background: url("../img/aboutphone.png") rgba(0, 0, 0, 0.5) no-repeat;
     background-position: top center;
     background-size: cover;
     background-blend-mode: overlay;
@@ -233,6 +233,12 @@
 }
 
 @include responsive($md){
+  .header{
+    .attorney-banner{
+      background: url("../img/aboutipad.png") rgba(0, 0, 0, 0.5) no-repeat;
+   
+    }
+  }
   .attorney-profile{
     .container{
       height: auto;
@@ -248,6 +254,12 @@
 }
 
 @include responsive($lg){
+  .header{
+    .attorney-banner{
+      background: url("../img/atto.jpg") rgba(0, 0, 0, 0.5) no-repeat;
+   
+    }
+  }
   .attorney-profile{
     .container{
       .attorney-info{
