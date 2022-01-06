@@ -1,6 +1,6 @@
 .header {
   .contact-banner {
-    background: url("../img/15.jpg") rgba(0, 0, 0, 0.35) no-repeat;
+    background: url("../img/contactphone.png")  no-repeat;
     background-position: center center;
     background-size: cover;
     background-blend-mode: overlay;
@@ -52,6 +52,11 @@
   }
 }
 @include responsive($md) {
+  .header {
+    .contact-banner {
+      background: url("../img/conatctipad.png")  no-repeat;
+    }
+  }
   .time {
     .time-blob {
       width: 32rem;
@@ -67,6 +72,7 @@
   }
 }
 @include responsive($xl) {
+
   .time {
     .time-blob {
       width: auto;
@@ -152,6 +158,11 @@
 }
 
 @include responsive($lg) {
+  .header {
+    .contact-banner {
+      background: url("../img/contactdesktop.png")  no-repeat;
+    }
+  }
   .contact-us {
     .contact-container {
       width: 90%;
@@ -172,20 +183,31 @@
   }
 }
 .wrapper {
-  background-image: linear-gradient(
-    84.19deg,
-    rgba(75, 121, 161, 0.05) 0%,
-    rgba(53, 148, 182, 0.05) 19.77%,
-    rgba(36, 174, 191, 0.05) 40.19%,
-    rgba(63, 199, 190, 0.05) 57.81%,
-    rgba(113, 222, 181, 0.05) 77.33%
-  );
+ .contact-blob{
+    opacity: 0.7;
+  }
+  // background-image: linear-gradient(
+  //   84.19deg,
+  //   rgba(75, 121, 161, 0.05) 0%,
+  //   rgba(53, 148, 182, 0.05) 19.77%,
+  //   rgba(36, 174, 191, 0.05) 40.19%,
+  //   rgba(63, 199, 190, 0.05) 57.81%,
+  //   rgba(113, 222, 181, 0.05) 77.33%
+  // );
+  // background:url("../img/15.jpg") ;
   position: relative;
+//   .image-back{
+//     margin-top: -20rem;
+//    img{
+//     width: 120rem;
+// height: 70vh;
+//    }
+//   }
   .contact-blob {
     width: 101.13rem;
     position: absolute;
     z-index: -1;
-    top: -4rem;
+    // top: -2rem;
   }
   .map {
     margin-top: 4rem;
@@ -221,7 +243,7 @@
 
   
   .contact-form {
-    border: 1px solid $primary-color;
+    border: 1px solid #fff;
     border-radius: 2.5rem;
     margin: 10.75rem 1rem 0;
 
@@ -241,10 +263,11 @@
         @extend .h2;
         font-size: 2rem;
         margin-bottom: 1rem;
+        color: #fff;
       }
       p {
         @extend .text;
-        color: #7d7d7d;
+        color: #fff;
         margin-bottom: 2rem;
         max-width: 38rem;
       }
@@ -252,7 +275,7 @@
         input,
         textarea {
           @extend .text;
-          color: #7d7d7d;
+          color: #fff;
           width: 18.94rem;
           border: none;
           background: #fff;
@@ -262,7 +285,7 @@
           outline: none;
         }
         .socials {
-          color: #afafaf;
+          color: #fff;
           font-family: "Futura", 'Poppins';
           font-weight: bold;
           font-size: 1rem;
@@ -331,7 +354,7 @@
   .wrapper {
     .contact-blob {
       width: 100%;
-      top: -12.3rem;
+      // top: -12.3rem;
     }
     .contact-form {
       .container {
@@ -349,7 +372,7 @@
 @include responsive($xl){
   .wrapper{
     .contact-blob {
-      top: -15.6rem;
+      // top: -15.6rem;
     }
     .contact-form{
       width: 68.38rem;
@@ -375,6 +398,11 @@
 }
 
 @include responsive($xxl){
+  .header {
+    .contact-banner {
+      background: url("../img/15.jpg")  no-repeat;
+    }
+  }
   .wrapper{
     .contact-blob{
       top: -20.8rem;

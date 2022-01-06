@@ -1,0 +1,42 @@
+
+.kuriftu-footer {
+  background: #191e19;
+  .footer-container{
+   margin-left: 3rem;
+   margin-right: 3rem;
+   display:flex;
+    .footer-cont{
+    margin-left: 5rem;
+      text-align: center;
+      margin-top: 3rem;
+      h1{
+        color :#C2874A; 
+        font-size: 1rem;
+        margin-top: 3rem;
+      }
+      ul{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        li{
+          text-decoration: none;
+          a{
+            color: #fff;
+          font-size: .8rem;
+        }
+        }
+      }
+    }
+  
+    }
+  .line{
+    display: grid;
+    place-items: center;
+  }
+   .logo{
+    display: grid;
+    place-items: center;
+     img{
+       width: 10rem;
+     }
+   } 
+}
