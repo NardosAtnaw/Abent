@@ -1,10 +1,10 @@
 .header {
   .attorney-banner {
-    background: url("../img/aboutphone.png") rgba(0, 0, 0, 0.5) no-repeat;
+    background: url("../img/attorneypnone.png") no-repeat;
     background-position: top center;
     background-size: cover;
     background-blend-mode: overlay;
-    height: 90vh;
+    height: 50vh;
     display: grid;
     place-items: center;
 
@@ -62,15 +62,20 @@
 
 .attorney-profile {
   margin-top: 3.69rem;
+  // background-color:$blue;
+
   .container {
     .attorney-info {
       margin-bottom: 3.25rem;
       .attorney-name {
         @extend .h2;
+        margin-top: 2rem;
         margin-bottom: 2.94rem;
+        text-align: center;
+        color: $secondary-color;
       }
-      div{
-        .attornery{
+      div {
+        .attornery {
           width: 50rem;
         }
       }
@@ -82,6 +87,7 @@
           gap: 0.5rem;
           margin-bottom: 2.13rem;
           p {
+            color: $secondary-color;
             @extend .text-small;
           }
         }
@@ -94,47 +100,54 @@
       }
     }
     .attorney-details {
-      padding: 1.19rem 0;
+      background: $blue;
+      padding: 2rem;
+      // padding: 1.19rem 0;
       .btn-container {
-        background: #ffffff;
+        background: #fff;
         box-shadow: 2px 2px 30px rgba(0, 0, 0, 0.15);
         border-radius: 5.19rem;
         display: flex;
-        button{
+
+        button {
+          // margin-top: 1rem;
           @extend .text-small;
           background: transparent;
           border: none;
           width: 100%;
-          height: 100%;
+          // height: 100%;
           padding: 1.19rem 0.19rem;
-          color: $primary-color;
-          &:first-child{
+          color: $secondary-color;
+          &:first-child {
             border-top-left-radius: 5.19rem;
             border-bottom-left-radius: 5.19rem;
           }
-          &:last-child{
+          &:last-child {
             border-top-right-radius: 5.19rem;
             border-bottom-right-radius: 5.19rem;
           }
         }
-        .active{
-          background: $primary-color;
+        .active {
+          background: $secondary-color;
           color: #fff;
         }
       }
-      .attorney-content{
-        .profile, .experience, .education{
+      .attorney-content {
+        color: #fff;
+        .profile,
+        .experience,
+        .education {
           display: none;
         }
-        .show{
+        .show {
           display: block;
         }
-        .profile{
+        .profile {
           @extend .text;
           margin-top: 4.56rem;
-          p{
+          p {
             .intro-link {
-              color: $primary-color;
+              color: $secondary-color;
               font-weight: bold;
               cursor: pointer;
               &:hover {
@@ -143,14 +156,14 @@
             }
           }
         }
-        .experience{
+        .experience {
           @extend .text;
           margin-top: 4.56rem;
-          div{
+          div {
             display: flex;
             justify-content: space-between;
             margin-bottom: 1rem;
-            li{
+            li {
               @extend .text;
               line-height: normal;
               // width: 100%;
@@ -160,9 +173,9 @@
               margin-bottom: 0.94rem;
             }
           }
-          p{
+          p {
             .intro-link {
-              color: $primary-color;
+              color: $secondary-color;
               font-weight: bold;
               cursor: pointer;
               &:hover {
@@ -171,22 +184,23 @@
             }
           }
         }
-        .education{
+        .education {
           margin-top: 4.56rem;
-          .edu-title, .admission-title{
+          .edu-title,
+          .admission-title {
             @extend .h4;
             margin-bottom: 1.8rem;
           }
-          ul{
+          ul {
             // margin-bottom: 3.44rem;
             display: flex;
             justify-content: space-between;
-            .uni-name{
-              div{
+            .uni-name {
+              div {
                 display: flex;
                 justify-content: space-between;
                 margin-bottom: 1rem;
-                li{
+                li {
                   @extend .text;
                   line-height: normal;
                   // width: 100%;
@@ -197,26 +211,26 @@
                 }
               }
             }
-            .uni-logo{
-              .logo-uni{
+            .uni-logo {
+              .logo-uni {
                 width: 10rem;
                 margin-left: 1rem;
                 margin-bottom: 2rem;
                 text-align: right;
-                &:last-child{
+                &:last-child {
                   width: 7rem;
                 }
               }
             }
           }
-          .admission{
+          .admission {
             display: flex;
             flex-direction: column;
-            div{
+            div {
               display: flex;
               justify-content: space-between;
               margin-bottom: 1rem;
-              li{
+              li {
                 @extend .text;
                 line-height: normal;
                 // width: 100%;
@@ -233,19 +247,20 @@
   }
 }
 
-@include responsive($md){
-  .header{
-    .attorney-banner{
-      background: url("../img/aboutipad.png") rgba(0, 0, 0, 0.5) no-repeat;
-   
+@include responsive($md) {
+  .header {
+    .attorney-banner {
+      background: url("../img/attorneyipad.png") no-repeat;
+      height: 35vh;
     }
   }
-  .attorney-profile{
-    .container{
+  .attorney-profile {
+    .container {
       height: auto;
-      .attorney-details{
-        .btn-container{
-          button{
+      .attorney-details {
+        color: #fff;
+        .btn-container {
+          button {
             font-size: 1.13rem;
           }
         }
@@ -254,21 +269,29 @@
   }
 }
 
-@include responsive($lg){
-  .header{
-    .attorney-banner{
-      background: url("../img/atto.jpg") rgba(0, 0, 0, 0.5) no-repeat;
-   
+@include responsive($lg) {
+  .header {
+    .attorney-banner {
+      background: url("../img/17.png") no-repeat;
+      height: 40vh;
     }
   }
-  .attorney-profile{
-    .container{
-      .attorney-info{
+  .attorney-profile {
+    .container {
+      .attorney-info {
         display: block;
         position: -webkit-sticky;
         position: sticky;
         top: 0rem;
       }
+    }
+  }
+}
+@include responsive($xxl) {
+  .header {
+    .attorney-banner {
+      background: url("../img/atto.jpg") no-repeat;
+      height: 35vh;
     }
   }
 }

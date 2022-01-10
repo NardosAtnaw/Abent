@@ -1,14 +1,14 @@
 .header {
   .laws-banner {
-    background: url("../img/16.jpg") rgba(0, 0, 0, 0.35) no-repeat;
+    background: url("../img/areaphone.png") no-repeat;
     background-position: center center;
     background-size: cover;
     background-blend-mode: overlay;
-    height: 60vh;
+    height: 40vh;
     display: grid;
     justify-content: center;
     align-items: flex-end;
-    .law-banner-
+    .law-banner-content
     {
       // z-index: 999;
       .law-banner-title{
@@ -60,6 +60,7 @@
   .header{
     // height: 40vh;
     .laws-banner{
+      background: url("../img/areaipad.png") no-repeat;
       align-items: center;
       .law-banner-content{
         margin-top: 2rem;
@@ -74,6 +75,7 @@
 @include responsive($lg){
   .header{
     .laws-banner{
+      background: url("../img/16.jpg") no-repeat;
       .law-banner-content{
         .input-container{
           width: 32.81rem;
@@ -85,12 +87,21 @@
 @include responsive($xl){
   .header{
     .laws-banner{
+      background: url("../img/areadesk2.png") no-repeat;
       .law-banner-content{
         margin-top: 10rem;
         .input-container{
           width: 47.81rem;
         }
       }
+    }
+  }
+}
+@include responsive($xxl){
+  .header{
+    .laws-banner{
+      background: url("../img/16.jpg") no-repeat;
+    
     }
   }
 }

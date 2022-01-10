@@ -387,7 +387,7 @@ template {
   line-height: 3.98rem;
 }
 
-.medium, .clock .clock-title, .features .container .features-lower .feature-card .card-title, .practice .container .practice-card .single-card .single-card-title, .testimonials .container .testi-container .testi-card .testi-footer .testi-name {
+.medium, .clock .clock-title, .practice .container .practice-card .single-card .single-card-title {
   font-family: 'medium bt';
   font-weight: 600;
   font-size: 1.25rem;
@@ -407,7 +407,8 @@ template {
 }
 
 .text, .contact-us .contact-us-subtitle, .contact-us .contact-container .contact-card p, .wrapper .contact-form .container p, .wrapper .contact-form .container .myform input,
-.wrapper .contact-form .container .myform textarea, .wrapper .contact-form .container .myform .button, .header .laws-banner .law-banner- .input-container .input-field, .header .laws-banner .law-banner- .input-container .input-field::placeholder, .categories .container .btn-container a, .main-text .container .side-contact .side-email .email-container a, .main-text .container .side-contact .side-call .icon-container a p, .main-text .container .side-contact .side-address .add p, .main-text .container .content p, .main-text .container .content strong, .header .attorney-banner .law-banner-content .input-container .input-field, .header .attorney-banner .law-banner-content .input-container .input-field::placeholder, .attorney-profile .container .attorney-details .attorney-content .profile, .attorney-profile .container .attorney-details .attorney-content .experience, .attorney-profile .container .attorney-details .attorney-content .experience div li, .attorney-profile .container .attorney-details .attorney-content .education ul .uni-name div li, .attorney-profile .container .attorney-details .attorney-content .education .admission div li, .main-text .container .about-contact .side-email .email-container a, .main-text .container .about-contact .side-call .icon-container a p, .main-text .container .about-contact .side-address .add p, .reach-out button, .contact-modal .modal-inner .emergency, .contact-modal .modal-inner li a, .intro .container .intro-content, .intro .container .intro-btn a, .features .container .features-upper .features-subtitle, .practice .container .practice-card .single-card .practice-link a, .practice .container .practice-card .single-card .single-card-text, .ltr .container .ltr-content a, .testimonials .container .testi-container .testi-card .testi-text, .attorney .attorney-container .container .attorney-text, .footer .container .footer-logo p, .footer .container .footer-contact .contact-info div p, .footer .container .corporate ul li a, .footer .container .single ul li a, .footer .footer-foot .container .terms a {
+.wrapper .contact-form .container .myform textarea, .wrapper .contact-form .container .myform .button, .header .laws-banner .law-banner-content .input-container .input-field, .header .laws-banner .law-banner-content .input-container .input-field::placeholder, .categories .container .btn-container a, .main-text .container .contact-form .container p, .main-text .container .contact-form .container .myform input,
+.main-text .container .contact-form .container .myform textarea, .main-text .container .contact-form .container .myform .button, .main-text .container .side-contact .side-email .email-container a, .main-text .container .side-contact .side-call .icon-container a p, .main-text .container .side-contact .side-address .add p, .main-text .container .content p, .main-text .container .content strong, .header .attorney-banner .law-banner-content .input-container .input-field, .header .attorney-banner .law-banner-content .input-container .input-field::placeholder, .attorney-profile .container .attorney-details .attorney-content .profile, .attorney-profile .container .attorney-details .attorney-content .experience, .attorney-profile .container .attorney-details .attorney-content .experience div li, .attorney-profile .container .attorney-details .attorney-content .education ul .uni-name div li, .attorney-profile .container .attorney-details .attorney-content .education .admission div li, .header .about-banner .law-banner-content .input-container .input-field, .header .about-banner .law-banner-content .input-container .input-field::placeholder, .main-text .container .about-contact .side-email .email-container a, .main-text .container .about-contact .side-call .icon-container a p, .main-text .container .about-contact .side-address .add p, .how-can div a, .reach-out button, .contact-modal .modal-inner .emergency, .contact-modal .modal-inner li a, .intro .container .intro-content, .intro .container .intro-btn a, .features .container .features-upper .features-subtitle, .practice .container .practice-card .single-card .practice-link a, .practice .container .practice-card .single-card .single-card-text, .ltr .container .ltr-content a, .testimonials .container .test-card .star .review, .testimonials .container .test-card p, .testimonials .container .test-card .client-name, .attorney .attorney-container .container h1, .attorney .attorney-container .container .attorney-text, .footer .container .footer-logo p, .footer .container .footer-contact .contact-info div p, .footer .container .corporate ul li a, .footer .container .single ul li a, .footer .footer-foot .container .terms a {
   font-family: "light bt";
   font-size: 1.13rem;
   line-height: 1.75rem;
@@ -415,7 +416,8 @@ template {
 
 @media screen and (min-width: 992px) {
   .text, .contact-us .contact-us-subtitle, .contact-us .contact-container .contact-card p, .wrapper .contact-form .container p, .wrapper .contact-form .container .myform input,
-  .wrapper .contact-form .container .myform textarea, .wrapper .contact-form .container .myform .button, .header .laws-banner .law-banner- .input-container .input-field, .header .laws-banner .law-banner- .input-container .input-field::placeholder, .categories .container .btn-container a, .main-text .container .side-contact .side-email .email-container a, .main-text .container .side-contact .side-call .icon-container a p, .main-text .container .side-contact .side-address .add p, .main-text .container .content p, .main-text .container .content strong, .header .attorney-banner .law-banner-content .input-container .input-field, .header .attorney-banner .law-banner-content .input-container .input-field::placeholder, .attorney-profile .container .attorney-details .attorney-content .profile, .attorney-profile .container .attorney-details .attorney-content .experience, .attorney-profile .container .attorney-details .attorney-content .experience div li, .attorney-profile .container .attorney-details .attorney-content .education ul .uni-name div li, .attorney-profile .container .attorney-details .attorney-content .education .admission div li, .main-text .container .about-contact .side-email .email-container a, .main-text .container .about-contact .side-call .icon-container a p, .main-text .container .about-contact .side-address .add p, .reach-out button, .contact-modal .modal-inner .emergency, .contact-modal .modal-inner li a, .intro .container .intro-content, .intro .container .intro-btn a, .features .container .features-upper .features-subtitle, .practice .container .practice-card .single-card .practice-link a, .practice .container .practice-card .single-card .single-card-text, .ltr .container .ltr-content a, .testimonials .container .testi-container .testi-card .testi-text, .attorney .attorney-container .container .attorney-text, .footer .container .footer-logo p, .footer .container .footer-contact .contact-info div p, .footer .container .corporate ul li a, .footer .container .single ul li a, .footer .footer-foot .container .terms a {
+  .wrapper .contact-form .container .myform textarea, .wrapper .contact-form .container .myform .button, .header .laws-banner .law-banner-content .input-container .input-field, .header .laws-banner .law-banner-content .input-container .input-field::placeholder, .categories .container .btn-container a, .main-text .container .contact-form .container p, .main-text .container .contact-form .container .myform input,
+  .main-text .container .contact-form .container .myform textarea, .main-text .container .contact-form .container .myform .button, .main-text .container .side-contact .side-email .email-container a, .main-text .container .side-contact .side-call .icon-container a p, .main-text .container .side-contact .side-address .add p, .main-text .container .content p, .main-text .container .content strong, .header .attorney-banner .law-banner-content .input-container .input-field, .header .attorney-banner .law-banner-content .input-container .input-field::placeholder, .attorney-profile .container .attorney-details .attorney-content .profile, .attorney-profile .container .attorney-details .attorney-content .experience, .attorney-profile .container .attorney-details .attorney-content .experience div li, .attorney-profile .container .attorney-details .attorney-content .education ul .uni-name div li, .attorney-profile .container .attorney-details .attorney-content .education .admission div li, .header .about-banner .law-banner-content .input-container .input-field, .header .about-banner .law-banner-content .input-container .input-field::placeholder, .main-text .container .about-contact .side-email .email-container a, .main-text .container .about-contact .side-call .icon-container a p, .main-text .container .about-contact .side-address .add p, .how-can div a, .reach-out button, .contact-modal .modal-inner .emergency, .contact-modal .modal-inner li a, .intro .container .intro-content, .intro .container .intro-btn a, .features .container .features-upper .features-subtitle, .practice .container .practice-card .single-card .practice-link a, .practice .container .practice-card .single-card .single-card-text, .ltr .container .ltr-content a, .testimonials .container .test-card .star .review, .testimonials .container .test-card p, .testimonials .container .test-card .client-name, .attorney .attorney-container .container h1, .attorney .attorney-container .container .attorney-text, .footer .container .footer-logo p, .footer .container .footer-contact .contact-info div p, .footer .container .corporate ul li a, .footer .container .single ul li a, .footer .footer-foot .container .terms a {
     font-size: 1.3rem;
     line-height: 2rem;
   }
@@ -425,20 +427,21 @@ template {
   text-align: center;
 }
 
-.text-medium, .header .nav .container .links-container .nav-links li .scroll-link, .header .banner .banner-content .banner-subtitle {
+.text-medium, .header .nav .container .links-container .nav-links li .scroll-link, .header .banner figure .slide .banner-subtitle, .header .banner .banner-content .banner-subtitle {
   font-family: 'medium bt';
   font-size: 1.13rem;
   line-height: 1.75rem;
 }
 
-.h4, .attorney-profile .container .attorney-details .attorney-content .education .edu-title, .attorney-profile .container .attorney-details .attorney-content .education .admission-title, .laws .laws-cards .law-card .container .law-card-title {
+.h4, .attorney-profile .container .attorney-details .attorney-content .education .edu-title,
+.attorney-profile .container .attorney-details .attorney-content .education .admission-title, .laws .laws-cards .law-card .container .law-card-title {
   font-family: 'futura' , 'Poppins';
   font-weight: 700;
   font-size: 1.56rem;
   line-height: 1.5rem;
 }
 
-.h2, .time .time-title, .contact-us .contact-us-title, .wrapper .map .map-title, .wrapper .contact-form .container h2, .header .laws-banner .law-banner- .law-banner-title, .main-text .container .content .service-title, .header .attorney-banner .about-title, .header .attorney-banner .law-banner-content .law-banner-title, .attorney-profile .container .attorney-info .attorney-name, .features .container .features-upper .features-title, .practice .container .practice-title, .ltr .container .ltr-content h1, .testimonials .testi-title, .attorney .attorney-title, .laws .laws-title {
+.h2, .time .time-title, .contact-us .contact-us-title, .wrapper .map .map-title, .wrapper .contact-form .container h2, .header .laws-banner .law-banner-content .law-banner-title, .main-text .container .contact-form .container h2, .main-text .container .content .service-title, .header .attorney-banner .about-title, .header .attorney-banner .law-banner-content .law-banner-title, .attorney-profile .container .attorney-info .attorney-name, .header .about-banner .about-title, .header .about-banner .law-banner-content .law-banner-title, .how-can div h1, .features .container .features-upper .features-title, .practice .container .practice-title, .ltr .container .ltr-content h1, .testimonials .testi-title, .attorney .attorney-title, .laws .laws-title {
   font-family: 'medium bt';
   font-weight: 700;
   font-size: 2.44rem;
@@ -446,7 +449,7 @@ template {
 }
 
 @media screen and (min-width: 1200px) {
-  .h2, .time .time-title, .contact-us .contact-us-title, .wrapper .map .map-title, .wrapper .contact-form .container h2, .header .laws-banner .law-banner- .law-banner-title, .main-text .container .content .service-title, .header .attorney-banner .about-title, .header .attorney-banner .law-banner-content .law-banner-title, .attorney-profile .container .attorney-info .attorney-name, .features .container .features-upper .features-title, .practice .container .practice-title, .ltr .container .ltr-content h1, .testimonials .testi-title, .attorney .attorney-title, .laws .laws-title {
+  .h2, .time .time-title, .contact-us .contact-us-title, .wrapper .map .map-title, .wrapper .contact-form .container h2, .header .laws-banner .law-banner-content .law-banner-title, .main-text .container .contact-form .container h2, .main-text .container .content .service-title, .header .attorney-banner .about-title, .header .attorney-banner .law-banner-content .law-banner-title, .attorney-profile .container .attorney-info .attorney-name, .header .about-banner .about-title, .header .about-banner .law-banner-content .law-banner-title, .how-can div h1, .features .container .features-upper .features-title, .practice .container .practice-title, .ltr .container .ltr-content h1, .testimonials .testi-title, .attorney .attorney-title, .laws .laws-title {
     font-family: "Futura", 'Poppins';
     font-weight: 700;
     font-size: 3.31rem;
@@ -454,7 +457,7 @@ template {
   }
 }
 
-.text-small, .attorney-profile .container .attorney-info .info-container div p, .attorney-profile .container .attorney-details .btn-container button, .features .container .features-lower .feature-card .card-text, .laws .laws-cards .law-card .container .law-card-date, .footer .footer-foot .container .copyright {
+.text-small, .attorney-profile .container .attorney-info .info-container div p, .attorney-profile .container .attorney-details .btn-container button, .laws .laws-cards .law-card .container .law-card-date, .footer .footer-foot .container .copyright {
   font-family: "light bt";
   font-weight: 300;
   font-size: 1rem;
@@ -993,7 +996,7 @@ template {
 }
 
 .header .contact-banner {
-  background: url("../img/15.jpg") rgba(0, 0, 0, 0.35) no-repeat;
+  background: url("../img/contactphone.png") no-repeat;
   background-position: center center;
   background-size: cover;
   background-blend-mode: overlay;
@@ -1044,6 +1047,9 @@ template {
 }
 
 @media screen and (min-width: 768px) {
+  .header .contact-banner {
+    background: url("../img/conatctipad.png") no-repeat;
+  }
   .time .time-blob {
     width: 32rem;
   }
@@ -1131,6 +1137,9 @@ template {
 }
 
 @media screen and (min-width: 992px) {
+  .header .contact-banner {
+    background: url("../img/contactdesktop.png") no-repeat;
+  }
   .contact-us .contact-container {
     width: 90%;
     margin: 0 auto;
@@ -1143,20 +1152,22 @@ template {
 
 @media screen and (min-width: 1200px) {
   .contact-us .contact-container {
-    width: 68.00rem;
+    width: 68rem;
   }
 }
 
 .wrapper {
-  background-image: linear-gradient(84.19deg, rgba(75, 121, 161, 0.05) 0%, rgba(53, 148, 182, 0.05) 19.77%, rgba(36, 174, 191, 0.05) 40.19%, rgba(63, 199, 190, 0.05) 57.81%, rgba(113, 222, 181, 0.05) 77.33%);
   position: relative;
+}
+
+.wrapper .contact-blob {
+  opacity: 0.7;
 }
 
 .wrapper .contact-blob {
   width: 101.13rem;
   position: absolute;
   z-index: -1;
-  top: -4rem;
 }
 
 .wrapper .map {
@@ -1187,7 +1198,7 @@ template {
 }
 
 .wrapper .contact-form {
-  border: 1px solid #566cfb;
+  border: 1px solid #fff;
   border-radius: 2.5rem;
   margin: 10.75rem 1rem 0;
   position: relative;
@@ -1210,17 +1221,18 @@ template {
 .wrapper .contact-form .container h2 {
   font-size: 2rem;
   margin-bottom: 1rem;
+  color: #fff;
 }
 
 .wrapper .contact-form .container p {
-  color: #7d7d7d;
+  color: #fff;
   margin-bottom: 2rem;
   max-width: 38rem;
 }
 
 .wrapper .contact-form .container .myform input,
 .wrapper .contact-form .container .myform textarea {
-  color: #7d7d7d;
+  color: #fff;
   width: 18.94rem;
   border: none;
   background: #fff;
@@ -1231,13 +1243,12 @@ template {
 }
 
 .wrapper .contact-form .container .myform .socials {
-  color: #afafaf;
-  font-family: "Futura", 'Poppins';
+  color: #fff;
+  font-family: "Futura", "Poppins";
   font-weight: bold;
   font-size: 1rem;
   width: 18.94rem;
   display: flex;
-  justify-content: flex-end;
   gap: 1.31rem;
   margin: 1.38rem 0 1.69rem;
 }
@@ -1249,7 +1260,7 @@ template {
 
 .wrapper .contact-form .container .myform .button {
   margin-bottom: 2.38rem;
-  text-align: end;
+  text-align: center;
 }
 
 .clock {
@@ -1279,6 +1290,7 @@ template {
     margin-right: 1rem;
   }
   .wrapper .contact-form .container .myform .socials {
+    justify-content: center;
     width: 100%;
   }
   .wrapper .contact-form .container .myform textarea {
@@ -1292,7 +1304,6 @@ template {
 @media screen and (min-width: 992px) {
   .wrapper .contact-blob {
     width: 100%;
-    top: -12.3rem;
   }
   .wrapper .contact-form .container .myform input {
     width: 48.5%;
@@ -1300,16 +1311,13 @@ template {
 }
 
 @media screen and (min-width: 1200px) {
-  .wrapper .contact-blob {
-    top: -15.6rem;
-  }
   .wrapper .contact-form {
     width: 68.38rem;
     margin: 0 auto;
     margin-top: 17rem;
   }
   .wrapper .contact-form .container {
-    width: 54.00rem;
+    width: 54rem;
   }
   .wrapper .map .map-container .location .map-responsive iframe {
     height: 50%;
@@ -1317,6 +1325,9 @@ template {
 }
 
 @media screen and (min-width: 1920px) {
+  .header .contact-banner {
+    background: url("../img/15.jpg") no-repeat;
+  }
   .wrapper .contact-blob {
     top: -20.8rem;
   }
@@ -1327,22 +1338,22 @@ template {
 }
 
 .header .laws-banner {
-  background: url("../img/16.jpg") rgba(0, 0, 0, 0.35) no-repeat;
+  background: url("../img/areaphone.png") no-repeat;
   background-position: center center;
   background-size: cover;
   background-blend-mode: overlay;
-  height: 60vh;
+  height: 40vh;
   display: grid;
   justify-content: center;
   align-items: flex-end;
 }
 
-.header .laws-banner .law-banner- .law-banner-title {
+.header .laws-banner .law-banner-content .law-banner-title {
   margin-bottom: 2.63rem;
   color: #fff;
 }
 
-.header .laws-banner .law-banner- .input-container {
+.header .laws-banner .law-banner-content .input-container {
   display: flex;
   flex-direction: row-reverse;
   width: 18.94rem;
@@ -1352,21 +1363,21 @@ template {
   border-radius: 3.81rem;
 }
 
-.header .laws-banner .law-banner- .input-container .search-button {
+.header .laws-banner .law-banner-content .input-container .search-button {
   background: none;
   border: none;
   padding: 0;
   margin: 0;
 }
 
-.header .laws-banner .law-banner- .input-container .icon {
+.header .laws-banner .law-banner-content .input-container .icon {
   padding: 10px;
   min-width: 50px;
   background: transparent;
   border: none;
 }
 
-.header .laws-banner .law-banner- .input-container .input-field {
+.header .laws-banner .law-banner-content .input-container .input-field {
   width: 100%;
   padding: 10px;
   outline: none;
@@ -1376,12 +1387,13 @@ template {
   border: none;
 }
 
-.header .laws-banner .law-banner- .input-container .input-field::placeholder {
+.header .laws-banner .law-banner-content .input-container .input-field::placeholder {
   color: #fff;
 }
 
 @media screen and (min-width: 768px) {
   .header .laws-banner {
+    background: url("../img/areaipad.png") no-repeat;
     align-items: center;
   }
   .header .laws-banner .law-banner-content {
@@ -1393,17 +1405,29 @@ template {
 }
 
 @media screen and (min-width: 992px) {
+  .header .laws-banner {
+    background: url("../img/16.jpg") no-repeat;
+  }
   .header .laws-banner .law-banner-content .input-container {
     width: 32.81rem;
   }
 }
 
 @media screen and (min-width: 1200px) {
+  .header .laws-banner {
+    background: url("../img/areadesk2.png") no-repeat;
+  }
   .header .laws-banner .law-banner-content {
     margin-top: 10rem;
   }
   .header .laws-banner .law-banner-content .input-container {
     width: 47.81rem;
+  }
+}
+
+@media screen and (min-width: 1920px) {
+  .header .laws-banner {
+    background: url("../img/16.jpg") no-repeat;
   }
 }
 
@@ -1436,11 +1460,39 @@ template {
 }
 
 .main-text {
-  margin-top: 3.5rem;
+  margin-top: 2.5rem;
+}
+
+.main-text .container .list h2 {
+  font-family: "medium bt";
+  font-weight: 700;
+  font-size: 1.5rem;
+  line-height: 1.5rem;
+  margin-bottom: 1.81rem;
+}
+
+.main-text .container .list ul {
+  margin-bottom: 3.5rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.main-text .container .list ul li {
+  margin-bottom: 1rem;
+}
+
+.main-text .container .list ul li a {
+  font-family: "light bt";
+  font-size: 1.13rem;
+  line-height: 1.75rem;
+}
+
+.main-text .container .list ul li a:hover {
+  color: #566cfb;
 }
 
 .main-text .container .side-links {
-  margin-top: 7rem;
+  margin-top: 5rem;
   display: none;
 }
 
@@ -1458,7 +1510,7 @@ template {
 
 .main-text .container .side-links ul .line {
   width: 14.19rem;
-  background: #000;
+  background: #566cfb;
   height: 1px;
   margin-top: 2.38rem;
   margin-bottom: 1.19rem;
@@ -1478,9 +1530,71 @@ template {
   color: #566cfb;
 }
 
-.main-text .container .side-contact {
+.main-text .container .contact-form {
   margin-top: 2rem;
   display: flex;
+  flex-direction: column;
+  align-items: center;
+  top: 5rem;
+  position: sticky;
+  background: #a07178;
+}
+
+.main-text .container .contact-form .container {
+  width: 100%;
+  padding: 0 1rem;
+  margin-top: 3.13rem;
+  background: transparent;
+}
+
+.main-text .container .contact-form .container h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #fff;
+}
+
+.main-text .container .contact-form .container p {
+  color: #fff;
+  margin-bottom: 2rem;
+  max-width: 38rem;
+}
+
+.main-text .container .contact-form .container .myform input,
+.main-text .container .contact-form .container .myform textarea {
+  color: #fff;
+  width: 18.94rem;
+  border: none;
+  background: #fff;
+  padding: 1.13rem 0.8rem;
+  box-shadow: 0px 2px 11px rgba(0, 0, 0, 0.08);
+  margin-bottom: 1.38rem;
+  outline: none;
+}
+
+.main-text .container .contact-form .container .myform .socials {
+  color: #fff;
+  font-family: "Futura", 'Poppins';
+  font-weight: bold;
+  font-size: 1rem;
+  display: flex;
+  justify-content: center;
+  gap: 1.31rem;
+  margin: 1.38rem 0 1.69rem;
+}
+
+.main-text .container .contact-form .container .myform .socials ul {
+  display: flex;
+  gap: 0.88rem;
+}
+
+.main-text .container .contact-form .container .myform .button {
+  margin-bottom: 2.38rem;
+  text-align: center;
+}
+
+.main-text .container .side-contact {
+  margin-top: 2rem;
+  display: none;
   flex-direction: column;
   align-items: center;
   width: 100%;
@@ -1561,8 +1675,8 @@ template {
   margin-bottom: 3.88rem;
 }
 
-.main-text .container .content img {
-  margin: 2.58rem 0;
+.main-text .container .content p {
+  margin-top: 1rem;
 }
 
 .main-text .container .content p .intro-link {
@@ -1581,9 +1695,12 @@ template {
 }
 
 @media screen and (min-width: 768px) {
+  .main-text .container .list ul {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
   .main-text .container .content .service-title {
     font-size: 2.44rem;
-    margin-bottom: 3.88rem;
+    margin-bottom: 0.88rem;
   }
 }
 
@@ -1593,10 +1710,16 @@ template {
     flex-direction: row;
     gap: 1rem;
   }
+  .main-text .container .list {
+    display: none;
+  }
   .main-text .container .side-links {
     display: block;
     position: sticky;
     top: 12.75rem;
+    background: #3d5a80;
+    color: #fff;
+    padding: .6rem;
   }
   .main-text .container .side-links h3 {
     font-family: "medium bt";
@@ -1604,34 +1727,48 @@ template {
     font-size: 1.5rem;
     line-height: 1.5rem;
     margin-bottom: 1.81rem;
+    color: #fff;
   }
   .main-text .container .side-links ul {
     margin-bottom: 3.5rem;
   }
   .main-text .container .side-links ul li a {
+    color: #fff;
     font-family: "light bt";
     font-size: 1.13rem;
     line-height: 1.75rem;
   }
   .main-text .container .side-contact {
+    display: block;
+    flex-direction: column;
+    align-items: center;
     position: sticky;
     top: 12.75rem;
   }
 }
 
 @media screen and (min-width: 1200px) {
+  .main-text .container .side-links {
+    padding: 2rem;
+  }
   .main-text .container .content img,
   .main-text .container .content p {
     width: auto;
   }
+  .main-text .container .side-contact {
+    display: flex;
+  }
+  .main-text .container .contact-form {
+    margin-top: 5rem;
+  }
 }
 
 .header .attorney-banner {
-  background: url("../img/aboutphone.png") rgba(0, 0, 0, 0.5) no-repeat;
+  background: url("../img/attorneypnone.png") no-repeat;
   background-position: top center;
   background-size: cover;
   background-blend-mode: overlay;
-  height: 90vh;
+  height: 50vh;
   display: grid;
   place-items: center;
 }
@@ -1698,7 +1835,10 @@ template {
 }
 
 .attorney-profile .container .attorney-info .attorney-name {
+  margin-top: 2rem;
   margin-bottom: 2.94rem;
+  text-align: center;
+  color: #a07178;
 }
 
 .attorney-profile .container .attorney-info div .attornery {
@@ -1712,6 +1852,10 @@ template {
   margin-bottom: 2.13rem;
 }
 
+.attorney-profile .container .attorney-info .info-container div p {
+  color: #a07178;
+}
+
 .attorney-profile .container .attorney-info .social-icon {
   display: flex;
   justify-content: center;
@@ -1719,11 +1863,12 @@ template {
 }
 
 .attorney-profile .container .attorney-details {
-  padding: 1.19rem 0;
+  background: #3d5a80;
+  padding: 2rem;
 }
 
 .attorney-profile .container .attorney-details .btn-container {
-  background: #ffffff;
+  background: #fff;
   box-shadow: 2px 2px 30px rgba(0, 0, 0, 0.15);
   border-radius: 5.19rem;
   display: flex;
@@ -1733,9 +1878,8 @@ template {
   background: transparent;
   border: none;
   width: 100%;
-  height: 100%;
   padding: 1.19rem 0.19rem;
-  color: #566cfb;
+  color: #a07178;
 }
 
 .attorney-profile .container .attorney-details .btn-container button:first-child {
@@ -1749,11 +1893,17 @@ template {
 }
 
 .attorney-profile .container .attorney-details .btn-container .active {
-  background: #566cfb;
+  background: #a07178;
   color: #fff;
 }
 
-.attorney-profile .container .attorney-details .attorney-content .profile, .attorney-profile .container .attorney-details .attorney-content .experience, .attorney-profile .container .attorney-details .attorney-content .education {
+.attorney-profile .container .attorney-details .attorney-content {
+  color: #fff;
+}
+
+.attorney-profile .container .attorney-details .attorney-content .profile,
+.attorney-profile .container .attorney-details .attorney-content .experience,
+.attorney-profile .container .attorney-details .attorney-content .education {
   display: none;
 }
 
@@ -1766,7 +1916,7 @@ template {
 }
 
 .attorney-profile .container .attorney-details .attorney-content .profile p .intro-link {
-  color: #566cfb;
+  color: #a07178;
   font-weight: bold;
   cursor: pointer;
 }
@@ -1794,7 +1944,7 @@ template {
 }
 
 .attorney-profile .container .attorney-details .attorney-content .experience p .intro-link {
-  color: #566cfb;
+  color: #a07178;
   font-weight: bold;
   cursor: pointer;
 }
@@ -1807,7 +1957,8 @@ template {
   margin-top: 4.56rem;
 }
 
-.attorney-profile .container .attorney-details .attorney-content .education .edu-title, .attorney-profile .container .attorney-details .attorney-content .education .admission-title {
+.attorney-profile .container .attorney-details .attorney-content .education .edu-title,
+.attorney-profile .container .attorney-details .attorney-content .education .admission-title {
   margin-bottom: 1.8rem;
 }
 
@@ -1862,10 +2013,14 @@ template {
 
 @media screen and (min-width: 768px) {
   .header .attorney-banner {
-    background: url("../img/aboutipad.png") rgba(0, 0, 0, 0.5) no-repeat;
+    background: url("../img/attorneyipad.png") no-repeat;
+    height: 35vh;
   }
   .attorney-profile .container {
     height: auto;
+  }
+  .attorney-profile .container .attorney-details {
+    color: #fff;
   }
   .attorney-profile .container .attorney-details .btn-container button {
     font-size: 1.13rem;
@@ -1874,7 +2029,8 @@ template {
 
 @media screen and (min-width: 992px) {
   .header .attorney-banner {
-    background: url("../img/atto.jpg") rgba(0, 0, 0, 0.5) no-repeat;
+    background: url("../img/17.png") no-repeat;
+    height: 40vh;
   }
   .attorney-profile .container .attorney-info {
     display: block;
@@ -1883,13 +2039,107 @@ template {
   }
 }
 
-.main-text .container {
-  flex-direction: column-reverse;
+@media screen and (min-width: 1920px) {
+  .header .attorney-banner {
+    background: url("../img/atto.jpg") no-repeat;
+    height: 35vh;
+  }
+}
+
+.header .about-banner {
+  background: url("../img/aboutusphone.png") no-repeat;
+  background-position: top center;
+  background-size: cover;
+  background-blend-mode: overlay;
+  height: 50vh;
+  display: grid;
+  place-items: center;
+}
+
+.header .about-banner .about-title {
+  text-align: center;
+  margin-top: 8rem;
+  color: #fff;
+}
+
+.header .about-banner .law-banner-content {
+  z-index: 999;
+}
+
+.header .about-banner .law-banner-content .law-banner-title {
+  margin-bottom: 2.63rem;
+  color: #fff;
+}
+
+.header .about-banner .law-banner-content .input-container {
+  display: flex;
+  flex-direction: row-reverse;
+  width: 18.94rem;
+  padding: 0 1.13rem;
+  margin-bottom: 2.81rem;
+  border: 2px solid #fff;
+  border-radius: 3.81rem;
+}
+
+.header .about-banner .law-banner-content .input-container .search-button {
+  background: none;
+  border: none;
+  padding: 0;
+  margin: 0;
+}
+
+.header .about-banner .law-banner-content .input-container .icon {
+  padding: 10px;
+  min-width: 50px;
+  background: transparent;
+  border: none;
+}
+
+.header .about-banner .law-banner-content .input-container .input-field {
+  width: 100%;
+  padding: 10px;
+  outline: none;
+  color: #fff;
+  border-color: #fff;
+  background: transparent;
+  border: none;
+}
+
+.header .about-banner .law-banner-content .input-container .input-field::placeholder {
+  color: #fff;
+}
+
+@media screen and (min-width: 768px) {
+  .header .about-banner {
+    background: url("../img/aboutusipad.png") no-repeat;
+    height: 35vh;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .header .about-banner {
+    background: url("../img/aboutusipadpro.png") no-repeat;
+    height: 35vh;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .header .about-banner {
+    background: url("../img/aboutusipadpro.png") no-repeat;
+    height: 35vh;
+  }
+}
+
+@media screen and (min-width: 1920px) {
+  .header .about-banner {
+    background: url("../img/About.jpg") no-repeat;
+    height: 35vh;
+  }
 }
 
 .main-text .container .about-contact {
-  margin-top: 7rem;
-  display: flex;
+  display: none;
+  margin-top: 2rem;
   flex-direction: column;
   align-items: center;
   width: 100%;
@@ -1961,7 +2211,7 @@ template {
 }
 
 .main-text .container .about-contact .side-address .add p {
-  max-width: 13.5rem;
+  max-width: 1 rem;
   text-align: center;
 }
 
@@ -1970,6 +2220,7 @@ template {
     flex-direction: row;
   }
   .main-text .container .about-contact {
+    display: block;
     align-items: flex-start;
     position: sticky;
     top: 8.06rem;
@@ -1981,6 +2232,7 @@ template {
     flex-direction: row;
   }
   .main-text .container .about-contact {
+    display: flex;
     align-items: flex-start;
     position: sticky;
     top: 7.06rem;
@@ -2107,7 +2359,10 @@ template {
 }
 
 .header .banner {
-  background: url("../img/homephone.jpg") rgba(0, 0, 0, 0.35) no-repeat;
+  overflow: hidden;
+  width: 100%;
+  height: 100vh;
+  background: no-repeat;
   background-position: center center;
   background-size: cover;
   background-blend-mode: overlay;
@@ -2117,6 +2372,62 @@ template {
   display: grid;
   place-items: center;
   position: relative;
+  animation: slide linear 10s infinite;
+}
+
+.header .banner figure {
+  width: 500%;
+  margin: 0;
+  animation: animate3 5s infinite;
+}
+
+.header .banner figure .slide {
+  float: left;
+  width: 20%;
+}
+
+.header .banner figure .slide .banner-title {
+  padding: 10rem;
+  margin-top: 15rem;
+  color: #fff;
+  position: fixed;
+  text-align: left;
+  font-family: "medium bt";
+  font-weight: 700;
+  font-size: 2.44rem;
+  line-height: 2.88rem;
+  margin-bottom: 1.31rem;
+  max-width: 45rem;
+}
+
+.header .banner figure .slide .banner-subtitle {
+  color: #fff;
+  padding: 10rem;
+  margin-top: 24rem;
+  text-align: left;
+  position: fixed;
+  font-size: 1.5rem;
+}
+
+.header .banner figure .slide img {
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  float: left;
+}
+
+@keyframes slide {
+  0% {
+    background: url("../img/phone1.png") no-repeat;
+  }
+  50% {
+    background: url("../img/phone2.png") no-repeat;
+  }
+  100% {
+    background: url("../img/phone3.png") no-repeat;
+  }
 }
 
 .header .banner .banner-content {
@@ -2134,19 +2445,19 @@ template {
 }
 
 .header .banner .banner-content .banner-title span:before {
-  content: 'CONSOLIDATED WITH';
-  animation: animate 30s infinite;
+  content: "CONSOLIDATED WITH";
+  animation: animate 10s infinite;
 }
 
 @keyframes animate {
   0% {
-    content: 'CONSOLIDATED WITH';
+    content: "CONSOLIDATED WITH";
   }
   50% {
-    content: 'SERVING AS';
+    content: "SERVING AS";
   }
   100% {
-    content: 'PROVIDING';
+    content: "PROVIDING";
   }
 }
 
@@ -2156,19 +2467,19 @@ template {
 }
 
 .header .banner .banner-content .banner-subtitle span:before {
-  content: 'profound local knowledge and immense international experience!';
-  animation: animate2 30sinfinite;
+  content: "profound local knowledge and immense international experience!";
+  animation: animate2 10s infinite;
 }
 
 @keyframes animate2 {
   0% {
-    content: ' profound local knowledge and immense international experience!';
+    content: " profound local knowledge and immense international experience!";
   }
   50% {
-    content: ' a legal bridge between you and your interest in Ethiopia!';
+    content: " a legal bridge between you and your interest in Ethiopia!";
   }
   100% {
-    content: 'a full-ranged one-stop legal solution!';
+    content: "a full-ranged one-stop legal solution!";
   }
 }
 
@@ -2177,38 +2488,97 @@ template {
   font-weight: 700;
 }
 
+.how-can {
+  background: url(../img/16.jpg) rgba(0, 0, 0, 0.16) no-repeat;
+  background-position: center center;
+  background-size: cover;
+  background-blend-mode: overlay;
+  background-attachment: fixed;
+  margin-top: 5rem;
+}
+
 .how-can div {
-  margin-top: 3rem;
+  color: #fff;
+  margin-top: 1rem;
+  padding: 2.5rem 0 4rem;
+  max-width: 32.69rem;
+  margin-left: 1rem;
 }
 
 .how-can div h1 {
-  text-align: center;
-  font-family: 'medium bt';
-  font-weight: 600;
-  font-size: 2rem;
-  line-height: 1.88rem;
+  color: #fff;
+  margin-bottom: 1.69rem;
 }
 
 .how-can div p {
-  margin-left: 2rem;
-  margin-right: 2rem;
-  line-height: 2rem;
-  margin-top: 2.44rem;
-  font-size: 1.3rem;
+  font-family: Futura Md BT;
+  font-weight: normal;
+  font-size: 1.13rem;
+  line-height: 1.75rem;
+  color: #fff;
+  margin-bottom: 1.2rem;
+  max-width: 28.19rem;
+}
+
+.features .container-list {
+  display: grid;
+  grid-template-columns: 1fr;
+  margin-bottom: 3rem;
+}
+
+.features .container-list .feature-card {
+  margin-top: 3rem;
+  background: #3d5a80;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  width: 21rem;
+  height: 12rem;
+}
+
+.features .container-list .feature-card .card-img {
+  margin-bottom: 0.75rem;
+  width: auto !important;
+}
+
+.features .container-list .feature-card .card-title {
+  font-family: "medium bt";
+  font-weight: 300;
+  font-size: 1.25rem;
+  line-height: 1.5rem;
+  margin-bottom: 0.75rem;
+  text-align: center;
+  color: #fff;
+}
+
+.features .container-list .feature-card .card-text {
+  width: 15.94rem;
+  text-align: center;
+  color: #fff;
   font-family: "light bt";
-}
-
-.how-can div p .intro-link {
-  color: #566cfb;
-  font-weight: bold;
-  cursor: pointer;
-}
-
-.how-can div p .intro-link:hover {
-  text-decoration: underline;
+  font-weight: 300;
+  font-size: 1rem;
 }
 
 @media screen and (min-width: 768px) {
+  .header .banner {
+    animation: slide linear 10s infinite;
+  }
+  @keyframes slide {
+    0% {
+      background: url("../img/ipad1.png") no-repeat;
+    }
+    50% {
+      background: url("../img/ipad2.png") no-repeat;
+    }
+    100% {
+      background: url("../img/ipad3.png") no-repeat;
+    }
+  }
   .header .banner .banner-content .banner-title {
     font-family: "Futura", "Poppins";
     font-weight: 700;
@@ -2216,39 +2586,47 @@ template {
     line-height: 4.31rem;
     margin-bottom: 2.31rem;
   }
-  .how-can div h1 {
-    font-weight: 600;
-    font-size: 2rem;
-    line-height: 2.88rem;
+  .header .nav .container .links-container {
+    width: 40vw;
   }
-  .how-can div p {
-    margin-left: 5rem;
-    margin-right: 5rem;
-    line-height: 2.31rem;
-    margin-top: 2.44rem;
-    font-size: 1.3rem;
-    font-family: "light bt";
-  }
-  .how-can div p .intro-link {
-    color: #566cfb;
-    font-weight: bold;
-    cursor: pointer;
-  }
-  .how-can div p .intro-link:hover {
-    text-decoration: underline;
+  .how-can div {
+    margin-left: 2rem;
   }
 }
 
 @media screen and (min-width: 992px) {
+  .header .banner {
+    animation: slide linear 10s infinite;
+  }
+  @keyframes slide {
+    0% {
+      background: url("../img/home1.jpg") no-repeat;
+    }
+    50% {
+      background: url("../img/home2.jpg") no-repeat;
+    }
+    100% {
+      background: url("../img/home3.jpg") no-repeat;
+    }
+  }
   .header .nav .container .links-container .nav-links li .scroll-link {
     font-size: 1.13rem;
+  }
+  .how-can div {
+    margin-left: 3rem;
+  }
+  .how-can div p {
+    margin-bottom: 1.3rem;
+  }
+  .how-can div a {
+    margin-top: 1rem;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .header .banner {
-    background: rgba(0, 0, 0, 0.5) no-repeat;
-    animation: slide 30s infinite;
+    background: no-repeat;
+    animation: slide linear 10s infinite;
   }
   @keyframes slide {
     0% {
@@ -2269,20 +2647,10 @@ template {
     margin-bottom: 2.31rem;
   }
   .how-can div {
-    text-align: center;
-  }
-  .how-can div h1 {
-    font-family: "Futura", 'Poppins';
-    font-weight: 700;
-    font-size: 3rem;
-    line-height: 3.98rem;
+    margin-left: 2.5rem;
   }
   .how-can div p {
-    text-align: center;
-    margin-left: 10rem;
-    margin-right: 10rem;
-    line-height: 2.31rem;
-    margin-top: 4.44rem;
+    max-width: 38.19rem;
   }
 }
 
@@ -2477,7 +2845,7 @@ template {
   margin: 0 auto;
   margin-bottom: 2rem;
   text-align: center;
-  max-width: 42rem;
+  max-width: 50rem;
 }
 
 .intro .container .intro-content .intro-link {
@@ -2561,31 +2929,6 @@ template {
   width: 2rem;
 }
 
-.features .container .features-lower .feature-card {
-  margin-bottom: 6.06rem;
-  margin-left: 1rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding: 2rem;
-}
-
-.features .container .features-lower .feature-card .card-img {
-  margin-bottom: 0.75rem;
-  width: auto !important;
-}
-
-.features .container .features-lower .feature-card .card-title {
-  margin-bottom: 0.75rem;
-  text-align: center;
-}
-
-.features .container .features-lower .feature-card .card-text {
-  width: 17.94rem;
-  text-align: center;
-}
-
 @media screen and (min-width: 768px) {
   .features .f-circle {
     top: 0rem;
@@ -2608,6 +2951,13 @@ template {
   .features .container .features-lower {
     display: flex;
   }
+  .features .container-list {
+    margin-bottom: 7.06rem;
+    grid-template-columns: 1fr 1fr;
+  }
+  .features .container-list .feature-card {
+    margin-bottom: 1.06rem;
+  }
 }
 
 @media screen and (min-width: 992px) {
@@ -2618,6 +2968,10 @@ template {
     line-height: 2.88rem;
     margin-top: 7.06rem;
     margin-bottom: 1.19rem;
+  }
+  .features .container-list {
+    margin-left: 7rem;
+    margin-right: 5rem;
   }
   .features .feature-md {
     top: 25%;
@@ -2637,6 +2991,12 @@ template {
     font-size: 1.13rem;
     line-height: 1.75rem;
   }
+  .features .container-list {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  .features .container-list .feature-card {
+    margin-top: 4rem;
+  }
 }
 
 @media screen and (min-width: 1920px) {
@@ -2645,6 +3005,10 @@ template {
   }
   .features .f-circle {
     left: 0;
+  }
+  .features .container-list {
+    margin-left: 0rem;
+    margin-right: 0rem;
   }
 }
 
@@ -2843,6 +3207,7 @@ template {
 .testimonials {
   margin-top: 5.69rem;
   background: linear-gradient(180deg, #fdfdfd 0%, rgba(253, 253, 253, 0) 100%);
+  width: 100%;
 }
 
 .testimonials .testi-title {
@@ -2853,49 +3218,95 @@ template {
 
 .testimonials .container {
   position: relative;
-  overflow: hidden;
-  display: flex;
-  flex: 1;
+  margin-bottom: 2rem;
 }
 
-.testimonials .container .testi-container {
-  overflow-x: scroll;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  gap: 2rem;
-  width: auto;
-  margin: 0 auto;
-}
-
-.testimonials .container .testi-container::-webkit-scrollbar {
-  width: 0;
-}
-
-.testimonials .container .testi-container .testi-card {
-  width: 20.56rem;
-  margin-top: 3.88rem;
+.testimonials .container .test-card {
+  background-color: #fff;
+  padding: 1rem;
+  height: 25rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  position: relative;
+  margin-top: 1rem;
+  padding: 1.81rem 1.31rem 1.81rem;
   background: #fff;
-  border: 1px solid #e4e4e4;
+  box-shadow: 2px 2px 24px rgba(0, 0, 0, 0.12);
 }
 
-.testimonials .container .testi-container .testi-card .testi-img {
-  margin-top: -1.63rem;
-  margin-left: 1.19rem;
-}
-
-.testimonials .container .testi-container .testi-card .testi-text {
-  margin: 1rem 1.2rem 0.81rem 1rem;
-}
-
-.testimonials .container .testi-container .testi-card .testi-footer {
-  margin: 0 0.69rem 2rem 1rem;
+.testimonials .container .test-card .star {
+  width: 100%;
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-end;
+  align-items: center;
 }
 
-.testimonials .container .testi-container .testi-card .testi-footer .icons-container {
+.testimonials .container .test-card .star img {
+  width: 8rem;
+}
+
+.testimonials .container .test-card .star .review {
+  margin-left: 1rem;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #3d5a80;
+}
+
+.testimonials .container .test-card p {
+  max-width: 45rem;
+  line-height: 2rem;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  font-size: 1rem;
+}
+
+.testimonials .container .test-card .client-name {
+  font-size: 1.1rem;
+  width: 100%;
+  justify-content: flex-end;
+  font-weight: 600;
+  color: #a07178;
+}
+
+.testimonials .test-btn {
+  width: 100%;
   display: flex;
-  gap: 0.5rem;
+  justify-content: center;
+}
+
+.testimonials .test-btn .btn {
+  margin-top: 2rem;
+}
+
+@media screen and (min-width: 768px) {
+  .testimonials .container .test-card {
+    margin-left: 2rem;
+    margin-right: 2rem;
+    height: 20rem;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .testimonials .container {
+    display: flex;
+  }
+  .testimonials .container .test-card {
+    margin-left: 0.3rem;
+    margin-right: 0.3rem;
+    height: 26rem;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .testimonials .container {
+    display: flex;
+  }
+  .testimonials .container .test-card {
+    margin-left: 0.3rem;
+    margin-right: 0.3rem;
+    height: 25rem;
+    margin-top: 2rem;
+  }
 }
 
 @media screen and (min-width: 1920px) {
@@ -2912,20 +3323,33 @@ template {
   text-align: center;
 }
 
-.attorney .attorney-container .attorney-img {
-  margin-top: 3.69rem;
-  width: 22.25rem;
+.attorney .attorney-container {
+  background: #3d5a80;
+}
+
+.attorney .attorney-container .attorney-image .attorney-img {
+  margin-top: 2rem;
+  width: 20.25rem;
+}
+
+.attorney .attorney-container .container h1 {
+  font-weight: 600;
+  font-size: 1.7rem;
+  color: #fff;
 }
 
 .attorney .attorney-container .container .attorney-text {
-  max-width: 40rem;
-  line-height: 2.31rem;
-  margin-top: 4.44rem;
+  max-width: 45rem;
+  line-height: 2rem;
+  margin-top: 1.44rem;
+  color: #fff;
+  font-size: 1rem;
 }
 
 .attorney .attorney-container .container a {
   font-size: 1rem;
   margin-top: 2.88rem;
+  margin-bottom: 3rem;
 }
 
 .attorney .attorney-container .container .attorney-btn {
@@ -2933,8 +3357,8 @@ template {
 }
 
 @media screen and (min-width: 768px) {
-  .attorney .attorney-container .attorney-img {
-    width: 40rem;
+  .attorney .attorney-container .attorney-image .attorney-img {
+    width: 30rem;
   }
   .attorney .attorney-container .container .attorney-btn {
     text-align: left;
@@ -2947,11 +3371,16 @@ template {
   }
   .attorney .attorney-container {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
     align-items: center;
+    margin-top: 2.3rem;
+  }
+  .attorney .attorney-container .container {
+    grid-column-start: 2;
+    grid-column-end: 4;
   }
   .attorney .attorney-container .container a {
-    margin-top: 0.88rem;
+    margin-top: 3.88rem;
   }
 }
 
@@ -2959,8 +3388,11 @@ template {
   .attorney .attorney-container {
     align-items: center;
   }
-  .attorney .attorney-container .attorney-img {
-    width: 58rem;
+  .attorney .attorney-container .attorney-image {
+    width: 35%;
+  }
+  .attorney .attorney-container .attorney-image .attorney-img {
+    width: 38rem;
   }
   .attorney .attorney-container .container .attorney-text {
     font-size: 1.13rem;
@@ -3122,7 +3554,7 @@ template {
 }
 
 .footer {
-  background: #8E92B5;
+  background: #324661;
   margin-top: 8.94rem;
   font-size: 0.88rem;
   overflow-x: hidden;
@@ -3282,6 +3714,7 @@ template {
   }
   .footer .container .footer-logo p {
     margin-left: 0;
+    text-align: start;
   }
   .footer .container .footer-logo .icon-container {
     justify-content: flex-start;
@@ -3325,7 +3758,7 @@ template {
     margin: 0;
   }
   .footer .footer-foot .container .terms a {
-    margin: 0 .4rem 0 .4rem;
+    margin: 0 0.4rem 0 0.4rem;
   }
 }
 
@@ -3339,7 +3772,9 @@ template {
   .footer .container {
     row-gap: 0;
   }
-  .footer .container .corporate, .footer .container .single, .footer .container .footer-contact {
+  .footer .container .corporate,
+  .footer .container .single,
+  .footer .container .footer-contact {
     margin-top: 1.3rem;
   }
   .footer .container .footer-contact .contact-info {

@@ -1,9 +1,109 @@
+.header {
+  .about-banner {
+    background: url("../img/aboutusphone.png")  no-repeat;
+    background-position: top center;
+    background-size: cover;
+    background-blend-mode: overlay;
+    height: 50vh;
+    display: grid;
+    place-items: center;
+
+    .about-title {
+      @extend .h2;
+      text-align: center;
+      margin-top: 8rem;
+      color: #fff;
+    }
+    .law-banner-content {
+      z-index: 999;
+      .law-banner-title {
+        @extend .h2;
+        margin-bottom: 2.63rem;
+        color: #fff;
+      }
+      .input-container {
+        display: flex;
+        flex-direction: row-reverse;
+        width: 18.94rem;
+        padding: 0 1.13rem;
+        margin-bottom: 2.81rem;
+        border: 2px solid #fff;
+        border-radius: 3.81rem;
+        .search-button {
+          background: none;
+          border: none;
+          padding: 0;
+          margin: 0;
+        }
+        .icon {
+          padding: 10px;
+          min-width: 50px;
+          background: transparent;
+          border: none;
+        }
+        .input-field {
+          @extend .text;
+          width: 100%;
+          padding: 10px;
+          outline: none;
+          color: #fff;
+          border-color: #fff;
+          background: transparent;
+          border: none;
+          &::placeholder {
+            color: #fff;
+            @extend .text;
+          }
+        }
+      }
+    }
+  }
+}
+
+@include responsive($md){
+  .header{
+    .about-banner{
+      background: url("../img/aboutusipad.png")  no-repeat;
+      height: 35vh;
+    }
+  }
+
+}
+@include responsive($lg){
+  .header{
+    .about-banner{
+      background: url("../img/aboutusipadpro.png")  no-repeat;
+      height: 35vh;
+    }
+  }
+
+}
+@include responsive($xl){
+  .header{
+    .about-banner{
+      background: url("../img/aboutusipadpro.png")  no-repeat;
+      height: 35vh;
+    }
+  }
+
+}
+@include responsive($xxl){
+  .header{
+    .about-banner{
+      background: url("../img/About.jpg")  no-repeat;
+      height: 35vh;
+    }
+  }
+
+}
 .main-text{
+
   .container{
-    flex-direction: column-reverse;
+    // flex-direction: column-reverse;
     .about-contact{
-      margin-top: 7rem;
-      display: flex;
+      display: none;
+      margin-top: 2rem;
+    
       flex-direction: column;
       align-items: center;
       width: 100%;
@@ -69,7 +169,8 @@
             margin-top: .35rem;
           }
           p{
-            max-width: 13.5rem;
+            max-width: 1
+            rem;
             text-align: center;
             @extend .text;
           }
@@ -77,6 +178,7 @@
       }
     }
   }
+ 
 }
 
 @include responsive($md){
@@ -84,6 +186,7 @@
     .container{
       flex-direction: row;
       .about-contact{
+        display: block;
         align-items: flex-start;
         position: sticky;
         top: 8.06rem;
@@ -97,6 +200,7 @@
     .container{
       flex-direction: row;
       .about-contact{
+        display: flex;
         align-items: flex-start;
         position: sticky;
         top: 7.06rem;

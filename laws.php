@@ -11,9 +11,9 @@
   </head>
 
   <body>
-    <header id="app" class="header">
-      <nav class="nav" id="nav">
-      </nav>
+  <header id="app" class="header">
+      <nav class="nav" id="nav"></nav>
+
       <section class="laws-banner">
         <div class="law-banner-content">
           <h1 class="law-banner-title text-center">
@@ -46,8 +46,8 @@
       </div>
     </section>
 
-    <footer id="footer" class="footer laws-footer"></footer>
-
-    <script src="./js/app.js"></script>
+ 
+    <footer class="footer" id="footer"> </footer>
+    <script src="./js/app.js" type="module"></script>
   </body>
 </html>

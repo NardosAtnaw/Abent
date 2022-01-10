@@ -1,10 +1,40 @@
 .main-text {
-  margin-top: 3.5rem;
+  margin-top: 2.5rem;
+ 
   .container {
     // flex-direction: row-reverse;
+    .list{
+      h2{
+        font-family: "medium bt";
+        font-weight: 700;
+        font-size: 1.5rem;
+        line-height: 1.5rem;
+        margin-bottom: 1.81rem; 
+      }
+      ul {
+        margin-bottom: 3.5rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+        li {
+          margin-bottom: 1rem;
+        
+          a {
+            font-family: "light bt";
+            font-size: 1.13rem;
+            line-height: 1.75rem;
+            &:hover{
+              color: $primary-color;
+            }
+            
+          }
+        }
+      }
+            }
     .side-links {
-      margin-top: 7rem;
+      margin-top: 5rem;
       display: none;
+
         h3 {
           font-family: "medium bt";
           font-weight: 700;
@@ -16,7 +46,7 @@
           margin-bottom: 3.5rem;
           .line{
             width: 14.19rem;
-            background: #000;
+            background: $primary-color;
             height: 1px;
             margin-top: 2.38rem;
             margin-bottom: 1.19rem;
@@ -36,9 +66,73 @@
           }
         }
     }
+.contact-form{
+  margin-top: 2rem;
+// margin-left: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  top:5rem;
+  position: sticky;
+  // width: 45%; 
+  background: $secondary-color;
+  .container {
+    width: 100%;
+    padding: 0 1rem;
+    margin-top: 3.13rem;
+    background: transparent;
+    h2 {
+      @extend .h2;
+      font-size: 2rem;
+      margin-bottom: 1rem;
+      color: #fff;
+    }
+    p {
+      @extend .text;
+      color: #fff;
+      margin-bottom: 2rem;
+      max-width: 38rem;
+    }
+    .myform {
+      input,
+      textarea {
+        @extend .text;
+        color: #fff;
+        width: 18.94rem;
+        border: none;
+        background: #fff;
+        padding: 1.13rem 0.8rem;
+        box-shadow: 0px 2px 11px rgba(0, 0, 0, 0.08);
+        margin-bottom: 1.38rem;
+        outline: none;
+      }
+      .socials {
+        color: #fff;
+        font-family: "Futura", 'Poppins';
+        font-weight: bold;
+        font-size: 1rem;
+        // width: 18.94rem;
+        display: flex;
+        justify-content: center;
+        gap: 1.31rem;
+        margin: 1.38rem 0 1.69rem;
+        ul {
+          display: flex;
+          gap: 0.88rem;
+        }
+      }
+      .button {
+        @extend .text;
+        margin-bottom: 2.38rem;
+        text-align: center;
+      }
+    }
+  }
+}
     .side-contact {
       margin-top: 2rem;
-      display: flex;
+      display: none;
+      // display: flex;
       flex-direction: column;
       align-items: center;
       width: 100%;
@@ -117,11 +211,12 @@
         font-size: 1.8rem;
         margin-bottom: 3.88rem;
       }
-      img {
-        margin: 2.58rem 0;
-      }
+      // img {
+      //   margin: 2.58rem 0;
+      // }
       p {
         @extend .text;
+        margin-top: 1rem;
         a{
           // font-weight: 700;
           // text-decoration: underline;
@@ -149,18 +244,28 @@
 @include responsive($md){
   .main-text {
     .container {
+      .list{
+        ul {
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+        }
+      }
       .content {
         .service-title {
           font-size: 2.44rem;
-          margin-bottom: 3.88rem;
+          margin-bottom: 0.88rem;
         }
       }
     }
   }
+  
+
 }
 @include responsive($lg) {
   .main-text {
     .container {
+      .list{
+        display: none;
+      }
       align-items: flex-start;
     flex-direction: row;
       gap: 1rem;
@@ -168,17 +273,25 @@
         display: block;
         position: sticky;
         top: 12.75rem;
+        background: $blue;
+        color: #fff;
+        padding: .6rem;
+        // margin-right: 2rem;
         h3 {
           font-family: "medium bt";
           font-weight: 700;
           font-size: 1.5rem;
           line-height: 1.5rem;
           margin-bottom: 1.81rem;
+          color: #fff;
         }
         ul {
           margin-bottom: 3.5rem;
+          
           li {
+          
             a {
+              color: #fff;
               font-family: "light bt";
               font-size: 1.13rem;
               line-height: 1.75rem;
@@ -187,6 +300,9 @@
         }
       }
       .side-contact{
+        display: block;
+       flex-direction: column;
+      align-items: center;
         position: sticky;
         top: 12.75rem;
       }
@@ -196,13 +312,24 @@
 @include responsive($xl){
   .main-text {
     .container {
+      .side-links{
+        padding: 2rem;
+
+      }
       .content {
         img,
         p {
           width: auto;
         }
       }
+      .side-contact{
+        display: flex;
+      }
+      .contact-form{
+        margin-top: 5rem;
+      }
     }
   }
 
+ 
 }
