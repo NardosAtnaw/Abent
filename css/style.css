@@ -1816,7 +1816,7 @@ template {
 
 @media screen and (min-width: 1200px) {
   .main-text .container {
-    gap: 2.9rem;
+    gap: 3rem;
   }
   .main-text .container .side-links {
     padding: 2rem;
