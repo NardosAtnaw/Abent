@@ -1,6 +1,7 @@
 .header {
   .contact-banner {
     background: url("../img/contactphone.png") no-repeat;
+
     background-position: center center;
     background-size: cover;
     background-blend-mode: overlay;
@@ -71,6 +72,7 @@
   }
 }
 @include responsive($xl) {
+
   .time {
     .time-blob {
       width: auto;
@@ -333,6 +335,7 @@
             margin-right: 1rem;
           }
           .socials {
+            justify-content: center;
             width: 100%;
           }
           textarea {
@@ -369,7 +372,6 @@
   .wrapper {
     .contact-blob {
       // top: -15.6rem;
-
     }
     .contact-form {
       width: 68.38rem;
