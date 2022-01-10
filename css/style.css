@@ -1245,6 +1245,7 @@ template {
 .wrapper .contact-form .container .myform .socials {
   color: #fff;
   font-family: "Futura", "Poppins";
+  font-family: "Futura", 'Poppins';
   font-weight: bold;
   font-size: 1rem;
   width: 18.94rem;
@@ -1901,9 +1902,7 @@ template {
   color: #fff;
 }
 
-.attorney-profile .container .attorney-details .attorney-content .profile,
-.attorney-profile .container .attorney-details .attorney-content .experience,
-.attorney-profile .container .attorney-details .attorney-content .education {
+.attorney-profile .container .attorney-details .attorney-content .profile, .attorney-profile .container .attorney-details .attorney-content .experience, .attorney-profile .container .attorney-details .attorney-content .education {
   display: none;
 }
 
@@ -2027,16 +2026,10 @@ template {
   }
 }
 
-@media screen and (min-width: 992px) {
-  .header .attorney-banner {
-    background: url("../img/17.png") no-repeat;
-    height: 40vh;
-  }
-  .attorney-profile .container .attorney-info {
-    display: block;
-    position: sticky;
-    top: 0rem;
-  }
+.attorney-profile .container .attorney-info {
+  display: block;
+  position: -webkit-sticky;
+  top: 0rem;
 }
 
 @media screen and (min-width: 1920px) {
