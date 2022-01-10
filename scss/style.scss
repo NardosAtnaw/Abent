@@ -118,7 +118,53 @@
     }
   }
   .banner {
-    background: url("../img/homephone.jpg")  rgba(0, 0, 0, 0.35)no-repeat;
+    overflow: hidden;
+    width: 100%;
+    height: 100vh;
+    figure {
+      // position: relative;
+      width: 500%;
+      margin: 0;
+      animation: animate3 5s infinite;
+      .slide {
+        float: left;
+        width: 20%;
+
+        .banner-title {
+          padding: 10rem;
+          margin-top: 15rem;
+          color: #fff;
+          position: fixed;
+          text-align: left;
+          font-family: "medium bt";
+          font-weight: 700;
+          font-size: 2.44rem;
+          line-height: 2.88rem;
+          margin-bottom: 1.31rem;
+          max-width: 45rem;
+        }
+        .banner-subtitle {
+          color: #fff;
+          padding: 10rem;
+          @extend .text-medium;
+          margin-top: 24rem;
+          text-align: left;
+          position: fixed;
+          // margin-bottom: 2.56rem;
+          font-size: 1.5rem;
+        }
+        img {
+          width: 100%;
+          height: 100vh;
+          background-size: cover;
+          background-position: center;
+          background-repeat: no-repeat;
+          float: left;
+        }
+      }
+    }
+
+    background: no-repeat;
     background-position: center center;
     background-size: cover;
     background-blend-mode: overlay;
@@ -128,8 +174,19 @@
     display: grid;
     place-items: center;
     position: relative;
+    animation: slide linear 10s infinite;
 
-
+    @keyframes slide {
+      0% {
+        background: url("../img/phone1.png") no-repeat;
+      }
+      50% {
+        background: url("../img/phone2.png") no-repeat;
+      }
+      100% {
+        background: url("../img/phone3.png") no-repeat;
+      }
+    }
     .banner-content {
       color: #fff;
       margin-top: 4rem;
@@ -140,24 +197,19 @@
         line-height: 2.88rem;
         margin-bottom: 1.31rem;
         max-width: 33rem;
-       span:before{
-          content: 'CONSOLIDATED WITH';
-          animation: animate 30s infinite;
-
-
-
+        span:before {
+          content: "CONSOLIDATED WITH";
+          animation: animate 10s infinite;
         }
         @keyframes animate {
-         0%{
-            content: 'CONSOLIDATED WITH';
+          0% {
+            content: "CONSOLIDATED WITH";
           }
-       
-        50%{
-            content: 'SERVING AS';
+          50% {
+            content: "SERVING AS";
           }
-          
-         100%{
-            content: 'PROVIDING';
+          100% {
+            content: "PROVIDING";
           }
         }
       }
@@ -165,73 +217,126 @@
         @extend .text-medium;
         margin-bottom: 2.56rem;
         font-size: 1.5rem;
-        span:before{
-          content: 'profound local knowledge and immense international experience!';
-          animation: animate2 30sinfinite;
-
-
-
+        span:before {
+          content: "profound local knowledge and immense international experience!";
+          animation: animate2 10s infinite;
         }
         @keyframes animate2 {
-         0%{
-            content: '
-            profound local knowledge and immense international experience!';
+          0% {
+            content: " profound local knowledge and immense international experience!";
           }
-       
-        50%{
-            content: ' a legal bridge between you and your interest in Ethiopia!';
+
+          50% {
+            content: " a legal bridge between you and your interest in Ethiopia!";
           }
-          
-         100%{
-            content: 'a full-ranged one-stop legal solution!';
+
+          100% {
+            content: "a full-ranged one-stop legal solution!";
           }
         }
       }
-    
+
       .cta-btn {
-        // margin-top: 12rem;
+        // margin-top: 3rem;
         font-size: 1.13rem;
         font-weight: 700;
       }
-   
     }
   }
 }
-.how-can{
-  div{
-   margin-top: 3rem;
-    h1{
-      text-align: center;
-      font-family: 'medium bt';
-  font-weight: 600;
-  font-size: 2rem;
-  line-height: 1.88rem;
+.how-can {
+  background: url(../img/16.jpg) rgba(0, 0, 0, 0.16) no-repeat;
+  background-position: center center;
+  background-size: cover;
+  background-blend-mode: overlay;
+  background-attachment: fixed;
+  margin-top: 5rem;
+  div {
+    color: #fff;
+    margin-top: 1rem;
+    padding: 2.5rem 0 4rem;
+    max-width: 32.69rem;
+    margin-left: 1rem;
+    // margin: 0 auto;
+    h1 {
+      @extend .h2;
+      color: #fff;
+      margin-bottom: 1.69rem;
     }
-    p{
-
-    margin-left: 2rem;
-    margin-right: 2rem;
-        line-height: 2rem;
-        margin-top: 2.44rem; 
-        font-size:1.3rem ;
+    p {
+      font-family: Futura Md BT;
+      font-weight: normal;
+      font-size: 1.13rem;
+      line-height: 1.75rem;
+      color: #fff;
+      margin-bottom: 1.2rem;
+      max-width: 28.19rem;
+    }
+    a {
+      @extend .text;
+    }
+  }
+}
+.features {
+  .container-list {
+    display: grid;
+    grid-template-columns: 1fr;
+    margin-bottom: 3rem;
+    .feature-card {
+      margin-top: 3rem;
+      // margin-bottom: 0.06rem;
+      background: $blue;
+      margin-left: 1rem;
+      margin-right: 1rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 1rem;
+      width: 21rem;
+      height: 12rem;
+      .card-img {
+        margin-bottom: 0.75rem;
+        width: auto !important;
+      }
+      .card-title {
+        font-family: "medium bt";
+        font-weight: 300;
+        font-size: 1.25rem;
+        line-height: 1.5rem;
+        margin-bottom: 0.75rem;
+        text-align: center;
+        color: #fff;
+      }
+      .card-text {
+        // @extend .text-small;
+        // font-weight: 200;
+        width: 15.94rem;
+        text-align: center;
+        color: #fff;
         font-family: "light bt";
-        .intro-link {
-          color: $primary-color;
-          font-weight: bold;
-          cursor: pointer;
-          &:hover {
-            text-decoration: underline;
-          }
-        }
+        font-weight: 300;
+        font-size: 1rem;
+      }
     }
   }
 }
 @include responsive($md) {
   .header {
     .banner {
-      
-        // background: url("../img/homeipd.png")  rgba(0, 0, 0, 0.35)no-repeat;
-      
+      animation: slide linear 10s infinite;
+
+      @keyframes slide {
+        0% {
+          background: url("../img/ipad1.png") no-repeat;
+        }
+        50% {
+          background: url("../img/ipad2.png") no-repeat;
+        }
+        100% {
+          background: url("../img/ipad3.png") no-repeat;
+        }
+      }
       .banner-content {
         .banner-title {
           font-family: "Futura", "Poppins";
@@ -242,41 +347,39 @@
         }
       }
     }
+    .nav {
+      .container {
+        .links-container {
+          width: 40vw;
+        }
+      }
+    }
   }
-  .how-can{
-    div{
-    
-      h1{
-       
-    font-weight: 600;
-    font-size: 2rem;
-    line-height: 2.88rem;
-      }
-      p{
 
-      margin-left: 5rem;
-      margin-right: 5rem;
-          line-height: 2.31rem;
-          margin-top: 2.44rem; 
-          font-size:1.3rem ;
-          font-family: "light bt";
-          .intro-link {
-            color: $primary-color;
-            font-weight: bold;
-            cursor: pointer;
-            &:hover {
-              text-decoration: underline;
-            }
-          }
-      }
+  .how-can {
+    div {
+      margin-left: 2rem;
     }
   }
 }
 
 @include responsive($lg) {
   .header {
-   
-   
+    .banner {
+      animation: slide linear 10s infinite;
+
+      @keyframes slide {
+        0% {
+          background: url("../img/home1.jpg") no-repeat;
+        }
+        50% {
+          background: url("../img/home2.jpg") no-repeat;
+        }
+        100% {
+          background: url("../img/home3.jpg") no-repeat;
+        }
+      }
+    }
     .nav {
       .container {
         .links-container {
@@ -290,7 +393,21 @@
         }
       }
     }
- 
+  }
+  .how-can {
+    div {
+      margin-left: 3rem;
+      p {
+        // text-align: center;
+        // margin-left: 10rem;
+        // margin-right: 10rem;
+        // font-size: 1.3rem;
+        margin-bottom: 1.3rem;
+      }
+      a {
+        margin-top: 1rem;
+      }
+    }
   }
 }
 @include responsive($xl) {
@@ -309,20 +426,20 @@
     //   }
     // }
     .banner {
-      background: rgba(0, 0, 0, 0.5) no-repeat;
-      animation: slide 30s infinite ;
-@keyframes slide {
-  0%{
-    background:url("../img/home1.jpg") ;
-  }
-  50%{
-    background:url("../img/home2.jpg") ;
-  }
-  100%{
-    background:url("../img/home3.jpg") ;
-  }
-  
-}
+      background: no-repeat;
+      animation: slide linear 10s infinite;
+
+      @keyframes slide {
+        0% {
+          background: url("../img/home1.jpg");
+        }
+        50% {
+          background: url("../img/home2.jpg");
+        }
+        100% {
+          background: url("../img/home3.jpg");
+        }
+      }
       .banner-content {
         .banner-title {
           font-family: "Futura", "Poppins";
@@ -334,21 +451,11 @@
       }
     }
   }
-  .how-can{
-    div{
-      text-align: center;
-      h1{
-        font-family: "Futura", 'Poppins';
-        font-weight: 700;
-        font-size: 3rem;
-        line-height: 3.98rem;
-      }
-      p{
-        text-align: center;
-      margin-left: 10rem;
-      margin-right: 10rem;
-          line-height: 2.31rem;
-          margin-top: 4.44rem; 
+  .how-can {
+    div {
+      margin-left: 3.5rem;
+      p {
+        max-width: 38.19rem;
       }
     }
   }
@@ -554,7 +661,7 @@
       margin: 0 auto;
       margin-bottom: 2rem;
       text-align: center;
-      max-width: 42rem;
+      max-width: 50rem;
       .intro-link {
         color: $primary-color;
         font-weight: bold;
@@ -630,30 +737,6 @@
           width: 2rem;
         }
       }
-      .feature-card {
-        margin-bottom: 6.06rem;
-        // background: lightblue;
-        margin-left: 1rem;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        padding: 2rem;
-        .card-img {
-          margin-bottom: 0.75rem;
-          width: auto !important;
-        }
-        .card-title {
-          @extend .medium;
-          margin-bottom: 0.75rem;
-          text-align: center;
-        }
-        .card-text {
-          @extend .text-small;
-          width: 17.94rem;
-          text-align: center;
-        }
-      }
     }
   }
 }
@@ -681,6 +764,15 @@
         display: flex;
       }
     }
+    .container-list {
+      margin-bottom: 7.06rem;
+      grid-template-columns: 1fr 1fr;
+      .feature-card {
+        margin-bottom: 1.06rem;
+
+        // padding: 2rem;
+      }
+    }
   }
 }
 @include responsive($lg) {
@@ -696,6 +788,10 @@
           margin-bottom: 1.19rem;
         }
       }
+    }
+    .container-list {
+      margin-left: 7rem;
+      margin-right: 5rem;
     }
     .feature-md {
       top: 25%;
@@ -725,6 +821,13 @@
         }
       }
     }
+    .container-list {
+      grid-template-columns: 1fr 1fr 1fr;
+      .feature-card {
+        margin-top: 4rem;
+        // padding: 2rem;
+      }
+    }
   }
 }
 
@@ -735,6 +838,10 @@
     }
     .f-circle {
       left: 0;
+    }
+    .container-list {
+      margin-left: 0rem;
+      margin-right: 0rem;
     }
   }
 }
@@ -838,7 +945,6 @@
   }
 }
 .ltr {
-
   background: url(../img/8.jpg) rgba(0, 0, 0, 0.6) no-repeat;
   background-position: center center;
   background-size: cover;
@@ -868,8 +974,8 @@
     }
   }
 }
-@include responsive($lg){
-  .ltr{
+@include responsive($lg) {
+  .ltr {
     margin: 7rem 0;
     background-attachment: none;
   }
@@ -936,10 +1042,12 @@
       right: 95rem;
     }
   }
+ 
 }
 .testimonials {
   margin-top: 5.69rem;
   background: linear-gradient(180deg, #fdfdfd 0%, rgba(253, 253, 253, 0) 100%);
+  width: 100%;
   .testi-title {
     @extend .h2;
     margin-top: 2.56rem;
@@ -948,55 +1056,116 @@
   }
   .container {
     position: relative;
-    overflow: hidden;
-    display: flex;
-    flex: 1;
-    .testi-container {
-      overflow-x: scroll;
-      &::-webkit-scrollbar {
-        width: 0;
-      }
-      display: grid;
-      grid-template-columns: 1fr 1fr 1fr;
-      gap: 2rem;
-      width: auto;
-      margin: 0 auto;
-      .testi-card {
-        width: 20.56rem;
-        margin-top: 3.88rem;
-        background: #fff;
-        border: 1px solid #e4e4e4;
-        .testi-img {
-          margin-top: -1.63rem;
-          margin-left: 1.19rem;
+
+    margin-bottom: 2rem;
+    // display: flex;
+    .test-card {
+      background-color: #fff;
+      padding: 1rem;
+      height: 25rem;
+      margin-left: 1rem;
+      margin-right: 1rem;
+      position: relative;
+      margin-top: 1rem;
+      padding: 1.81rem 1.31rem 1.81rem;
+      background: #fff;
+      box-shadow: 2px 2px 24px rgba(0, 0, 0, 0.12);
+      .star {
+        width: 100%;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        // padding:1rem;
+        img {
+          width: 8rem;
         }
-        .testi-text {
+        .review {
           @extend .text;
-          margin: 1rem 1.2rem 0.81rem 1rem;
+          margin-left: 1rem;
+          font-size: 1.1rem;
+
+          font-weight: 600;
+          color: $blue;
         }
-        .testi-footer {
-          margin: 0 0.69rem 2rem 1rem;
-          display: flex;
-          justify-content: space-between;
-          .testi-name {
-            @extend .medium;
-          }
-          .icons-container {
-            display: flex;
-            gap: 0.5rem;
-          }
-        }
+      }
+      p {
+        @extend .text;
+        max-width: 45rem;
+        line-height: 2rem;
+        margin-top: 2rem;
+        // text-align: center;
+        margin-bottom: 1rem;
+        font-size: 1rem;
+      }
+      .client-name {
+        @extend .text;
+        // margin-left: 1rem;
+        font-size: 1.1rem;
+        width: 100%;
+
+        justify-content: flex-end;
+        font-weight: 600;
+        color: $secondary-color;
+      }
+    }
+  }
+  .test-btn {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    .btn {
+      margin-top: 2rem;
+    }
+  }
+}
+@include responsive($md) {
+  .testimonials {
+    .container {
+      .test-card {
+        margin-left: 2rem;
+        margin-right: 2rem;
+        height: 20rem;
       }
     }
   }
 }
+@include responsive($lg) {
+  .testimonials {
+    .container {
+      display: flex;
+      .test-card {
+        margin-left: 0.3rem;
+        margin-right: 0.3rem;
+        height: 26rem;
+      }
+    }
+  }
+}
+@include responsive($xl) {
+  .testimonials {
+    .container {
+      display: flex;
+      .test-card {
+        margin-left: 0.3rem;
+        margin-right: 0.3rem;
+        height: 25rem;
+        margin-top: 2rem;
+      }
+    }
+  }
 
+}
 @include responsive($xxl) {
   .testimonials {
     .container {
       .testi-container {
         gap: 7rem;
       }
+    }
+  }
+  .how-can {
+    div {
+      margin-left: 15rem;
     }
   }
 }
@@ -1007,20 +1176,37 @@
     text-align: center;
   }
   .attorney-container {
-    .attorney-img {
-      margin-top: 3.69rem;
-      width: 22.25rem;
+    background: $blue;
+
+    .attorney-image {
+      .attorney-img {
+        margin-top: 2rem;
+        width: 20.25rem;
+      }
     }
     .container {
+      // background: $blue;
+
+      h1 {
+        @extend .text;
+        font-weight: 600;
+        font-size: 1.7rem;
+        color: #fff;
+        // text-align: center;
+      }
       .attorney-text {
         @extend .text;
-        max-width: 40rem;
-        line-height: 2.31rem;
-        margin-top: 4.44rem;
+        max-width: 45rem;
+        line-height: 2rem;
+        margin-top: 1.44rem;
+        // text-align: center;
+        color: #fff;
+        font-size: 1rem;
       }
       a {
         font-size: 1rem;
         margin-top: 2.88rem;
+        margin-bottom: 3rem;
       }
       .attorney-btn {
         text-align: center;
@@ -1031,8 +1217,10 @@
 @include responsive($md) {
   .attorney {
     .attorney-container {
-      .attorney-img {
-        width: 40rem;
+      .attorney-image {
+        .attorney-img {
+          width: 30rem;
+        }
       }
       .container {
         .attorney-btn {
@@ -1048,11 +1236,14 @@
     margin: 7rem 0;
     .attorney-container {
       display: grid;
-      grid-template-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
       align-items: center;
+      margin-top: 2.3rem;
       .container {
+        grid-column-start: 2;
+        grid-column-end: 4;
         a {
-          margin-top: 0.88rem;
+          margin-top: 3.88rem;
         }
       }
     }
@@ -1062,8 +1253,13 @@
   .attorney {
     .attorney-container {
       align-items: center;
-      .attorney-img {
-        width: 58rem;
+      .attorney-image {
+        width: 100%;
+        // max-width: 0%;
+        .attorney-img {
+         
+          width: 35rem;
+        }
       }
       .container {
         .attorney-text {
@@ -1231,14 +1427,14 @@
   margin-bottom: 2.25rem;
 }
 .footer {
-  background: #8E92B5;
+  background: #324661;
   margin-top: 8.94rem;
   font-size: 0.88rem;
   overflow-x: hidden;
 
   .container {
     padding-top: 2.06rem;
-    .footer-line{
+    .footer-line {
       height: 1px;
       width: 100%;
       background: #fff;
@@ -1251,7 +1447,7 @@
         margin-bottom: 3.25rem;
         width: 9.25rem;
       }
-      p{
+      p {
         @extend .text;
         color: #fff;
         font-size: 1rem;
@@ -1282,7 +1478,7 @@
           .location {
             max-width: 13.69rem;
           }
-          a{
+          a {
             font-size: 1rem;
           }
           p {
@@ -1339,9 +1535,9 @@
     }
   }
 
-  .footer-foot{
+  .footer-foot {
     padding-bottom: 2.38rem;
-    .container{
+    .container {
       .copyright {
         @extend .text-small;
         text-align: center;
@@ -1350,24 +1546,22 @@
         margin-bottom: 1rem;
         a {
           color: #fff;
-          &:hover{
+          &:hover {
             color: $primary-color;
             text-decoration: underline;
-
           }
         }
       }
-      .terms{
+      .terms {
         color: #fff;
         text-align: center;
-        a{
+        a {
           @extend .text;
           font-size: 1rem;
           color: #fff;
-          &:hover{
+          &:hover {
             color: $primary-color;
             text-decoration: underline;
-
           }
         }
       }
@@ -1380,14 +1574,18 @@
     .container {
       row-gap: 2rem;
       .footer-logo {
-      
         .logo {
+          // display: flex;
+          // justify-content: center;
           margin: 0 0 1.88rem;
         }
-        p{
+        p {
           margin-left: 0;
+          text-align: start;
         }
         .icon-container {
+          // margin-left: 2rem;
+          // justify-content: center;
           justify-content: flex-start;
         }
       }
@@ -1428,18 +1626,17 @@
         }
       }
     }
-    .footer-foot{
-      .container{
+    .footer-foot {
+      .container {
         display: flex;
         align-items: flex-start;
         justify-content: space-between;
-        .copyright{ 
+        .copyright {
           margin: 0;
         }
-        .terms{
-          a{
-            margin: 0 .4rem 0 .4rem;
-
+        .terms {
+          a {
+            margin: 0 0.4rem 0 0.4rem;
           }
         }
       }
@@ -1456,15 +1653,17 @@
   }
 }
 
-@include responsive($xl){
+@include responsive($xl) {
   .footer {
-    .container{
+    .container {
       row-gap: 0;
-      .corporate, .single, .footer-contact{
+      .corporate,
+      .single,
+      .footer-contact {
         margin-top: 1.3rem;
       }
-      .footer-contact{
-        .contact-info{
+      .footer-contact {
+        .contact-info {
           margin-bottom: 0;
         }
       }
